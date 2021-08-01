@@ -41,16 +41,17 @@ const Hamburger = styled.button`
 const Navs = styled.div`
   display: none;
 
-  @media ${breakpoint.sm}{
+  @media ${breakpoint.sm} {
     display: flex;
   }
 `;
 
 const Nav = styled.button`
-  color: #fefcef;
   text-decoration: none;
   transition: all 0.4s;
   padding: 0 0 0 30px;
+  font-weight: ${props => props.isChosen ? 'bold' : 'medium'};
+  color: ${props => props.isChosen ? '#023552' : '#fefcef'};
 `;
 
 const MobileNavWrapper = styled.div`
@@ -101,25 +102,26 @@ const tabs = [{
 }, {
   id: "contact",
   name: "CONTACT"
-}
-];
+}];
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [tab, setTab] = useState(tabs[0].id);
+  const [currentTab, setCurrentTab] = useState(tabs[0].id);
+
   return (
     <>
       <Header open={open}>
-        <HomeButton onClick={() => setTab(tabs[0].id)}>
+        <HomeButton onClick={() => setCurrentTab(tabs[0].id)}>
           KEKE WEB
         </HomeButton>
         <Navs>
           {tabs.map(tab => (
-            <Nav
-              key={tab.id}
-              onClick={() => setTab(tab.id)}>
+              <Nav
+                isChosen={currentTab === tab.id}
+                key={tab.id}
+                onClick={() => setCurrentTab(tab.id)}>
                 {tab.name}
-            </Nav>
+              </Nav>
           ))}
         </Navs>
         <Hamburger onClick={() => setOpen(!open)} />
@@ -128,15 +130,19 @@ function App() {
             <MobileNav
               open={open}
               key={tab.id} 
-              onClick={() => setTab(tab.id)}>{tab.name}
+              onClick={() => {
+                setOpen(false)
+                setCurrentTab(tab.id)
+              }}>
+              {tab.name}
             </MobileNav>
           ))}
         </MobileNavWrapper>
       </Header>
       <BodyContainer>
-        {tab === "home" && <HomePage />}
-        {tab === "research" && <ResearchesPage />}
-        {tab === "contact" && <ContactPage />}
+        {currentTab === "home" && <HomePage />}
+        {currentTab === "research" && <ResearchesPage />}
+        {currentTab === "contact" && <ContactPage />}
       </BodyContainer>
     </>
   );
