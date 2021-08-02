@@ -1,4 +1,10 @@
 import HomePage from './pages/HomePage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import ResearchesPage from './pages/ResearchesPage';
 import ContactPage from './pages/ContactPage'
 import background from './images/background.jpg';
@@ -46,7 +52,7 @@ const Navs = styled.div`
   }
 `;
 
-const Nav = styled.button`
+const Nav = styled(Link)`
   text-decoration: none;
   transition: all 0.4s;
   padding: 0 0 0 30px;
@@ -68,7 +74,7 @@ const MobileNavWrapper = styled.div`
   transition: all 0.4s ease-out;
 `;
 
-const MobileNav = styled.button`
+const MobileNav = styled(Link)`
   color: #fefcef;
   text-decoration: none;
   opacity: 0;
@@ -90,14 +96,14 @@ const BodyContainer = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 50px 50px 50px;
+  padding: 100px 40px 50px 40px;
 `;
 
 const tabs = [{
   id: "home",
   name: "HOME",
 }, {
-  id: "research",
+  id: "researches",
   name: "RESEARCH",
 }, {
   id: "contact",
@@ -106,45 +112,38 @@ const tabs = [{
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [currentTab, setCurrentTab] = useState(tabs[0].id);
+  // const [currentTab, setCurrentTab] = useState(tabs[0].id);
 
   return (
-    <>
+    <Router>
       <Header open={open}>
-        <HomeButton onClick={() => setCurrentTab(tabs[0].id)}>
+        <HomeButton to="/">
           KEKE WEB
         </HomeButton>
         <Navs>
-          {tabs.map(tab => (
-              <Nav
-                isChosen={currentTab === tab.id}
-                key={tab.id}
-                onClick={() => setCurrentTab(tab.id)}>
-                {tab.name}
-              </Nav>
-          ))}
+          <Nav to="/researches">Researches</Nav>
+          <Nav to="/contact">Contact</Nav>
         </Navs>
         <Hamburger onClick={() => setOpen(!open)} />
         <MobileNavWrapper open={open}>
-          {tabs.map(tab => (
-            <MobileNav
-              open={open}
-              key={tab.id} 
-              onClick={() => {
-                setOpen(false)
-                setCurrentTab(tab.id)
-              }}>
-              {tab.name}
-            </MobileNav>
-          ))}
+          <MobileNav open={open} to="/researches">Researches</MobileNav>
+          <MobileNav open={open} to="/contact">Contact</MobileNav>
         </MobileNavWrapper>
       </Header>
       <BodyContainer>
-        {currentTab === "home" && <HomePage />}
-        {currentTab === "research" && <ResearchesPage />}
-        {currentTab === "contact" && <ContactPage />}
+        <Switch>
+          <Route path="/contact">
+            <ContactPage />
+          </Route>
+          <Route path="/researches">
+            <ResearchesPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
       </BodyContainer>
-    </>
+    </Router>
   );
 }
 
