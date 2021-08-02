@@ -57,7 +57,7 @@ const Nav = styled(Link)`
   transition: all 0.4s;
   padding: 0 0 0 30px;
   font-weight: ${props => props.isChosen ? 'bold' : 'medium'};
-  color: ${props => props.isChosen ? '#023552' : '#fefcef'};
+  color: ${props => props.isMatchedTab ? '#023552' : '#fefcef'};
 `;
 
 const MobileNavWrapper = styled.div`
@@ -112,7 +112,7 @@ const tabs = [{
 
 function App() {
   const [open, setOpen] = useState(false);
-  // const [currentTab, setCurrentTab] = useState(tabs[0].id);
+  const [currentTab, setCurrentTab] = useState(tabs[0].id);
 
   return (
     <Router>
@@ -121,13 +121,30 @@ function App() {
           KEKE WEB
         </HomeButton>
         <Navs>
-          <Nav to="/researches">Researches</Nav>
-          <Nav to="/contact">Contact</Nav>
+          {tabs.map(tab => {
+            const isMatchedTab = tab.id === currentTab;
+
+            return(
+            <Nav 
+              onClick={() => setCurrentTab(tab.id)}
+              isMatchedTab={isMatchedTab}
+              key={tab.id}
+              to={`/${tab.id}`}>
+              {tab.name}
+            </Nav>
+          )})}
         </Navs>
         <Hamburger onClick={() => setOpen(!open)} />
         <MobileNavWrapper open={open}>
-          <MobileNav open={open} to="/researches">Researches</MobileNav>
-          <MobileNav open={open} to="/contact">Contact</MobileNav>
+          {tabs.map(tab => (
+            <MobileNav
+              key={tab.id}
+              onClick={() => setOpen(false)}
+              open={open} 
+              to={`/${tab.id}`}>
+              {tab.name}
+            </MobileNav>
+          ))}
         </MobileNavWrapper>
       </Header>
       <BodyContainer>
