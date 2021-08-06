@@ -3,11 +3,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 import ResearchesPage from './pages/ResearchesPage';
 import ContactPage from './pages/ContactPage'
-import background from './images/background.jpg';
 import hamburger from './images/hamburger.png';
 import breakpoint from './breakpoints';
 import styled from 'styled-components';
@@ -17,7 +16,7 @@ const Header = styled.header`
   position: absolute;
   width: 100%;
   height: 80px;
-  background-color: #708b95;
+  background-color: #407A52;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +24,7 @@ const Header = styled.header`
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
 `;
 
-const HomeButton = styled.button`
+const HomeButton = styled(Link)`
   color: #fefcef;
   font-weight: bold;
   text-decoration: none;
@@ -56,8 +55,12 @@ const Nav = styled(Link)`
   text-decoration: none;
   transition: all 0.4s;
   padding: 0 0 0 30px;
-  font-weight: ${props => props.isChosen ? 'bold' : 'medium'};
-  color: ${props => props.isMatchedTab ? '#023552' : '#fefcef'};
+  color: #fefcef;
+
+  ${props => props.matchedNav &&`
+    font-weight: bold;
+    color: #E29C45;
+  `};
 `;
 
 const MobileNavWrapper = styled.div`
@@ -69,7 +72,7 @@ const MobileNavWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  background-color: #708b95;
+  background-color: #407A52;
   height: ${props => props.open ? '140px' : '0px'};
   transition: all 0.4s ease-out;
 `;
@@ -92,27 +95,37 @@ const MobileNav = styled(Link)`
 const BodyContainer = styled.div`
   height: 100%;
   min-height: 100vh;
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #F2F1EF;
   padding: 100px 40px 50px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 `;
 
-const tabs = [{
+const navs = [{
   id: "home",
   name: "HOME",
 }, {
-  id: "researches",
+  id: "research",
   name: "RESEARCH",
+},
+{
+  id: "members",
+  name: "MEMBERS"
+}, {
+  id: "publications",
+  name: "PUBLICATIONS"
 }, {
   id: "contact",
   name: "CONTACT"
+}, {
+  id: "join-us",
+  name: "JOIN US"
 }];
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [currentTab, setCurrentTab] = useState(tabs[0].id);
+  const [currentTab, setCurrentTab] = useState(navs[0].id);
 
   return (
     <Router>
@@ -121,28 +134,28 @@ function App() {
           KEKE WEB
         </HomeButton>
         <Navs>
-          {tabs.map(tab => {
-            const isMatchedTab = tab.id === currentTab;
+          {navs.map(nav => {
+            const matchedNav = nav.id === currentTab;
 
-            return(
+            return (
             <Nav 
-              onClick={() => setCurrentTab(tab.id)}
-              isMatchedTab={isMatchedTab}
-              key={tab.id}
-              to={`/${tab.id}`}>
-              {tab.name}
+              onClick={() => setCurrentTab(nav.id)}
+              matchedNav={matchedNav}
+              key={nav.id}
+              to={`/${nav.id}`}>
+              {nav.name}
             </Nav>
           )})}
         </Navs>
         <Hamburger onClick={() => setOpen(!open)} />
         <MobileNavWrapper open={open}>
-          {tabs.map(tab => (
+          {navs.map(nav => (
             <MobileNav
-              key={tab.id}
+              key={nav.id}
               onClick={() => setOpen(false)}
               open={open} 
-              to={`/${tab.id}`}>
-              {tab.name}
+              to={`/${nav.id}`}>
+              {nav.name}
             </MobileNav>
           ))}
         </MobileNavWrapper>
@@ -152,7 +165,7 @@ function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
-          <Route path="/researches">
+          <Route path="/research">
             <ResearchesPage />
           </Route>
           <Route path="/">
