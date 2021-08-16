@@ -6,6 +6,7 @@ const Title = styled.h1`
   margin: 36px 0 0 0;
   display: flex;
   justify-content: center;
+  font-size: 28px;
 `;
 
 const ContentWrapper = styled.div`
@@ -52,8 +53,8 @@ const AboutMeWrapper = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 28px;
 `;
 
 function HomePage() {

@@ -5,6 +5,7 @@ const Title = styled.h1`
   margin: 36px 0 0 0;
   display: flex;
   justify-content: center;
+  font-size: 28px;
 `;
 
 const ContentWrapper = styled.div`

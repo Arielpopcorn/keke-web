@@ -19,16 +19,6 @@ const Title = styled.h1`
   font-size: 28px;
 `;
 
-// const MemberSection = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, max-content);
-//   grid-column-gap: 40px;
-//   grid-row-gap: 24px;
-//   margin: 24px 0 0 0;
-//   justify-items: center;
-//   justify-content: flex-start;
-// `;
-
 const Name = styled.p`
   font-size: 16px;
   line-height: 32px;
@@ -143,22 +133,20 @@ function MembersPage() {
   return (
     <Wrapper>
       <Title>Members</Title>
-      {/* <MemberSection> */}
-          {members.map(member => (
-            <MemberContainer>
-              <AvatarContainer>
-                <Avatar src={member.cover} />
-              </AvatarContainer>
-              <MemberContent>
-                <ContentTitleWrapper style={{display: 'flex'}}>
-                  <Name>{member.name}</Name>
-                  <Position>{member.position}</Position>
-                </ContentTitleWrapper>
-                <Content>{member.content}</Content>
-              </MemberContent>
-            </MemberContainer>
-          ))}
-      {/* </MemberSection> */}
+        {members.map(member => (
+          <MemberContainer>
+            <AvatarContainer>
+              <Avatar src={member.cover} />
+            </AvatarContainer>
+            <MemberContent>
+              <ContentTitleWrapper style={{display: 'flex'}}>
+                <Name>{member.name}</Name>
+                <Position>{member.position}</Position>
+              </ContentTitleWrapper>
+              <Content>{member.content}</Content>
+            </MemberContent>
+          </MemberContainer>
+        ))}
     </Wrapper>
   );
 }

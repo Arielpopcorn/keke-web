@@ -1,13 +1,9 @@
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import img1 from '../images/mock-research1.jpg';
-import img2 from '../images/mock-research2.jpg';
-import img3 from '../images/mock-research3.jpg';
-import img4 from '../images/mock-research4.jpg';
-import img5 from '../images/mock-research5.jpg';
-import img6 from '../images/mock-research6.jpg';
-
 import breakpoint from '../breakpoints';
+import { researchList } from '../constants/researchList';
+
 
 const ResearchSection = styled.div`
   .cf:before,
@@ -60,6 +56,7 @@ const Title = styled.h1`
   margin: 36px 0 0 0;
   display: flex;
   justify-content: center;
+  font-size: 28px;
 `;
 
 const TabsWrapper = styled.div`
@@ -84,7 +81,7 @@ const Tab = styled.button`
   }
 `;
 
-const Block = styled.a`
+const Block = styled(Link)`
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   text-decoration: none;
   position: relative;
@@ -145,49 +142,11 @@ const tabs = [{
   name: "Ontogenetic niche "
 }];
 
-const mockResearches = [{
-  id: "1",
-  link: "https://blockecology.github.io/",
-  cover: img1,
-  title: "HIIIIII I AM A RESEARCHER",
-  tag: "Plant-soil_microbe_interactions"
-}, {
-  id: "2",
-  link: "https://parameterizeit.github.io/",
-  cover: img2,
-  title: "two",
-  tag: "Species_interaction_and_coexistence"
-}, {
-  id: "3",
-  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
-  cover: img3,
-  title: "three",
-  tag: "Stage-dependent_species_interaction"
-}, {
-  id: "4",
-  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
-  cover: img4,
-  title: "four",
-  tag: "Stage-dependent_species_interaction"
-}, {
-  id: "5",
-  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
-  cover: img5,
-  title: "five",
-  tag: "Stage-dependent_species_interaction"
-}, {
-  id: "6",
-  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
-  cover: img6,
-  title: "six",
-  tag: "Stage-dependent_species_interaction"
-}]
-
-function ResearchesPage() {
+function ResearchListPage() {
   const [currentTab, setCurrentTab] = useState(tabs[0].id);
 
-  const filteredResearch = mockResearches.filter(research => {
-    if (currentTab === 'all') return mockResearches;
+  const filteredResearch = researchList.filter(research => {
+    if (currentTab === 'all') return researchList;
     return (
     research.tag === currentTab
   )});
@@ -319,7 +278,7 @@ function ResearchesPage() {
       <ResearchSection>
       <div className="container cf">
         {filteredResearch.map(research => (
-          <Block target="_blank" rel="noreferrer" href={research.link} className="box">
+          <Block to={`research/${research.id}`} className="box" key={research.id}>
             <CoverContainer>
               <Cover src={research.cover} alt="cover-img" />
             </CoverContainer>
@@ -334,4 +293,4 @@ function ResearchesPage() {
   );
 }
 
-export default ResearchesPage;
+export default ResearchListPage;

@@ -9,7 +9,7 @@ import researchgate from './images/researchgate.svg';
 import twitter from './images/inaturalist.svg';
 import github from './images/github.png';
 import googleScholar from './images/google-scholar.svg';
-import ResearchesPage from './pages/ResearchesPage';
+import ResearchListPage from './pages/ResearchListPage';
 import ContactPage from './pages/ContactPage'
 import hamburger from './images/hamburger.png';
 import breakpoint from './breakpoints';
@@ -18,6 +18,7 @@ import { useState } from 'react';
 import PublicationsPage from './pages/PublicationsPage';
 import MembersPage from './pages/MembersPage';
 import JoinUsPage from './pages/JoinUsPage';
+import ResearchPage from './pages/ResearchPage'
 
 const Header = styled.header`
   position: absolute;
@@ -216,8 +217,11 @@ function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
+          <Route path="/research/:id">
+            <ResearchPage />
+          </Route>
           <Route path="/research">
-            <ResearchesPage />
+            <ResearchListPage />
           </Route>
           <Route path="/publications">
             <PublicationsPage />
