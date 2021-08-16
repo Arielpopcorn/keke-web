@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import pig from '../images/pig.jpg';
-import img1 from '../images/mock-research1.jpeg';
+import img1 from '../images/mock-research1.jpg';
 import img2 from '../images/mock-research2.jpg';
+import img3 from '../images/mock-research3.jpg';
+import img4 from '../images/mock-research4.jpg';
+import img5 from '../images/mock-research5.jpg';
+import img6 from '../images/mock-research6.jpg';
+
 import breakpoint from '../breakpoints';
 
-const W = styled.div`
-  h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
-  }
-
+const ResearchSection = styled.div`
   .cf:before,
   .cf:after {
     content: " ";
@@ -23,48 +22,31 @@ const W = styled.div`
     clear: both;
   }
 
-  /**
-   * For IE 6/7 only
-   * Include this rule to trigger hasLayout and contain floats.
-   */
   .cf {
     *zoom: 1;
   }
 
-  .boxes {
-    display: block;
-    width: 30%;
-    height: 220px;
-    background: #fe4;
-    position: relative;
-    overflow: hidden;
+  .box {
     float: left;
-    margin: 1.5%;
+    margin: 14.5%;
     cursor: pointer;
-  }
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    width: 68%;
 
-  .da-image {
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .overlay {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: -100%;
-    color: #FFF;
-    background-color: #FAFAFA;
-    opacity: 0.8;
-    z-index: 10;
+    @media ${breakpoint.xs}{
+    margin: 6.5%;
+    width: 35%;
+    }
+  
+    @media ${breakpoint.sm}{
+      width: 17%;
+      margin: 1.5%;
+    }
   }
 
   .container {
-    width: 1170px;
     display: block;
-    margin: auto;
+    margin: 36px 0 0 0;
   }
 `
 
@@ -74,64 +56,57 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
+const Title = styled.h1`
+  margin: 36px 0 0 0;
+  display: flex;
+  justify-content: center;
+`;
+
 const TabsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, minmax(max-content, min-content));
-  grid-template-rows: 40px;
-  margin: 20px 0 0 0;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 140px);
+  grid-row-gap: 14px;
+  grid-template-rows: 30px;
+  margin: 24px 0 0 0;
+  grid-column-gap: 10px;
 `;
 
 const Tab = styled.button`
   background-color: ${props => props.isMatchedTab ? '#407A52' : '#F2F1EF'};
   color: ${props => props.isMatchedTab ? '#FAFAFA' : '#000'};
   font-weight: ${props => props.isMatchedTab ? 'bold' : 'medium'};
-  font-size: 16px;
+  font-size: 13px;
+  border-radius: 2px;
 
   &:hover {
-    background-color: ${props => props.isMatchedTab ? '#407A52' : '#f9f9f4'};
-  }
-`;
-
-const BlocksWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 50px;
-  margin: 40px 0 0 0;
-
-  @media ${breakpoint.xs}{
-    grid-template-columns: repeat(2, 1fr);
-    margin: 60px 0 0 0;
-  }
-
-  @media ${breakpoint.sm}{
-    grid-template-columns: repeat(3, 1fr);
-    margin: 60px 0 0 0;
+    background-color: ${props => props.isMatchedTab ? '#407A52' : '#E5E5E5'};
   }
 `;
 
 const Block = styled.a`
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
-  transition: all 0.2s ease-out;
-  background-color: #f9f9f4;
   text-decoration: none;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 `;
 
 const CoverContainer = styled.div`
   position: relative;
   width: 100%;
-  padding-top: 60%;
+  padding-top: 100%;
   overflow: hidden;
 `;
 
-const CoverImage = styled.img`
+const Cover = styled.img`
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
 `;
 
-const Title = styled.p`
+const ResearchTitle = styled.p`
   color: #407A52;
   font-weight: bold;
   text-decoration: none;
@@ -140,16 +115,19 @@ const Title = styled.p`
 `;
 
 const Mask = styled.div`
-display: block;
-position: absolute;
-width: 100%;
-height: 100%;
-top: 0%;
-left: -100%;
-color: #FFF;
-background-color: #FAFAFA;
-opacity: 0.8;
-z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: -100%;
+  color: #FFF;
+  background-color: #FAFAFA;
+  opacity: 0.8;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 `;
 
 const tabs = [{
@@ -170,20 +148,38 @@ const tabs = [{
 const mockResearches = [{
   id: "1",
   link: "https://blockecology.github.io/",
-  cover: pig,
+  cover: img1,
   title: "HIIIIII I AM A RESEARCHER",
   tag: "Plant-soil_microbe_interactions"
 }, {
   id: "2",
   link: "https://parameterizeit.github.io/",
-  cover: img1,
+  cover: img2,
   title: "two",
   tag: "Species_interaction_and_coexistence"
 }, {
   id: "3",
   link: "https://www.marieclaire.com.tw/entertainment/story/45399",
-  cover: img2,
+  cover: img3,
   title: "three",
+  tag: "Stage-dependent_species_interaction"
+}, {
+  id: "4",
+  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
+  cover: img4,
+  title: "four",
+  tag: "Stage-dependent_species_interaction"
+}, {
+  id: "5",
+  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
+  cover: img5,
+  title: "five",
+  tag: "Stage-dependent_species_interaction"
+}, {
+  id: "6",
+  link: "https://www.marieclaire.com.tw/entertainment/story/45399",
+  cover: img6,
+  title: "six",
   tag: "Stage-dependent_species_interaction"
 }]
 
@@ -225,11 +221,8 @@ function ResearchesPage() {
     return xDiff * xDiff + yDiff * yDiff;
   }
   
-  var boxes = window.document.querySelectorAll(".boxes");
-  console.log("boxes", boxes)
-  
+  var boxes = window.document.querySelectorAll(".box");
   var TweenMax = window.TweenMax;
-  console.log("TweenMax",TweenMax)
   
   for (var i = 0; i < boxes.length; i++) {
     boxes[i].onmouseenter = function (e) {
@@ -307,55 +300,37 @@ function ResearchesPage() {
 })
 
   return (
-      <Wrapper>
-        <TabsWrapper>
-          {tabs.map(tab => {
-            const isMatchedTab = tab.id === currentTab;
+    <Wrapper>
+      <Title>Research</Title>
+      <TabsWrapper>
+        {tabs.map(tab => {
+          const isMatchedTab = tab.id === currentTab;
 
-            return (
-              <Tab
-                key={tab.id}
-                onClick={() => setCurrentTab(tab.id)}
-                isMatchedTab={isMatchedTab}>
-                {tab.name}
-              </Tab>
-            )
-          })}
-        </TabsWrapper>
-        {/* <BlocksWrapper>
-          {filteredResearch.map(research => (
-            <Block 
-              key={research.id}
-              href={research.link} 
-              type="button" 
-              target="_blank">
-              <CoverContainer>
-                <CoverImage src={research.cover} alt="cover-img" />
-              </CoverContainer>
-              <Title>
-                {research.title}
-              </Title>
-              <Mask>
-                <Title>
-                  {research.title}
-                </Title>
-              </Mask>
-            </Block>
-          ))}
-        </BlocksWrapper> */}
-        <W>
-        <div className="container cf">
-          {filteredResearch.map(research => (
-            <div className="boxes">
-              <img className="da-image" src={research.cover} alt="cover-img" />
-              <div className="overlay">
-                <Title>{research.title}</Title>
-              </div>
-            </div>
-          ))}
-        </div>
-        </W>
-      </Wrapper>
+          return (
+            <Tab
+              key={tab.id}
+              onClick={() => setCurrentTab(tab.id)}
+              isMatchedTab={isMatchedTab}>
+              {tab.name}
+            </Tab>
+          )
+        })}
+      </TabsWrapper>
+      <ResearchSection>
+      <div className="container cf">
+        {filteredResearch.map(research => (
+          <Block target="_blank" rel="noreferrer" href={research.link} className="box">
+            <CoverContainer>
+              <Cover src={research.cover} alt="cover-img" />
+            </CoverContainer>
+            <Mask className="overlay">
+              <ResearchTitle>{research.title}</ResearchTitle>
+            </Mask>
+          </Block>
+        ))}
+      </div>
+      </ResearchSection>
+    </Wrapper>
   );
 }
 
