@@ -3,30 +3,26 @@ import breakpoint from '../breakpoints';
 import { useParams } from "react-router-dom";
 import { researchList } from '../constants/researchList';
 
-const Title = styled.h1`
-  margin: 36px 0 0 0;
-  display: flex;
-  justify-content: center;
-  font-size: 28px;
-`;
-
-const ResearchSection = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 48px 0 0 0;
+  max-width: 920px;
 `;
 
 const ResearchTitle = styled.h1`
+  margin: 0 0 48px 0;
 `;
 
 const ResearchCoverContainer = styled.div`
   position: relative;
-  width: 400px;
+  width: 50%;
   padding-top: 50%;
   border-radius: 5px;
   flex-shrink: 0;
+  margin: 0 0 48px 0;
 `;
 
 const ResearchCover = styled.img`
@@ -39,7 +35,8 @@ const ResearchCover = styled.img`
 `;
 
 const ResearchSubtitle = styled.h2`
-  margin: 24px 0 24px 0;
+  margin: 0 0 24px 0;
+  text-align: center;
 `;
 
 const ResearchContent = styled.div`
@@ -69,7 +66,7 @@ function ResearchPage() {
   const currentResearch = researchList.find(research => research.id === id)
 
   return (
-    <ResearchSection>
+    <Wrapper>
       <ResearchTitle>{currentResearch.content.title}</ResearchTitle>
       <ResearchCoverContainer>
         <ResearchCover src={currentResearch.cover} />
@@ -82,7 +79,7 @@ function ResearchPage() {
           <Paragraph>{p}</Paragraph>
         ))}
       </ResearchContent>
-    </ResearchSection>
+    </Wrapper>
   );
 }
 

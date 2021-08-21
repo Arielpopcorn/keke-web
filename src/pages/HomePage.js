@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import pig from '../images/pig.jpg';
 
+
 const Title = styled.h1`
   margin: 36px 0 0 0;
   display: flex;
