@@ -20,14 +20,10 @@ const Title = styled.h1`
 `;
 
 const Name = styled.p`
-  font-size: 16px;
-  line-height: 32px;
   font-weight: bold;
 `;
 
 const Position = styled.p`
-  font-size: 16px;
-  line-height: 28px;
   font-weight: bold;
   color: #407A52;
   margin: 0 0 0 12px;

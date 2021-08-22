@@ -105,7 +105,7 @@ const BodyContainer = styled.div`
   height: 100%;
   min-height: calc(100vh - 100px);
   background-color: #F2F1EF;
-  padding: 80px 60px 50px 60px;
+  padding: 80px 40px 50px 40px;
   display: flex;
   justify-content: center;
   align-items: flex-start;

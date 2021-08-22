@@ -21,18 +21,6 @@ const Avatar = styled.img`
   border-radius: 50%;
 `;
 
-const AboutMeWrapper = styled.div`
-
-`;
-
-// const ClipPath = styled.img`
-  
-// `;
-
-const Text = styled.p`
-  font-size: 16px;
-  line-height: 32px;
-`;
 
 function JoinUsPage() {
   return (

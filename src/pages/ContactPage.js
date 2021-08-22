@@ -19,8 +19,7 @@ const DescriptionWrapper = styled.div`
 `;
 
 const Description = styled.div`
-  font-size: 16px;
-  line-height: 32px;
+
 `;
 
 const ContactSection = styled.div`
@@ -55,8 +54,7 @@ const Icon = styled.img`
 `;
 
 const Text = styled.p`
-  font-size: 13px;
-  line-height: 26px;
+  line-height: 28px;
   font-weight: 600;
   border-bottom: 1px black solid;
 `;

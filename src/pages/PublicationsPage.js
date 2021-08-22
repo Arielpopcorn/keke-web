@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
 import { publications } from '../constants/publications';
+import link from '../images/link.png';
 
 const Title = styled.h1`
   margin: 36px 0 0 0;
@@ -9,10 +10,67 @@ const Title = styled.h1`
   font-size: 28px;
 `;
 
+const PublicationsSection = styled.div`
+  margin: 24px 0 0 0;
+`;
+
+const YearSection = styled.div`
+  margin: 24px 0 0 0;
+`;
+const Year = styled.h2`
+  background-color: #407A52;
+  color: #FFF;
+  width: max-content;
+  padding: 0 8px 0 4px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 0 12px 0;
+`;
+
+const Publication = styled.div`
+  margin: 0 0 16px 0;
+`;
+
+const PublicationTitle = styled.p`
+  margin: 0 0 12px 0;
+  font-weight: bold;
+  line-height: 22px;
+`;
+
+const Index = styled.span`
+  color: #407A52;
+  font-weight: bold;
+`;
+
+const AuthorParagraph = styled.p`
+  line-height: 20px;
+  margin: 0 0 8px 0;
+`;
+
 const Author = styled.span`
-  font-size: 16px;
-  line-height: 32px;
-  color: ${props => props.isKe ? 'red' : 'black' }
+  font-size: 13px;
+  line-height: 20px;
+  color: ${props => props.isKe ? '#407A52' : 'black' };
+  font-weight: ${props => props.isKe ? 'bold' : 'medium' };
+`;
+
+const BulletPoint = styled.ul`
+  padding-left: 20px;
+`;
+
+const Link = styled.a`
+  color: #407A52;
+`;
+
+const Button = styled.a`
+  border: 1px solid #407A52;
+  border-radius: 2px;
+  padding: 0 4px;
+  color: #407A52;
+  text-decoration: none;
+  margin: 0 12px 0 0;
+  line-height: 20px;
 `;
 
 function PublicationsPage() {
@@ -28,62 +86,69 @@ function PublicationsPage() {
     return ({
       [year]: yearlyPublications
     })
-  });
+  }).reverse();
   
   return (
     <div>
       <Title>Publications</Title>
-      <div>
+      <PublicationsSection>
         {sortedPublications.map((sortedPublication) => (
-            <div key={Object.keys(sortedPublication)}>
-              <h2>{Object.keys(sortedPublication)}</h2>
+            <YearSection key={Object.keys(sortedPublication)}>
+              <Year>{Object.keys(sortedPublication)}</Year>
               {Object.values(sortedPublication).map((publication, index) => (
-                <div key={index}>
-                  {publication.map(p => {
+                <Fragment key={index}>
+                  {publication.reverse().map(p => {
                     const sortedIfMatchedKe = p.authors.map(author => ({
                       isKe: (author === "Ke, P.-J." || author === "Ke, P.-J.*") ? true : false,
                       author,
                     }))
 
                     return (
-                    <div key={p.id}>
-                      <p style={{fontWeight: "bold"}}>[{p.id}] {p.title}</p>
-                      {sortedIfMatchedKe.map((a, index) => (
-                        <Fragment key={index}>
-                          <Author isKe={a.isKe}>
-                            {a.author}
-                          </Author>
-                          <span>{index !== sortedIfMatchedKe.length - 1 ? ", " : null}</span>
-                        </Fragment>
-                      ))}
-                      <span>
-                        ({p.year})
-                        {p.magazine}
-                      </span>
+                    <Publication key={p.id}>
+                      <Index>[{p.id}]</Index>
+                      <PublicationTitle>
+                        {p.title}
+                      </PublicationTitle>
+                      <AuthorParagraph>
+                        {sortedIfMatchedKe.map((a, index) => (
+                          <Fragment key={index}>
+                            <Author isKe={a.isKe}>
+                              {a.author}
+                            </Author>
+                            <Author>{index !== sortedIfMatchedKe.length - 1 ? ", " : null}</Author>
+                          </Fragment>
+                        ))}
+                        <Author>
+                          &nbsp
+                          ({p.year})
+                          &nbsp
+                          {p.magazine}
+                        </Author>
+                      </AuthorParagraph>
                       {p.highlighted.map(highlightedPublication => (
-                        <div key={highlightedPublication.id} >
-                          <ul>
-                            <li>
-                              <a type="button" href={highlightedPublication.url} target="_blank" rel="noreferrer">
-                                {highlightedPublication.title}
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+                        <BulletPoint key={highlightedPublication.id}>
+                          <li>
+                            <Link type="button" href={highlightedPublication.url} target="_blank" rel="noreferrer">
+                              {highlightedPublication.title}
+                            </Link>
+                          </li>
+                        </BulletPoint>
                       ))}
-                      <a type="button" href={p.pdf} target="_blank" rel="noreferrer">
-                        PDF
-                      </a>
-                      <a type="button" href={p.doi} target="_blank" rel="noreferrer">
-                        DOI
-                      </a>
-                    </div>
+                      <div>
+                        <Button type="button" href={p.pdf} target="_blank" rel="noreferrer">
+                          PDF
+                        </Button>
+                        <Button type="button" href={p.doi} target="_blank" rel="noreferrer">
+                          DOI
+                        </Button>
+                      </div>
+                    </Publication>
                   )})}
-                </div>
+                </Fragment>
               ))}
-            </div>
+            </YearSection>
         ))}
-      </div>
+      </PublicationsSection>
     </div>
   );
 }

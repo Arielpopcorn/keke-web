@@ -14,10 +14,12 @@ const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-column-gap: 72px;
-  margin: 24px 0 0 0;
+  margin: 48px 0 0 0;
+  max-width: 920px;
 
   @media ${breakpoint.sm} {
     grid-template-columns: repeat(2, auto);
+    margin: 24px 0 0 0;
   }
 `;
 
@@ -36,13 +38,10 @@ const Avatar = styled.img`
 
 const Name = styled.h2`
   margin: 12px 0 0 0;
-  font-size: 16px;
-  line-height: 32px;
 `;
 
 const Status = styled.p`
-  font-size: 16px;
-  line-height: 32px;
+
 `
 
 const AboutMeWrapper = styled.div`
@@ -54,8 +53,7 @@ const AboutMeWrapper = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 14px;
-  line-height: 28px;
+
 `;
 
 function HomePage() {
