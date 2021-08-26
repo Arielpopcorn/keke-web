@@ -183,7 +183,7 @@ function App() {
   const [currentTab, setCurrentTab] = useState(navs[0].id);
 
   return (
-    <Router>
+    <Router basename="/keke-web">
       <Header open={open}>
         <HomeButton to="/">
           KEKE WEB
