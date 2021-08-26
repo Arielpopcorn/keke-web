@@ -1,5 +1,6 @@
 import HomePage from './pages/HomePage';
 import {
+  BrowserRouter as Router,
   Switch,
   Route,
   Link,
@@ -181,10 +182,8 @@ function App() {
   const [open, setOpen] = useState(false);
   const [currentTab, setCurrentTab] = useState(navs[0].id);
 
-  console.log('Your process.env.PUBLIC_URL', process.env.PUBLIC_URL);
-
   return (
-    <>
+    <Router basename={'/keke-web'}>
       <Header open={open}>
         <HomeButton to="/">
           KEKE WEB
@@ -258,7 +257,7 @@ function App() {
           </IconWrapper>
         </SocialMediaContainer>
       </Footer>
-      </>
+    </Router>
   );
 }
 
