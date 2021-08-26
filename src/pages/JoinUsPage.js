@@ -1,5 +1,13 @@
 import styled from 'styled-components';
-import pig from '../images/pig.jpg';
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const Title = styled.h1`
   margin: 36px 0 0 0;
@@ -8,25 +16,48 @@ const Title = styled.h1`
   font-size: 28px;
 `;
 
-const ContentWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-column-gap: 40px;
+const DescriptionWrapper = styled.div`
   margin: 24px 0 0 0;
+  text-align: left;
+  
 `;
 
-const Avatar = styled.img`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+const Link = styled.a`
+  color: #407A52;
+  font-weight: bold;
+`;
+
+const Description = styled.div`
+  margin: 0 0 24px 0;
+`;
+
+const Text = styled.p`
+  line-height: 28px;
+  font-weight: 600;
 `;
 
 
 function JoinUsPage() {
   return (
-    <div>
+    <Wrapper>
       <Title>Join us</Title>
-    </div>
+      <DescriptionWrapper>
+        <Description>Feel free to email me (
+          {' '}
+          <Link href="mailto:pojuke@ntu.edu.tw">
+            pojuke@ntu.edu.tw
+          </Link>
+          {' '}
+          ) if you are interested in joining the lab (please include a CV and brief description of your interests and motivations). The work in the lab encompasses theoretical and empirical research, with topics spanning community ecology, theoretical ecology, plant ecology, and microbial ecology. Given the multiple research approaches taken in the lab, scientific curiosity and collegiality are the only prerequisites although some experience with either programming, field work, or wet lab would be great.</Description>
+        <Description>For Masters and PhD students, please contact me as early as possible in the application cycle (see 
+          {' '}
+          <Link href="https://ecology.lifescience.ntu.edu.tw/doku.php/zh-tw/admission_foreign" target="_blank" rel="noreferrer">
+            IEEB
+          </Link> 
+          {' '}
+          website for deadlines). Potential undergraduate researchers from NTU or elsewhere should contact me following the above instructions. Prospective postdocs should have a relevant research background with demonstrable publication record; please get in touch to discuss funding opportunities and other potential fellowship applications.</Description>
+      </DescriptionWrapper>
+    </Wrapper>
   );
 }
 

@@ -14,6 +14,8 @@ const Wrapper = styled.div`
 
 const ResearchTitle = styled.h1`
   margin: 0 0 48px 0;
+  font-size: 20px;
+  text-align: center;
 `;
 
 const ResearchCoverContainer = styled.div`

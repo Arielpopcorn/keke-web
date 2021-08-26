@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import { researchList } from '../constants/researchList';
-
 
 const ResearchSection = styled.div`
   .cf:before,
@@ -75,9 +74,40 @@ const Tab = styled.button`
   font-weight: ${props => props.isMatchedTab ? 'bold' : 'medium'};
   font-size: 13px;
   border-radius: 2px;
+  position: relative;
 
   &:hover {
     background-color: ${props => props.isMatchedTab ? '#407A52' : '#E5E5E5'};
+  }
+`;
+
+const Description = styled.p`
+  position: absolute;
+  z-index: 3;
+  background-color: oldlace;
+  padding: ${props => props.description ? '8px' : 0};
+  border-radius: 2px;
+  display: none;
+  font-size: 12px;
+  line-height: 16px;
+  min-width: 280px;
+  bottom: ${props => props.buttonHeight ? `calc(0px + ${props.buttonHeight}px + 8px)` : '0'};
+  right: calc(50% - 140px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
+  text-align: left;
+
+  button:hover & {
+    display: ${props => props.description ? 'block' : 'none'};
+  }
+
+  @media ${breakpoint.xs} {
+    min-width: 320px;
+    right: calc(50% - 100px);
+  }
+
+  @media ${breakpoint.sm} {
+    min-width: 360px;
+    right: calc(50% - 180px);%;
   }
 `;
 
@@ -130,20 +160,35 @@ const Mask = styled.div`
 const tabs = [{
   id: "all",
   name: "All",
+  description: null
 }, {
   id: "Plant-soil_microbe_interactions",
   name: "Plant-soil feedback",
+  description: "Plants can condition and cause species-specific changes in soil microbial communities that will influence plant competitive outcomes and community dynamics, a process known as plant-soil feedbacks (PSF). Our lab develops experiments and models that better capture the temporal and demographic context of PSF and employ them to study the consequences of PSF."
 },
 {
   id: "Species_interaction_and_coexistence",
-  name: "Species coexistence"
+  name: "Species coexistence",
+  description: "The maintenance of biodiversity boils down to the stable coexistence of interacting species. When describing competitive interactions, ecologists adopt either a phenomenological or mechanistic approach. To better understand competitive dynamics, our lab strives to synthesize different modeling approaches to develop explicit connections between causal mechanisms and emergent phenomena."
 }, {
   id: "Stage-dependent_species_interaction",
-  name: "Ontogenetic niche "
+  name: "Ontogenetic niche",
+  description: "The strength of species interactions is often assumed to be fixed through time. However, greater awareness of the temporal complexity of ecological communities has urged ecologists to study how species’ phenology and ontogeny modify species interaction strength. In our lab, we combine both empirical and theoretical approaches to develop a temporally-explicit perspective of community ecology."
 }];
 
 function ResearchListPage() {
   const [currentTab, setCurrentTab] = useState(tabs[0].id);
+  const [tabHeight, setTabHeight] = useState(0);
+
+  const tabRef = useRef(null);
+
+  console.log('tabHeight', tabHeight)
+
+  useEffect(() => {
+    if (!tabRef) return;
+
+    setTabHeight(tabRef.current.clientHeight)
+  }, [])
 
   const filteredResearch = researchList.filter(research => {
     if (currentTab === 'all') return researchList;
@@ -267,10 +312,16 @@ function ResearchListPage() {
 
           return (
             <Tab
+              ref={tabRef}
               key={tab.id}
               onClick={() => setCurrentTab(tab.id)}
               isMatchedTab={isMatchedTab}>
               {tab.name}
+              <Description
+                buttonHeight={tabHeight}
+                description={tab?.description}>
+                {tab.description}
+              </Description>
             </Tab>
           )
         })}

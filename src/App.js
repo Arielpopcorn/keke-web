@@ -88,6 +88,9 @@ const MobileNavWrapper = styled.div`
 
 const MobileNav = styled(Link)`
   color: #fefcef;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   text-decoration: none;
   opacity: 0;
   transition: all 0.4s;

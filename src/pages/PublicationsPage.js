@@ -99,13 +99,13 @@ function PublicationsPage() {
                 <Fragment key={index}>
                   {publication.reverse().map(p => {
                     const sortedIfMatchedKe = p.authors.map(author => ({
-                      isKe: (author === "Ke, P.-J." || author === "Ke, P.-J.*") ? true : false,
+                      isKe: (author === "Po-Ju Ke" || author === "Po-Ju Ke*") ? true : false,
                       author,
                     }))
 
                     return (
                     <Publication key={p.id}>
-                      <Index>[{p.id}]</Index>
+                      {/* <Index>[{p.id}]</Index> */}
                       <PublicationTitle>
                         {p.title}
                       </PublicationTitle>
@@ -128,9 +128,19 @@ function PublicationsPage() {
                       {p.highlighted.map(highlightedPublication => (
                         <BulletPoint key={highlightedPublication.id}>
                           <li>
-                            <Link type="button" href={highlightedPublication.url} target="_blank" rel="noreferrer">
-                              {highlightedPublication.title}
-                            </Link>
+                            {(highlightedPublication.content ?? []).map(c => {
+                              if (c.url) {
+                                return (
+                                  <Link key={c.id} type="button" href={c.url} target="_blank" rel="noreferrer">
+                                    {c.text}
+                                  </Link>
+                                )
+                              } 
+
+                              return (
+                                <span>{c.text}</span>
+                              )
+                            })}
                           </li>
                         </BulletPoint>
                       ))}
