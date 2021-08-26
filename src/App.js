@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
   Link,
-  Redirect
 } from "react-router-dom";
 import researchgate from './constants/images/researchgate.svg';
 import twitter from './constants/images/inaturalist.svg';
@@ -184,7 +183,7 @@ function App() {
   const [currentTab, setCurrentTab] = useState(navs[0].id);
 
   return (
-    <Router basename="/keke-web">
+    <Router basename={process.env.PUBLIC_URL}>
       <Header open={open}>
         <HomeButton to="/">
           KEKE WEB
@@ -218,10 +217,6 @@ function App() {
       </Header>
       <BodyContainer>
         <Switch>
-          <Redirect
-            exact
-            from="/"
-            to={HomePage} />
           <Route path="/contact">
             <ContactPage />
           </Route>
