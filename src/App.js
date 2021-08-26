@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
   Link,
+  Redirect
 } from "react-router-dom";
 import researchgate from './constants/images/researchgate.svg';
 import twitter from './constants/images/inaturalist.svg';
@@ -217,6 +218,10 @@ function App() {
       </Header>
       <BodyContainer>
         <Switch>
+          <Redirect
+            exact
+            from="/"
+            to={HomePage} />
           <Route path="/contact">
             <ContactPage />
           </Route>
