@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import email from '../images/email.png'
-import location from '../images/location.png'
-import phone from '../images/phone.png'
+import email from '../constants/images/email.png'
+import location from '../constants/images/location.png'
+import phone from '../constants/images/phone.png'
 
 const Wrapper = styled.div`
   width: 100%;

@@ -1,17 +1,17 @@
-import pdf_2015_1 from '../pdf/pdf_2015_1.pdf';
-import pdf_2015_2 from '../pdf/pdf_2015_2.pdf';
-import pdf_2017_1 from '../pdf/pdf_2017_1.pdf';
-import pdf_2018_1 from '../pdf/pdf_2018_1.pdf';
-import pdf_2018_2 from '../pdf/pdf_2018_2.pdf';
-import pdf_2018_3 from '../pdf/pdf_2018_3.pdf';
-import pdf_2018_4 from '../pdf/pdf_2018_4.pdf';
-import pdf_2018_5 from '../pdf/pdf_2018_5.pdf';
-import pdf_2020_1 from '../pdf/pdf_2020_1.pdf';
-import pdf_2020_2 from '../pdf/pdf_2020_2.pdf';
-import pdf_2021_1 from '../pdf/pdf_2021_1.pdf';
-import pdf_2021_2 from '../pdf/pdf_2021_2.pdf';
-import pdf_2021_3 from '../pdf/pdf_2021_3.pdf';
-import pdf_in_press_1 from '../pdf/pdf_in_press_1.pdf';
+import pdf_2015_1 from '../constants/pdf/pdf_2015_1.pdf';
+import pdf_2015_2 from '../constants/pdf/pdf_2015_2.pdf';
+import pdf_2017_1 from '../constants/pdf/pdf_2017_1.pdf';
+import pdf_2018_1 from '../constants/pdf/pdf_2018_1.pdf';
+import pdf_2018_2 from '../constants/pdf/pdf_2018_2.pdf';
+import pdf_2018_3 from '../constants/pdf/pdf_2018_3.pdf';
+import pdf_2018_4 from '../constants/pdf/pdf_2018_4.pdf';
+import pdf_2018_5 from '../constants/pdf/pdf_2018_5.pdf';
+import pdf_2020_1 from '../constants/pdf/pdf_2020_1.pdf';
+import pdf_2020_2 from '../constants/pdf/pdf_2020_2.pdf';
+import pdf_2021_1 from '../constants/pdf/pdf_2021_1.pdf';
+import pdf_2021_2 from '../constants/pdf/pdf_2021_2.pdf';
+import pdf_2021_3 from '../constants/pdf/pdf_2021_3.pdf';
+import pdf_in_press_1 from '../constants/pdf/pdf_in_press_1.pdf';
 
 
 export const publications = [{

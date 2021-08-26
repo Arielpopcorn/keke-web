@@ -5,13 +5,13 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import researchgate from './images/researchgate.svg';
-import twitter from './images/inaturalist.svg';
-import github from './images/github.png';
-import googleScholar from './images/google-scholar.svg';
+import researchgate from './constants/images/researchgate.svg';
+import twitter from './constants/images/inaturalist.svg';
+import github from './constants/images/github.png';
+import googleScholar from './constants/images/google-scholar.svg';
 import ResearchListPage from './pages/ResearchListPage';
 import ContactPage from './pages/ContactPage'
-import hamburger from './images/hamburger.png';
+import hamburger from './constants/images/hamburger.png';
 import breakpoint from './breakpoints';
 import styled from 'styled-components';
 import { useState } from 'react';

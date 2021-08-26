@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
-import pig from '../images/pig.jpg';
+import pig from '../constants/images/pig.jpg';
 
 
 const Title = styled.h1`

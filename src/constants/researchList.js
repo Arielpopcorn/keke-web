@@ -1,9 +1,9 @@
-import img1 from '../images/mock-research1.jpg';
-import img2 from '../images/mock-research2.jpg';
-import img3 from '../images/mock-research3.jpg';
-import img4 from '../images/mock-research4.jpg';
-import img5 from '../images/mock-research5.jpg';
-import img6 from '../images/mock-research6.jpg';
+import img1 from '../constants/images/mock-research1.jpg';
+import img2 from '../constants/images/mock-research2.jpg';
+import img3 from '../constants/images/mock-research3.jpg';
+import img4 from '../constants/images/mock-research4.jpg';
+import img5 from '../constants/images/mock-research5.jpg';
+import img6 from '../constants/images/mock-research6.jpg';
 
 export const researchList = [{
   id: "1",

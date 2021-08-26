@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
 import { publications } from '../constants/publications';
-import link from '../images/link.png';
 
 const Title = styled.h1`
   margin: 36px 0 0 0;
