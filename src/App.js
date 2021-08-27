@@ -40,8 +40,8 @@ const HomeButton = styled(Link)`
 `;
 
 const Hamburger = styled.button`
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   background-image: url(${hamburger});
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +83,7 @@ const MobileNavWrapper = styled.div`
   flex-direction: column;
   background-color: #407A52;
   height: ${props => props.open ? '260px' : '0px'};
-  transition: all 0.1s ease-out;
+  transition: all 0.3s ease-out;
 `;
 
 const MobileNav = styled(Link)`
