@@ -61,7 +61,7 @@ export const PUBLICATIONS = [{
 }, {
   id: "3",
   title: "Linking modern coexistence theory and contemporary niche theory",
-  authors : ["Andrew D. Letten*", "Po-Ju Ke*", "Tadashi Fukam"],
+  authors : ["Andrew D. Letten*", "Po-Ju Ke*", "Tadashi Fukami"],
   year: "2017",
   magazine: "Ecological Monograph, 87(2), 161-177",
   highlighted: [{
