@@ -12,5 +12,5 @@ export const MEMBERS = [{
   name: "You",
   position: "student",
   cover: avatar2,
-  content: "this could be you!"
+  content: "This could be you!"
 }]

@@ -67,6 +67,7 @@ const MemberContent = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   margin: 24px 0 48px 0;
+  width: 100%;
 
   @media ${breakpoint.sm} {
     margin: 0 0 100px 36px;
