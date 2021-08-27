@@ -21,11 +21,10 @@ const Title = styled.h1`
 
 const DescriptionWrapper = styled.div`
   margin: 24px 0 0 0;
-  text-align: center;
 `;
 
 const Description = styled.div`
-
+  text-align: left;
 `;
 
 const ContactSection = styled.div`

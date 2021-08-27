@@ -43,11 +43,9 @@ function JoinUsPage() {
       <Title>Join us</Title>
       <DescriptionWrapper>
         <Description>Feel free to email me (
-          {' '}
           <Link href="mailto:pojuke@ntu.edu.tw">
             pojuke@ntu.edu.tw
           </Link>
-          {' '}
           ) if you are interested in joining the lab (please include a CV and brief description of your interests and motivations). The work in the lab encompasses theoretical and empirical research, with topics spanning community ecology, theoretical ecology, plant ecology, and microbial ecology. Given the multiple research approaches taken in the lab, scientific curiosity and collegiality are the only prerequisites although some experience with either programming, field work, or wet lab would be great.</Description>
         <Description>For Masters and PhD students, please contact me as early as possible in the application cycle (see 
           {' '}
