@@ -70,7 +70,7 @@ const Title = styled.h1`
 const TabsWrapper = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(1, 164px);
+  grid-template-columns: repeat(1, 170px);
   grid-row-gap: 4px;
   grid-template-rows: 30px;
   margin: 24px 0 0 0;
@@ -81,7 +81,6 @@ const TabsWrapper = styled.div`
   @media ${breakpoint.xs} {
     grid-template-columns: repeat(2, 164px);
     grid-row-gap: 8px;
-    grid-column-gap: 4px;
   }
 
   @media ${breakpoint.sm} {
@@ -96,6 +95,9 @@ const Tab = styled.button`
   font-weight: ${props => props.isMatchedTab ? 'bold' : 'medium'};
   font-size: 13px;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: ${props => props.isMatchedTab ? '#407A52' : '#E5E5E5'};
