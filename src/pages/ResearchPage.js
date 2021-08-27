@@ -10,19 +10,27 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 48px 0 0 0;
+  margin: 60px 0 0 0;
   max-width: 920px;
+
+  @media ${breakpoint.sm} {
+    margin: 48px 0 0 0;
+  }
 `;
 
 const BackButton = styled(Link)`
   position: absolute;
   top: 100px;
-  left: 40px;
+  left: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
   color: #000;
+
+  @media ${breakpoint.sm} {
+    left: 40px;
+  }
 `;
 
 const Icon = styled.img`
