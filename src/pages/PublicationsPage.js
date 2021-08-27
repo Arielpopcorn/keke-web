@@ -37,11 +37,6 @@ const PublicationTitle = styled.p`
   line-height: 22px;
 `;
 
-const Index = styled.span`
-  color: #407A52;
-  font-weight: bold;
-`;
-
 const AuthorParagraph = styled.p`
   line-height: 20px;
   margin: 0 0 8px 0;

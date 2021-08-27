@@ -83,18 +83,6 @@ const Paragraph = styled.p`
   line-height: 32px;
 `;
 
-const ContentWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-column-gap: 72px;
-  margin: 24px 0 0 0;
-
-  @media ${breakpoint.sm} {
-    grid-template-columns: repeat(2, auto);
-  }
-`;
-
-
 function ResearchPage() {
   const { id } = useParams();
   const currentResearch = RESEARCH_LIST.find(research => research.id === id);

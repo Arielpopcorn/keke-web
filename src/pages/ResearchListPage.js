@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
@@ -70,7 +70,7 @@ const Title = styled.h1`
 const TabsWrapper = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(1, 170px);
+  grid-template-columns: 1fr;
   grid-row-gap: 4px;
   grid-template-rows: 30px;
   margin: 24px 0 0 0;
