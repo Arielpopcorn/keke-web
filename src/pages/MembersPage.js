@@ -94,7 +94,7 @@ function MembersPage() {
               <Avatar src={member.cover} />
             </AvatarContainer>
             <MemberContent>
-              <ContentTitleWrapper style={{display: 'flex'}}>
+              <ContentTitleWrapper>
                 <Name>{member.name}</Name>
                 <Position>{member.position}</Position>
               </ContentTitleWrapper>

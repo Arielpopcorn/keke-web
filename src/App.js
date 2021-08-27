@@ -186,7 +186,7 @@ function App() {
     <Router basename={'/keke-web'}>
       <Header open={open}>
         <HomeButton to="/">
-          KEKE WEB
+          KE LAB
         </HomeButton>
         <Navs>
           {navs.map(nav => {

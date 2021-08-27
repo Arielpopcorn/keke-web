@@ -245,7 +245,7 @@ export const PUBLICATIONS = [{
 }, {
   id: "12",
   title: "Dynamic plant-soil microbe interactions: the neglected effect of soil conditioning time",
-  authors : ["Po-Ju Ke", "Peter C. Zee", "Tadashi Fukam"],
+  authors : ["Po-Ju Ke", "Peter C. Zee", "Tadashi Fukami"],
   year: "2021",
   magazine: "New Phytologist, 231(4), 1546-1558",
   highlighted: [],

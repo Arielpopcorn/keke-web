@@ -70,7 +70,7 @@ const Title = styled.h1`
 const TabsWrapper = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 140px);
+  grid-template-columns: repeat(1, 164px);
   grid-row-gap: 4px;
   grid-template-rows: 30px;
   margin: 24px 0 0 0;
@@ -79,10 +79,13 @@ const TabsWrapper = styled.div`
   border-bottom: 1px solid #407A52;
 
   @media ${breakpoint.xs} {
+    grid-template-columns: repeat(2, 164px);
     grid-row-gap: 8px;
+    grid-column-gap: 4px;
   }
 
-  @media ${breakpoint.xs} {
+  @media ${breakpoint.sm} {
+    grid-template-columns: repeat(4, 164px);
     grid-row-gap: 14px;
   }
 `;
@@ -193,7 +196,7 @@ const tabs = [{
   description: "The maintenance of biodiversity boils down to the stable coexistence of interacting species. When describing competitive interactions, ecologists adopt either a phenomenological or mechanistic approach. To better understand competitive dynamics, our lab strives to synthesize different modeling approaches to develop explicit connections between causal mechanisms and emergent phenomena."
 }, {
   id: "Stage-dependent_species_interaction",
-  name: "Ontogenetic niche",
+  name: "Ontogenetic niche shift",
   description: "The strength of species interactions is often assumed to be fixed through time. However, greater awareness of the temporal complexity of ecological communities has urged ecologists to study how species’ phenology and ontogeny modify species interaction strength. In our lab, we combine both empirical and theoretical approaches to develop a temporally-explicit perspective of community ecology."
 }];
 

@@ -118,9 +118,9 @@ function PublicationsPage() {
                           </Fragment>
                         ))}
                         <Author>
-                          &nbsp
+                          {' '}
                           ({p.year})
-                          &nbsp
+                          {' '}
                           {p.magazine}
                         </Author>
                       </AuthorParagraph>
