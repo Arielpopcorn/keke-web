@@ -83,7 +83,7 @@ const MobileNavWrapper = styled.div`
   flex-direction: column;
   background-color: #407A52;
   height: ${props => props.open ? '260px' : '0px'};
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 `;
 
 const MobileNav = styled(Link)`
