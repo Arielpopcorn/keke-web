@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
-import { publications } from '../constants/publications';
+import { PUBLICATIONS } from '../constants/publications';
 
 const Title = styled.h1`
   margin: 36px 0 0 0;
@@ -73,14 +73,14 @@ const Button = styled.a`
 `;
 
 function PublicationsPage() {
-  const years = publications.map(publication => publication.year).reduce((years, currentYear) => {
+  const years = PUBLICATIONS.map(publication => publication.year).reduce((years, currentYear) => {
     if (years.includes(currentYear)) return years;
 
     return [...years, currentYear]
   }, []);
 
   const sortedPublications = years.map((year, index) => {
-    const yearlyPublications = publications.filter(publication => year === publication.year);
+    const yearlyPublications = PUBLICATIONS.filter(publication => year === publication.year);
 
     return ({
       [year]: yearlyPublications

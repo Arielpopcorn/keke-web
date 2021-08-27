@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import breakpoint from '../breakpoints';
 import { useParams } from "react-router-dom";
-import { researchList } from '../constants/researchList';
+import { RESEARCH_LIST } from '../constants/researchList';
+import backIcon from '../constants/images/back.png';
 
 const Wrapper = styled.div`
   display: flex;
@@ -12,9 +14,30 @@ const Wrapper = styled.div`
   max-width: 920px;
 `;
 
+const BackButton = styled(Link)`
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+`;
+
+const Icon = styled.img`
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 0 0;
+`;
+
+const BackText = styled.p`
+  
+`;
+
 const ResearchTitle = styled.h1`
   margin: 0 0 48px 0;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
 `;
 
@@ -39,6 +62,7 @@ const ResearchCover = styled.img`
 const ResearchSubtitle = styled.h2`
   margin: 0 0 24px 0;
   text-align: center;
+  font-size: 20px;
 `;
 
 const ResearchContent = styled.div`
@@ -65,16 +89,22 @@ const ContentWrapper = styled.div`
 
 function ResearchPage() {
   const { id } = useParams();
-  const currentResearch = researchList.find(research => research.id === id)
+  const currentResearch = RESEARCH_LIST.find(research => research.id === id);
 
   return (
     <Wrapper>
-      <ResearchTitle>{currentResearch.content.title}</ResearchTitle>
+      <BackButton to="/research">
+        <Icon src={backIcon} alt="back" />
+        <BackText>Back</BackText>
+      </BackButton>
+      <ResearchTitle>
+        {currentResearch.content.title}
+      </ResearchTitle>
       <ResearchCoverContainer>
         <ResearchCover src={currentResearch.cover} />
       </ResearchCoverContainer>
       <ResearchSubtitle>
-      {currentResearch.content.subtitle}
+        {currentResearch.content.subtitle}
       </ResearchSubtitle>
       <ResearchContent>
         {currentResearch.content.paragraph.map(p => (

@@ -5,7 +5,7 @@ import img4 from '../constants/images/mock-research4.jpg';
 import img5 from '../constants/images/mock-research5.jpg';
 import img6 from '../constants/images/mock-research6.jpg';
 
-export const researchList = [{
+export const RESEARCH_LIST = [{
   id: "1",
   cover: img1,
   title: "HIIIIII I AM A RESEARCHER",

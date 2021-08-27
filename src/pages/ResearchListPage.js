@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
-import { researchList } from '../constants/researchList';
+import { RESEARCH_LIST } from '../constants/researchList';
 
 const ResearchSection = styled.div`
   .cf:before,
@@ -41,7 +41,16 @@ const ResearchSection = styled.div`
 
   .container {
     display: block;
-    margin: 36px 0 0 0;
+
+    @media ${breakpoint.xs} {
+
+    }
+  
+    @media ${breakpoint.sm} {
+      margin: 32px 0 0 0;
+      font-size: 13px;
+      margin: 24px 0 0 0;
+    }
   }
 `
 
@@ -62,10 +71,20 @@ const TabsWrapper = styled.div`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 140px);
-  grid-row-gap: 14px;
+  grid-row-gap: 4px;
   grid-template-rows: 30px;
   margin: 24px 0 0 0;
   grid-column-gap: 10px;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid #407A52;
+
+  @media ${breakpoint.xs} {
+    grid-row-gap: 8px;
+  }
+
+  @media ${breakpoint.xs} {
+    grid-row-gap: 14px;
+  }
 `;
 
 const Tab = styled.button`
@@ -74,40 +93,42 @@ const Tab = styled.button`
   font-weight: ${props => props.isMatchedTab ? 'bold' : 'medium'};
   font-size: 13px;
   border-radius: 2px;
-  position: relative;
 
   &:hover {
     background-color: ${props => props.isMatchedTab ? '#407A52' : '#E5E5E5'};
   }
 `;
 
-const Description = styled.p`
-  position: absolute;
-  z-index: 3;
-  background-color: oldlace;
-  padding: ${props => props.description ? '8px' : 0};
-  border-radius: 2px;
-  display: none;
-  font-size: 12px;
-  line-height: 16px;
-  min-width: 280px;
-  bottom: ${props => props.buttonHeight ? `calc(0px + ${props.buttonHeight}px + 8px)` : '0'};
-  right: calc(50% - 140px);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
-  text-align: left;
-
-  button:hover & {
-    display: ${props => props.description ? 'block' : 'none'};
-  }
+const DescriptionWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 12px 0 0 0;
 
   @media ${breakpoint.xs} {
-    min-width: 320px;
-    right: calc(50% - 100px);
+    margin: 16px 0 0 0;
   }
 
   @media ${breakpoint.sm} {
-    min-width: 360px;
-    right: calc(50% - 180px);%;
+    margin: 32px 0 0 0;
+  }
+
+`;
+
+const Description = styled.p`
+  padding: ${props => props.description ? '8px' : 0};
+  font-size: 12px;
+  text-align: left;
+  max-width: 280px;
+  line-height: 24px;
+
+  @media ${breakpoint.xs} {
+    max-width: 520px;
+  }
+
+  @media ${breakpoint.sm} {
+    max-width: 920px;
+    font-size: 13px;
   }
 `;
 
@@ -178,20 +199,9 @@ const tabs = [{
 
 function ResearchListPage() {
   const [currentTab, setCurrentTab] = useState(tabs[0].id);
-  const [tabHeight, setTabHeight] = useState(0);
 
-  const tabRef = useRef(null);
-
-  console.log('tabHeight', tabHeight)
-
-  useEffect(() => {
-    if (!tabRef) return;
-
-    setTabHeight(tabRef.current.clientHeight)
-  }, [])
-
-  const filteredResearch = researchList.filter(research => {
-    if (currentTab === 'all') return researchList;
+  const filteredResearch = RESEARCH_LIST.filter(research => {
+    if (currentTab === 'all') return RESEARCH_LIST;
     return (
     research.tag === currentTab
   )});
@@ -300,8 +310,9 @@ function ResearchListPage() {
           break;
       }
     };
-  }
-})
+  }})
+
+  const showDescription = tabs.find(tab => tab.id === currentTab).description;
 
   return (
     <Wrapper>
@@ -312,33 +323,34 @@ function ResearchListPage() {
 
           return (
             <Tab
-              ref={tabRef}
               key={tab.id}
               onClick={() => setCurrentTab(tab.id)}
               isMatchedTab={isMatchedTab}>
               {tab.name}
-              <Description
-                buttonHeight={tabHeight}
-                description={tab?.description}>
-                {tab.description}
-              </Description>
             </Tab>
           )
         })}
       </TabsWrapper>
+      {showDescription && (
+        <DescriptionWrapper>
+          <Description>
+            {showDescription}
+          </Description>
+        </DescriptionWrapper>
+      )}
       <ResearchSection>
-      <div className="container cf">
-        {filteredResearch.map(research => (
-          <Block to={`research/${research.id}`} className="box" key={research.id}>
-            <CoverContainer>
-              <Cover src={research.cover} alt="cover-img" />
-            </CoverContainer>
-            <Mask className="overlay">
-              <ResearchTitle>{research.title}</ResearchTitle>
-            </Mask>
-          </Block>
-        ))}
-      </div>
+        <div className="container cf">
+          {filteredResearch.map(research => (
+            <Block  to={`research/${research.id}`} className="box" key={research.id}>
+              <CoverContainer>
+                <Cover src={research.cover} alt="cover-img" />
+              </CoverContainer>
+              <Mask className="overlay">
+                <ResearchTitle>{research.title}</ResearchTitle>
+              </Mask>
+            </Block>
+          ))}
+        </div>
       </ResearchSection>
     </Wrapper>
   );

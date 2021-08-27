@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
-import pig from '../constants/images/pig.jpg';
+import pig from '../constants/images/keke.jpg';
 
 
 const Title = styled.h1`
@@ -14,26 +14,31 @@ const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-column-gap: 72px;
-  margin: 48px 0 0 0;
   max-width: 920px;
+  margin: 32px 0 0 0;
 
   @media ${breakpoint.sm} {
     grid-template-columns: repeat(2, auto);
-    margin: 24px 0 0 0;
+    margin: 48px 0 0 0;
   }
 `;
 
 const Profile = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `;
 
 const Avatar = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+
+  @media ${breakpoint.sm}{
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 const Name = styled.h2`

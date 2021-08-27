@@ -14,7 +14,7 @@ import pdf_2021_3 from '../constants/pdf/pdf_2021_3.pdf';
 import pdf_in_press_1 from '../constants/pdf/pdf_in_press_1.pdf';
 
 
-export const publications = [{
+export const PUBLICATIONS = [{
   id: "1",
   title: "The soil microbial community predicts the importance of plant traits in plant–soil feedback",
   authors : ["Po-Ju Ke", "Takeshi Miki", "Tzung-Su Ding"],
