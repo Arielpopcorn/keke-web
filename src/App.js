@@ -243,16 +243,16 @@ function App() {
       <Footer>
         <Line />
         <SocialMediaContainer>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://www.aljazeera.com/gallery/2019/10/8/hot-air-balloons-ride-over-turkeys-iconic-cappadocia#:~:text=Cappadocia%2C%20preserved%20as%20a%20UNESCO,in%20Cappadocia%2C%20central%20Turkey.%20%5B">
+          <IconWrapper target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Po-Ju-Ke">
             <Icon src={researchgate} alt="facebook-icon" />
           </IconWrapper>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://www.aljazeera.com/gallery/2019/10/8/hot-air-balloons-ride-over-turkeys-iconic-cappadocia#:~:text=Cappadocia%2C%20preserved%20as%20a%20UNESCO,in%20Cappadocia%2C%20central%20Turkey.%20%5B">
+          <IconWrapper target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=6RfWMMkAAAAJ&hl=en&oi=ao">
             <Icon src={googleScholar} alt="github-icon" />
           </IconWrapper>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://www.aljazeera.com/gallery/2019/10/8/hot-air-balloons-ride-over-turkeys-iconic-cappadocia#:~:text=Cappadocia%2C%20preserved%20as%20a%20UNESCO,in%20Cappadocia%2C%20central%20Turkey.%20%5B">
+          <IconWrapper target="_blank" rel="noreferrer" href="https://twitter.com/chblueris?lang=en">
             <Icon src={twitter} alt="twitter-icon" />
           </IconWrapper>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://www.aljazeera.com/gallery/2019/10/8/hot-air-balloons-ride-over-turkeys-iconic-cappadocia#:~:text=Cappadocia%2C%20preserved%20as%20a%20UNESCO,in%20Cappadocia%2C%20central%20Turkey.%20%5B">
+          <IconWrapper target="_blank" rel="noreferrer" href="https://github.com/pojuke">
             <Icon style={{width: 34, height: 34}} src={github} alt="github-icon" />
           </IconWrapper>
         </SocialMediaContainer>

@@ -157,6 +157,10 @@ const Cover = styled.img`
   width: 100%;
   height: 100%;
   top: 0;
+  background-image: ${props =>  `url(${props.cover})`};
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 const ResearchTitle = styled.p`
@@ -188,16 +192,16 @@ const tabs = [{
   name: "All",
   description: null
 }, {
-  id: "Plant-soil_microbe_interactions",
+  id: "Plant-soil feedback",
   name: "Plant-soil feedback",
   description: "Plants can condition and cause species-specific changes in soil microbial communities that will influence plant competitive outcomes and community dynamics, a process known as plant-soil feedbacks (PSF). Our lab develops experiments and models that better capture the temporal and demographic context of PSF and employ them to study the consequences of PSF."
 },
 {
-  id: "Species_interaction_and_coexistence",
+  id: "Species coexistence",
   name: "Species coexistence",
   description: "The maintenance of biodiversity boils down to the stable coexistence of interacting species. When describing competitive interactions, ecologists adopt either a phenomenological or mechanistic approach. To better understand competitive dynamics, our lab strives to synthesize different modeling approaches to develop explicit connections between causal mechanisms and emergent phenomena."
 }, {
-  id: "Stage-dependent_species_interaction",
+  id: "Ontogenetic niche shift",
   name: "Ontogenetic niche shift",
   description: "The strength of species interactions is often assumed to be fixed through time. However, greater awareness of the temporal complexity of ecological communities has urged ecologists to study how species’ phenology and ontogeny modify species interaction strength. In our lab, we combine both empirical and theoretical approaches to develop a temporally-explicit perspective of community ecology."
 }];
@@ -208,7 +212,7 @@ function ResearchListPage() {
   const filteredResearch = RESEARCH_LIST.filter(research => {
     if (currentTab === 'all') return RESEARCH_LIST;
     return (
-    research.tag === currentTab
+    research.tags.includes(currentTab)
   )});
 
   useEffect(() => {
@@ -348,7 +352,7 @@ function ResearchListPage() {
           {filteredResearch.map(research => (
             <Block  to={`research/${research.id}`} className="box" key={research.id}>
               <CoverContainer>
-                <Cover src={research.cover} alt="cover-img" />
+                <Cover cover={research.cover} />
               </CoverContainer>
               <Mask className="overlay">
                 <ResearchTitle>{research.title}</ResearchTitle>

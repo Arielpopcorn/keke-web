@@ -46,7 +46,7 @@ const Name = styled.h2`
 `;
 
 const Status = styled.p`
-
+  line-height: 24px;
 `
 
 const AboutMeWrapper = styled.div`
@@ -68,8 +68,9 @@ function HomePage() {
       <ContentWrapper>
         <Profile>
           <Avatar src={pig} alt="Avatar" />
-          <Name>Po-Ru Ko</Name>
-          <Status>NTU assistant professor </Status>
+          <Name>Po-Ju Ke</Name>
+          <Status>National Taiwan University</Status>
+          <Status>Assistant Professor</Status>
         </Profile>
         <AboutMeWrapper>
           <Text>Our research aims to understand what determines the strength of species interactions and predict the community- and ecosystem-level consequences of these interactions. Species interact with competitors, predators, and mutualists within ecological communities; understanding how these complex interactions maintain species diversity provides the necessary knowledge for predicting and regulating the state of ecological systems.</Text>

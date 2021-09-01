@@ -51,7 +51,7 @@ const ResearchTitle = styled.h1`
 
 const ResearchCoverContainer = styled.div`
   position: relative;
-  width: 50%;
+  width: 80%;
   padding-top: 50%;
   border-radius: 5px;
   flex-shrink: 0;
@@ -65,12 +65,6 @@ const ResearchCover = styled.img`
   height: 100%;
   left: 0;
   top: 0;
-`;
-
-const ResearchSubtitle = styled.h2`
-  margin: 0 0 24px 0;
-  text-align: center;
-  font-size: 20px;
 `;
 
 const ResearchContent = styled.div`
@@ -94,16 +88,13 @@ function ResearchPage() {
         <BackText>Back</BackText>
       </BackButton>
       <ResearchTitle>
-        {currentResearch.content.title}
+        {currentResearch.title}
       </ResearchTitle>
       <ResearchCoverContainer>
         <ResearchCover src={currentResearch.cover} />
       </ResearchCoverContainer>
-      <ResearchSubtitle>
-        {currentResearch.content.subtitle}
-      </ResearchSubtitle>
       <ResearchContent>
-        {currentResearch.content.paragraph.map(p => (
+        {currentResearch.paragraph.map(p => (
           <Paragraph>{p}</Paragraph>
         ))}
       </ResearchContent>
