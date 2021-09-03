@@ -152,7 +152,7 @@ const CoverContainer = styled.div`
   overflow: hidden;
 `;
 
-const Cover = styled.img`
+const Cover = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
