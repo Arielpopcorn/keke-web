@@ -59,6 +59,8 @@ const AboutMeWrapper = styled.div`
 
 const Text = styled.p`
   margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 28px;
 `;
 
 function HomePage() {

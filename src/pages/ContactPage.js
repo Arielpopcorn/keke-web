@@ -25,6 +25,8 @@ const DescriptionWrapper = styled.div`
 
 const Description = styled.div`
   text-align: left;
+  font-size: 14px;
+  line-height: 28px;
 `;
 
 const ContactSection = styled.div`

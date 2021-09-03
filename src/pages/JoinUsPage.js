@@ -29,13 +29,9 @@ const Link = styled.a`
 
 const Description = styled.div`
   margin: 0 0 24px 0;
-`;
-
-const Text = styled.p`
+  font-size: 14px;
   line-height: 28px;
-  font-weight: 600;
 `;
-
 
 function JoinUsPage() {
   return (

@@ -123,10 +123,10 @@ const DescriptionWrapper = styled.div`
 
 const Description = styled.p`
   padding: ${props => props.description ? '8px' : 0};
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 28px;
   text-align: left;
   max-width: 280px;
-  line-height: 24px;
 
   @media ${breakpoint.xs} {
     max-width: 520px;
