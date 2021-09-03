@@ -44,18 +44,28 @@ const BackText = styled.p`
 `;
 
 const ResearchTitle = styled.h1`
-  margin: 0 0 48px 0;
+  margin: 0 0 36px 0;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
+
+  @media ${breakpoint.sm} {
+    margin: 0 0 48px 0;
+  }
 `;
 
 const ResearchCoverContainer = styled.div`
   position: relative;
-  width: 80%;
-  padding-top: 50%;
+  width: 100%;
+  padding-top: 67%;
   border-radius: 5px;
   flex-shrink: 0;
-  margin: 0 0 48px 0;
+  margin: 0 0 36px 0;
+
+  @media ${breakpoint.sm} {
+    width: 80%;
+    padding-top: 50%;
+    margin: 0 0 48px 0;
+  }
 `;
 
 const ResearchCover = styled.img`
