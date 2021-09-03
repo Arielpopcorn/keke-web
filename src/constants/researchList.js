@@ -7,8 +7,8 @@ import img5 from '../constants/images/research5.jpg';
 export const RESEARCH_LIST = [{
   id: "1",
   cover: img1,
-  title: "Mechanistic understanding of PSF",
-  tags: ['All', 'Plant-soil feedback'],
+  title: "Temporal dimension of PSF",
+  tags:  ['All', 'Plant-soil feedback', 'Ontogenetic niche shift'],
   paragraph: [
     "Plant conditioning of soil microbial communities is a time-dependent process, but how PSF strengths vary with the duration of soil conditioning and whether plants differ in their temporal development pattern of PSF remains unknown. This information is critical when predicting the consequences of PSF because plant individuals may experience different microbial effects depending on how long neighboring plants have conditioned the soil. In the past, we have tackled this problem with annual aerial photos of a Californian foredune ecosystem. Using GIS spatial analysis, we estimated the age of individual plants and reconstructed >20-year chronosequence of soil conditioning length for all four dominant plants in the community. With a combination of high-throughput sequencing and greenhouse experiments, we have shown that soil microbial communities are continuously turning over due to plant conditioning and the PSF resulting from these shifts in microbial communities exhibit different temporal patterns depending on the plant-soil combination (Ke et al., 2021, New Phytologist).",
     "We have also tackled this research theme via theoretical models. Current models of PSF often make simplifying assumptions when describing soil microbial dynamics and plant demographic processes, obscuring the temporal factors that regulate how soil microbes affect plant communities. Our lab continues to develop models that incorporate different temporal dimensions of plant-soil microbe interactions. One example is that we developed a novel patch occupancy model to show that whether or not microbial effects are cross-generational critically affects the ability of host-specific pathogens to promote plant coexistence (Ke and Levine, 2021, The American Naturalist). This model highlights two key factors that determine the temporal extent of microbial effects: the plant demographic transition affected by soil microbes (i.e., ontogeny) and the decay rate of microbial effects between consecutive plant generations (i.e., interaction timing).",
@@ -17,8 +17,8 @@ export const RESEARCH_LIST = [{
   }, {
     id: "2",
     cover: img2,
-    title: "Temporal dimension of PSF",
-    tags: ['All', 'Plant-soil feedback', 'Ontogenetic niche shift'],
+    title: "Mechanistic understanding of PSF",
+    tags:  ['All', 'Plant-soil feedback'],
     paragraph: [
       "Focusing on plant-soil feedback, I have developed models to investigate the interdependency among two major belowground processes: plant-mediated nutrient cycling (i.e., litter-mediated PSF) and plant-soil microbe interactions (i.e., microbial-mediated PSF). I have shown that plant litter decomposability, a key trait controlling nutrient cycling, has a strong positive effect on a plant’s PSF strength when mycorrhizal fungi are abundant, but not when pathogens dominate the microbial community. This result stems from the fact that the two microbial functional groups have different indirect interactions with litter dynamics. In particular, mycorrhizal fungi create an environment with depleted soil nutrient and enhanced litter production, and therefore the benefits of having higher litter decomposability are amplified under such an environment. Data compiled from empirical studies also supported this theoretical prediction (Ke et al., 2015, New Phytol.; Ke & Miki, 2015, Front. Microbiol.). Inspired by these results, I aim to build novel mechanistic models that further integrate litter- and microbial-mediated PSFs into resource competition theory, thereby better predicting the consequences of PSF across environmental contexts.",
     ]
