@@ -46,7 +46,7 @@ const BackText = styled.p`
 const ResearchTitle = styled.h1`
   margin: 0 0 48px 0;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
 `;
 
 const ResearchCoverContainer = styled.div`
