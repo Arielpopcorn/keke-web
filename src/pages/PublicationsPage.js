@@ -81,35 +81,34 @@ function PublicationsPage() {
       [year]: yearlyPublications
     })
   }).reverse();
-  
+
   return (
     <div>
       <Title>Publications</Title>
       <PublicationsSection>
-        {sortedPublications.map((sortedPublication) => (
+        {sortedPublications.map((sortedPublication, index) => (
             <YearSection key={Object.keys(sortedPublication)}>
               <Year>{Object.keys(sortedPublication)}</Year>
               {Object.values(sortedPublication).map((publication, index) => (
                 <Fragment key={index}>
                   {publication.reverse().map(p => {
-                    const sortedIfMatchedKe = p.authors.map(author => ({
+                    const matchingKe = p.authors.map(author => ({
                       isKe: (author === "Po-Ju Ke" || author === "Po-Ju Ke*") ? true : false,
                       author,
                     }))
 
                     return (
                     <Publication key={p.id}>
-                      {/* <Index>[{p.id}]</Index> */}
                       <PublicationTitle>
                         {p.title}
                       </PublicationTitle>
                       <AuthorParagraph>
-                        {sortedIfMatchedKe.map((a, index) => (
+                        {matchingKe.map((a, index) => (
                           <Fragment key={index}>
                             <Author isKe={a.isKe}>
                               {a.author}
                             </Author>
-                            <Author>{index !== sortedIfMatchedKe.length - 1 ? ", " : null}</Author>
+                            <Author>{index !== matchingKe.length - 1 ? ", " : null}</Author>
                           </Fragment>
                         ))}
                         <Author>
@@ -132,7 +131,7 @@ function PublicationsPage() {
                               } 
 
                               return (
-                                <span>{c.text}</span>
+                                <span key={c.id}>{c.text}</span>
                               )
                             })}
                           </li>

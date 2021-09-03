@@ -19,6 +19,7 @@ import PublicationsPage from './pages/PublicationsPage';
 import MembersPage from './pages/MembersPage';
 import JoinUsPage from './pages/JoinUsPage';
 import ResearchPage from './pages/ResearchPage'
+import ScrollToTop from './hooks/ScrollToTop';
 
 const Header = styled.header`
   position: absolute;
@@ -178,85 +179,87 @@ const navs = [{
   name: "JOIN US"
 }];
 
-function App() {
+function App () {
   const [open, setOpen] = useState(false);
   const [currentTab, setCurrentTab] = useState(navs[0].id);
 
   return (
     <Router basename={'/keke-web'}>
-      <Header open={open}>
-        <HomeButton to="/">
-          KE LAB
-        </HomeButton>
-        <Navs>
-          {navs.map(nav => {
-            const matchedNav = nav.id === currentTab;
+      <ScrollToTop>
+        <Header open={open}>
+          <HomeButton to="/">
+            KE LAB
+          </HomeButton>
+          <Navs>
+            {navs.map(nav => {
+              const matchedNav = nav.id === currentTab;
 
-            return (
-            <Nav 
-              onClick={() => setCurrentTab(nav.id)}
-              matchedNav={matchedNav}
-              key={nav.id}
-              to={`/${nav.id}`}>
-              {nav.name}
-            </Nav>
-          )})}
-        </Navs>
-        <Hamburger onClick={() => setOpen(!open)} />
-        <MobileNavWrapper open={open}>
-          {navs.map(nav => (
-            <MobileNav
-              key={nav.id}
-              onClick={() => setOpen(false)}
-              open={open} 
-              to={`/${nav.id}`}>
-              {nav.name}
-            </MobileNav>
-          ))}
-        </MobileNavWrapper>
-      </Header>
-      <BodyContainer>
-        <Switch>
-          <Route path="/contact">
-            <ContactPage />
-          </Route>
-          <Route path="/research/:id">
-            <ResearchPage />
-          </Route>
-          <Route path="/research">
-            <ResearchListPage />
-          </Route>
-          <Route path="/publications">
-            <PublicationsPage />
-          </Route>
-          <Route path="/members">
-            <MembersPage />
-          </Route>
-          <Route path="/join-us">
-            <JoinUsPage />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-        </Switch>
-      </BodyContainer>
-      <Footer>
-        <Line />
-        <SocialMediaContainer>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Po-Ju-Ke">
-            <Icon src={researchgate} alt="facebook-icon" />
-          </IconWrapper>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=6RfWMMkAAAAJ&hl=en&oi=ao">
-            <Icon src={googleScholar} alt="github-icon" />
-          </IconWrapper>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://twitter.com/chblueris?lang=en">
-            <Icon src={twitter} alt="twitter-icon" />
-          </IconWrapper>
-          <IconWrapper target="_blank" rel="noreferrer" href="https://github.com/pojuke">
-            <Icon style={{width: 34, height: 34}} src={github} alt="github-icon" />
-          </IconWrapper>
-        </SocialMediaContainer>
-      </Footer>
+              return (
+              <Nav 
+                onClick={() => setCurrentTab(nav.id)}
+                matchedNav={matchedNav}
+                key={nav.id}
+                to={`/${nav.id}`}>
+                {nav.name}
+              </Nav>
+            )})}
+          </Navs>
+          <Hamburger onClick={() => setOpen(!open)} />
+          <MobileNavWrapper open={open}>
+            {navs.map(nav => (
+              <MobileNav
+                key={nav.id}
+                onClick={() => setOpen(false)}
+                open={open} 
+                to={`/${nav.id}`}>
+                {nav.name}
+              </MobileNav>
+            ))}
+          </MobileNavWrapper>
+        </Header>
+        <BodyContainer>
+          <Switch>
+            <Route path="/contact">
+              <ContactPage />
+            </Route>
+            <Route path="/research/:id">
+              <ResearchPage />
+            </Route>
+            <Route path="/research">
+              <ResearchListPage />
+            </Route>
+            <Route path="/publications">
+              <PublicationsPage />
+            </Route>
+            <Route path="/members">
+              <MembersPage />
+            </Route>
+            <Route path="/join-us">
+              <JoinUsPage />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </BodyContainer>
+        <Footer>
+          <Line />
+          <SocialMediaContainer>
+            <IconWrapper target="_blank" rel="noreferrer" href="https://www.researchgate.net/profile/Po-Ju-Ke">
+              <Icon src={researchgate} alt="facebook-icon" />
+            </IconWrapper>
+            <IconWrapper target="_blank" rel="noreferrer" href="https://scholar.google.com/citations?user=6RfWMMkAAAAJ&hl=en&oi=ao">
+              <Icon src={googleScholar} alt="github-icon" />
+            </IconWrapper>
+            <IconWrapper target="_blank" rel="noreferrer" href="https://twitter.com/chblueris?lang=en">
+              <Icon src={twitter} alt="twitter-icon" />
+            </IconWrapper>
+            <IconWrapper target="_blank" rel="noreferrer" href="https://github.com/pojuke">
+              <Icon style={{width: 34, height: 34}} src={github} alt="github-icon" />
+            </IconWrapper>
+          </SocialMediaContainer>
+        </Footer>
+      </ScrollToTop>
     </Router>
   );
 }

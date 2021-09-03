@@ -1,6 +1,6 @@
 import img1 from '../constants/images/research1.jpg';
 import img2 from '../constants/images/research2.jpg';
-import img3 from '../constants/images/mock-research3.jpg';
+import img3 from '../constants/images/research3.jpg';
 import img4 from '../constants/images/research4.jpg';
 import img5 from '../constants/images/research5.jpg';
 

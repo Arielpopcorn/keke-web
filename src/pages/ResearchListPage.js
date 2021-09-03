@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import { RESEARCH_LIST } from '../constants/researchList';
@@ -207,7 +208,10 @@ const tabs = [{
 }];
 
 function ResearchListPage() {
-  const [currentTab, setCurrentTab] = useState(tabs[0].id);
+  const location = useLocation();
+  console.log('location123', location)
+
+  const [currentTab, setCurrentTab] = useState(location.state?.backTag ?? tabs[0].id);
 
   const filteredResearch = RESEARCH_LIST.filter(research => {
     if (currentTab === 'all') return RESEARCH_LIST;
@@ -350,7 +354,12 @@ function ResearchListPage() {
       <ResearchSection>
         <div className="container cf">
           {filteredResearch.map(research => (
-            <Block  to={`research/${research.id}`} className="box" key={research.id}>
+            <Block to={{
+              pathname: `research/${research.id}`,
+              state: currentTab
+              }}
+              className="box" 
+              key={research.id}>
               <CoverContainer>
                 <Cover cover={research.cover} />
               </CoverContainer>

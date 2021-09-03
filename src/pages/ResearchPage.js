@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import breakpoint from '../breakpoints';
 import { useParams } from "react-router-dom";
 import { RESEARCH_LIST } from '../constants/researchList';
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 60px 0 0 0;
+  margin: 80px 0 0 0;
   max-width: 920px;
 
   @media ${breakpoint.sm} {
@@ -46,7 +46,7 @@ const BackText = styled.p`
 const ResearchTitle = styled.h1`
   margin: 0 0 48px 0;
   font-size: 24px;
-  text-align: left;
+  text-align: center;
 `;
 
 const ResearchCoverContainer = styled.div`
@@ -81,9 +81,12 @@ function ResearchPage() {
   const { id } = useParams();
   const currentResearch = RESEARCH_LIST.find(research => research.id === id);
 
+  const location = useLocation();
+  console.log('location', location)
+
   return (
     <Wrapper>
-      <BackButton to="/research">
+      <BackButton to={{ pathname:"/research", state: {backTag: location.state} }}>
         <Icon src={backIcon} alt="back" />
         <BackText>Back</BackText>
       </BackButton>
