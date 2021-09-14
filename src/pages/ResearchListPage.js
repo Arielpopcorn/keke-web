@@ -213,7 +213,6 @@ const tabs = [{
 
 function ResearchListPage() {
   const location = useLocation();
-  console.log('location123', location)
 
   const [currentTab, setCurrentTab] = useState(location.state?.backTag ?? tabs[0].id);
 

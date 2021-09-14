@@ -1,4 +1,7 @@
 import img1 from '../constants/images/research1.jpg';
+import RunHorseLight_1 from '../constants/images/RunHorseLight_1.jpg';
+import RunHorseLight_2 from '../constants/images/RunHorseLight_2.jpg';
+import RunHorseLight_3 from '../constants/images/RunHorseLight_3.jpg';
 import img2 from '../constants/images/research2.jpg';
 import img3 from '../constants/images/research3.jpg';
 import img4 from '../constants/images/research4.jpg';
@@ -6,7 +9,7 @@ import img5 from '../constants/images/research5.jpg';
 
 export const RESEARCH_LIST = [{
   id: "1",
-  cover: img1,
+  slides: [RunHorseLight_1, RunHorseLight_2, RunHorseLight_3],
   title: "Temporal dimension of PSF",
   tags:  ['All', 'Plant-soil feedback', 'Ontogenetic niche shift'],
   paragraph: [
@@ -16,7 +19,7 @@ export const RESEARCH_LIST = [{
   ]
   }, {
     id: "2",
-    cover: img2,
+    slides: [img2],
     title: "Mechanistic understanding of PSF",
     tags:  ['All', 'Plant-soil feedback'],
     paragraph: [
@@ -24,7 +27,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "3",
-    cover: img3,
+    slides: [img3],
     title: "Linking PSF and coexistence theory",
     tags: ['All', 'Plant-soil feedback', 'Species coexistence'],
     paragraph: [
@@ -32,7 +35,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "4",
-    cover: img4,
+    slides: [img4],
     title: "Synthesizing coexistence theories",
     tags: ['All', 'Species coexistence'],
     paragraph: [
@@ -41,7 +44,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "5",
-    cover: img5,
+    slides: [img5],
     title: "Stage dependent species interactions",
     tags: ['All', 'Ontogenetic niche shift'],
     paragraph: [
