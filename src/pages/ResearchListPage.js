@@ -80,12 +80,12 @@ const TabsWrapper = styled.div`
   border-bottom: 1px solid #407A52;
 
   @media ${breakpoint.xs} {
-    grid-template-columns: repeat(2, 164px);
+    grid-template-columns: repeat(2, 177px);
     grid-row-gap: 8px;
   }
 
   @media ${breakpoint.sm} {
-    grid-template-columns: repeat(4, 164px);
+    grid-template-columns: repeat(4, 177px);
     grid-row-gap: 14px;
   }
 `;
@@ -102,6 +102,10 @@ const Tab = styled.button`
 
   &:hover {
     background-color: ${props => props.isMatchedTab ? '#407A52' : '#E5E5E5'};
+  }
+
+  @media ${breakpoint.sm} {
+    font-size: 14px;
   }
 `;
 
@@ -191,7 +195,7 @@ const Mask = styled.div`
 const tabs = [{
   id: "all",
   name: "All",
-  description: null
+  description: "We use a combination of high-throughput sequencing, manipulative experiments, and ecological modeling to study topics that are broadly related to community and theoretical ecology. Click on the above filter tabs to learn about the broad themes that unite our research and the boxes below to learn about individual projects."
 }, {
   id: "Plant-soil feedback",
   name: "Plant-soil feedback",

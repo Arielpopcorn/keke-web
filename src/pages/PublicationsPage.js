@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import styled from 'styled-components';
+import breakpoint from '../breakpoints';
 import { PUBLICATIONS } from '../constants/publications';
 
 const Title = styled.h1`
@@ -29,6 +30,10 @@ const Year = styled.h2`
 
 const Publication = styled.div`
   margin: 0 0 16px 0;
+
+  @media ${breakpoint.sm} {
+    margin: 0 0 24px 0;
+  }
 `;
 
 const PublicationTitle = styled.p`
@@ -50,7 +55,7 @@ const Author = styled.span`
 `;
 
 const BulletPoint = styled.ul`
-  padding-left: 20px;
+  padding-left: 36px;
 `;
 
 const Link = styled.a`

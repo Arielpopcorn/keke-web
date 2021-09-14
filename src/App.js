@@ -166,8 +166,8 @@ const navs = [{
   name: "RESEARCH",
 },
 {
-  id: "members",
-  name: "MEMBERS"
+  id: "people",
+  name: "PEOPLE"
 }, {
   id: "publications",
   name: "PUBLICATIONS"
@@ -231,7 +231,7 @@ function App () {
             <Route path="/publications">
               <PublicationsPage />
             </Route>
-            <Route path="/members">
+            <Route path="/people">
               <MembersPage />
             </Route>
             <Route path="/join-us">

@@ -85,15 +85,33 @@ const ContentTitleWrapper = styled.div`
   align-items: center;
 `;
 
+const Button = styled.a`
+  color: #000;
+  margin: 24px 0 0 0;
+  line-height: 20px;
+
+  @media ${breakpoint.sm} {
+    margin: 12px 0 0 0;
+  }
+`;
+
+
 function MembersPage() {
   return (
     <Wrapper>
-      <Title>Members</Title>
+      <Title>People</Title>
         {MEMBERS.map(member => (
           <MemberContainer>
-            <AvatarContainer>
-              <Avatar src={member.cover} />
-            </AvatarContainer>
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+              <AvatarContainer>
+                <Avatar src={member.cover} />
+              </AvatarContainer>
+              {member.cv && (
+                <Button type="button" href={member.cv} target="_blank" rel="noreferrer">
+                  See my CV
+                </Button>
+              )}
+            </div>
             <MemberContent>
               <ContentTitleWrapper>
                 <Name>{member.name}</Name>

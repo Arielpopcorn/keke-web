@@ -92,7 +92,6 @@ function ResearchPage() {
   const currentResearch = RESEARCH_LIST.find(research => research.id === id);
 
   const location = useLocation();
-  console.log('location', location)
 
   return (
     <Wrapper>

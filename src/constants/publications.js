@@ -44,8 +44,11 @@ export const PUBLICATIONS = [{
     }]
   }, {
     id: 3,
-    title: "See also recommendation by Bernhard Schmid, Faculty of 1000 Ecology",
-    url: "https://facultyopinions.com/prime/725282790",
+    content: [{
+      id: 1,
+      text: "See also recommendation by Bernhard Schmid, Faculty of 1000 Ecology",
+      url: "https://facultyopinions.com/prime/725282790"
+    }],
   }],
   pdf: pdf_2015_1,
   doi: "https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.13215"
@@ -99,8 +102,11 @@ export const PUBLICATIONS = [{
     }]
   }, {
     id: 4,
-    title: "Included in BES/ESA joint virtual issue, Biodiversity and Ecosystem Services",
-    url: "https://besjournals.onlinelibrary.wiley.com/hub/bes_esa-biodiversity-and-ecosystem-services",
+    content: [{
+      id: 1,
+      text: "Included in BES/ESA joint virtual issue, Biodiversity and Ecosystem Services",
+      url: "https://besjournals.onlinelibrary.wiley.com/hub/bes_esa-biodiversity-and-ecosystem-services",
+    }]
   }],
   pdf: pdf_2017_1,
   doi: "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1242"
