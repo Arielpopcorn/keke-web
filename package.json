@@ -14,7 +14,7 @@
     "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://pojuke.com",
+  "homepage": "https://Arielpopcorn.github.io/keke-web",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
