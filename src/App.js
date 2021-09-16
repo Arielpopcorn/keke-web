@@ -184,7 +184,7 @@ function App () {
   const [currentTab, setCurrentTab] = useState(navs[0].id);
 
   return (
-    <Router basename={'/keke-web'}>
+    <Router>
       <ScrollToTop>
         <Header open={open}>
           <HomeButton to="/">
