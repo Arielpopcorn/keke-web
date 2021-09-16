@@ -72,7 +72,6 @@ function ResearchPage() {
         {currentResearch.title}
       </ResearchTitle>
       <Carousel slides={currentResearch.slides} />
-      {/* <ResearchCover src={currentResearch.cover} /> */}
       {currentResearch.paragraph.map((perParagraph, index) => (
         <Paragraph key={index}>
           {perParagraph}

@@ -3,6 +3,20 @@ import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import arrow from '../constants/images/arrow.png';
 
+const Wrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 12px 0;
+
+  @media ${breakpoint.sm} {
+    margin: 0 0 48px 0;
+  }
+
+`;
+
 const CarouselContainer = styled.div`
   position: relative;
   width: 100%;
@@ -17,14 +31,14 @@ const CarouselContainer = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  margin: 4px 0 12px 0;
+  margin: 4px 0 0 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
   @media ${breakpoint.sm} {
-    margin: 4px 0 48px 0;
+    margin: 8px 0 0 0;
     width: 80%;
   }
 `;
@@ -34,8 +48,8 @@ const Button = styled.button`
 `;
 
 const Icon = styled.img`
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   transform: ${props => props.left ? `rotate(180deg)` : 0}
 `;
 
@@ -48,6 +62,11 @@ const Image = styled.img`
   top: 0;
   opacity: ${props => props.currentPage ? 1 : 0};
   transition: opacity 0.8s ease-in-out;
+`;
+
+const PageNumber = styled.span`
+  width: 12px;
+  text-align: center;
 `;
 
 function Carousel({
@@ -82,8 +101,10 @@ function Carousel({
     }
   }, [onNext])
 
+  const isCarousel = slides.length > 1
+
   return (
-    <>
+    <Wrapper>
       <CarouselContainer>
         {slides.map((slide, index) => (
           <Image
@@ -93,18 +114,22 @@ function Carousel({
             alt="slide-show" />
         ))}
       </CarouselContainer>
-      <ButtonContainer>
-        <Button 
-          onClick={() => onPrevious()}>
-          <Icon left="left" src={arrow} alt="arrow" />
-        </Button>
-        {currentPage + 1} / {slides.length}
-        <Button 
-          onClick={() => onNext()}>
-          <Icon src={arrow} alt="arrow" />
-        </Button>
-      </ButtonContainer>
-    </>
+      {isCarousel && (
+        <ButtonContainer>
+          <Button 
+            onClick={() => onPrevious()}>
+            <Icon left="left" src={arrow} alt="arrow" />
+          </Button>
+          <PageNumber>{currentPage + 1}</PageNumber>
+           / 
+          <PageNumber>{slides.length}</PageNumber>
+          <Button 
+            onClick={() => onNext()}>
+            <Icon src={arrow} alt="arrow" />
+          </Button>
+        </ButtonContainer>
+      )}
+    </Wrapper>
   );
 }
 
