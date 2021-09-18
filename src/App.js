@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
   Link,
+  Redirect
 } from "react-router-dom";
 import researchgate from './constants/images/researchgate.svg';
 import twitter from './constants/images/inaturalist.svg';
@@ -240,6 +241,10 @@ function App () {
             <Route path="/">
               <HomePage />
             </Route>
+            <Redirect
+              exact
+              from="/"
+              to="/" />
           </Switch>
         </BodyContainer>
         <Footer>
