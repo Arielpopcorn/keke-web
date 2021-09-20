@@ -104,7 +104,7 @@ function MembersPage() {
     <Wrapper>
       <Title>People</Title>
         {MEMBERS.map(member => (
-          <MemberContainer>
+          <MemberContainer key={member.id}>
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
               <AvatarContainer>
                 <Avatar src={member.cover} />

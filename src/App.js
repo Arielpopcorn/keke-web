@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
   Link,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 import researchgate from './constants/images/researchgate.svg';
 import twitter from './constants/images/inaturalist.svg';
@@ -181,8 +181,11 @@ const navs = [{
 }];
 
 function App () {
+  const currentUrl = window.location.href
+  const currentNav = currentUrl.split('/')[currentUrl.split('/').length - 1]
+
   const [open, setOpen] = useState(false);
-  const [currentTab, setCurrentTab] = useState(navs[0].id);
+  const [currentTab, setCurrentTab] = useState(currentNav ?? navs[0].id);
 
   return (
     <Router>

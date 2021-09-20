@@ -50,6 +50,10 @@ export const MEMBERS = [{
     url: null
   }, {
     id: 4,
+    text: "here",
+    url: "https://genchanghsu.github.io/",
+  }, {
+    id: 5,
     text: ". Stay inquisitive and never stop exploring!",
     url: null
   }]
