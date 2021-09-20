@@ -131,9 +131,11 @@ const Description = styled.p`
   line-height: 28px;
   text-align: left;
   max-width: 280px;
+  margin: 0 0 12px 0;
 
   @media ${breakpoint.xs} {
     max-width: 520px;
+    margin: 0;
   }
 
   @media ${breakpoint.sm} {
@@ -166,6 +168,19 @@ const Cover = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+`;
+
+const MobileResearchTitle = styled.p`
+  color: #407A52;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 -20px 0;
+  font-size: 17px;
+  text-align: center;
+
+  @media ${breakpoint.xs} {
+    display: none;
+  }
 `;
 
 const ResearchTitle = styled.p`
@@ -357,6 +372,8 @@ function ResearchListPage() {
       <ResearchSection>
         <div className="container cf">
           {filteredResearch.map(research => (
+            <>
+            <MobileResearchTitle>{research.title}</MobileResearchTitle>
             <Block to={{
               pathname: `research/${research.id}`,
               state: currentTab
@@ -370,6 +387,7 @@ function ResearchListPage() {
                 <ResearchTitle>{research.title}</ResearchTitle>
               </Mask>
             </Block>
+            </>
           ))}
         </div>
       </ResearchSection>

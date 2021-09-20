@@ -33,10 +33,12 @@ const MemberContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 48px 0;
 
   @media ${breakpoint.sm} {
     flex-direction: row;
     align-items: flex-start;
+    margin: 0 0 100px 0;
   }
 `;
 
@@ -70,17 +72,12 @@ const MemberContent = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 24px 0 48px 0;
+  margin: 24px 0 0 0;
   width: 100%;
 
   @media ${breakpoint.sm} {
-    margin: 0 0 100px 36px;
+    margin: 0 0 0 36px;
   }
-`;
-
-const Content = styled.p`
-  font-size: 14px;
-  line-height: 28px;
 `;
 
 const ContentTitleWrapper = styled.div`
@@ -107,6 +104,13 @@ const Button = styled.a`
 
 const Link = styled.a`
   color: #407A52;
+  font-size: 14px;
+  line-height: 28px;
+`;
+
+const Text = styled.span`
+  font-size: 14px;
+  line-height: 28px;
 `;
 
 function MembersPage() {
@@ -130,7 +134,7 @@ function MembersPage() {
                 <Name>{member.name}</Name>
                 <Position>{member.position}</Position>
               </ContentTitleWrapper>
-              <Content>
+              <p>
                 {member.content.map(c => {
                   if (c.url) {
                     return (
@@ -141,10 +145,10 @@ function MembersPage() {
                   } 
 
                   return (
-                    <span key={c.id}>{c.text}</span>
+                    <Text key={c.id}>{c.text}</Text>
                   )
                 })}  
-              </Content>
+              </p>
             </MemberContent>
           </MemberContainer>
         ))}

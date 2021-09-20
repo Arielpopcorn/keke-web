@@ -53,7 +53,7 @@ export const RESEARCH_LIST = [{
     cover: img5,   
     tags: ['All', 'Ontogenetic niche shift'],
     paragraph: [
-      "More content coming soon.",
+      "More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon. More content coming soon.",
     ]
   }
 ];
