@@ -22,7 +22,11 @@ const Name = styled.p`
 const Position = styled.p`
   font-weight: bold;
   color: #407A52;
-  margin: 0 0 0 12px;
+  
+
+  @media ${breakpoint.sm} {
+    margin: 0 0 0 12px;
+  }
 `;
 
 const MemberContainer = styled.div`
@@ -82,7 +86,13 @@ const Content = styled.p`
 const ContentTitleWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @media ${breakpoint.sm} {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 const Button = styled.a`
