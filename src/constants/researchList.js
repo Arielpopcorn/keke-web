@@ -20,7 +20,7 @@ export const RESEARCH_LIST = [{
   ]
   }, {
     id: "2",
-    slides: [img2],
+    slides: [RunHorseLight_1],
     title: "Mechanistic understanding of PSF",
     cover: img2,
     tags:  ['All', 'Plant-soil feedback'],
@@ -29,7 +29,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "3",
-    slides: [img3],
+    slides: [RunHorseLight_1],
     title: "Linking PSF and coexistence theory",
     cover: img3,
     tags: ['All', 'Plant-soil feedback', 'Species coexistence'],
@@ -38,7 +38,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "4",
-    slides: [img4],
+    slides: [RunHorseLight_1],
     title: "Synthesizing coexistence theories",
     cover: img4,
     tags: ['All', 'Species coexistence'],
@@ -48,7 +48,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "5",
-    slides: [img5],
+    slides: [RunHorseLight_1],
     title: "Stage dependent species interactions",
     cover: img5,   
     tags: ['All', 'Ontogenetic niche shift'],

@@ -275,4 +275,22 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_in_press_1,
   doi: "https://arxiv.org/abs/1908.07960"
+}, {
+  id: "15",
+  title: "Reconstructing large interaction networks from empirical time series data",
+  authors : ["Chun-Wei Chang", "Takeshi Miki", "Masayuki Ushio", "Po-Ju Ke", "Hsiao-Pei Lu", "Fuh-Kwo Shiah", "Chih-hao Hsieh"],
+  year: "in press",
+  magazine: "Ecology Letters",
+  highlighted: [],
+  pdf: null,
+  doi: null
+}, {
+  id: "16",
+  title: "An empiricist’s guide to using ecological theory",
+  authors : ["Tess N. Grainger", "Athmanathan Senthilnathan*", "Po-Ju Ke", "Matthew A. Barbour", "Natalie T. Jones", "John P. DeLong", "Sarah P. Otto", "Mary I. O’Connor", "Kyle E. Coblentz", "Nikunj Goel", "Jawad Sakarchi", "Megan Szojka", "Jonathan M. Levine", "Rachel M. Germain"],
+  year: "in press",
+  magazine: "The Amerian Naturalist",
+  highlighted: [],
+  pdf: null,
+  doi: null
 }];

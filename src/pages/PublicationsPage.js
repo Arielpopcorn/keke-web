@@ -126,7 +126,7 @@ function PublicationsPage() {
                       {p.highlighted.map(highlightedPublication => (
                         <BulletPoint key={highlightedPublication.id}>
                           <li>
-                            {(highlightedPublication.content ?? []).map(c => {
+                            {(highlightedPublication?.content ?? []).map(c => {
                               if (c.url) {
                                 return (
                                   <Link key={c.id} type="button" href={c.url} target="_blank" rel="noreferrer">
@@ -143,12 +143,18 @@ function PublicationsPage() {
                         </BulletPoint>
                       ))}
                       <div>
-                        <Button type="button" href={p.pdf} target="_blank" rel="noreferrer">
-                          PDF
-                        </Button>
-                        <Button type="button" href={p.doi} target="_blank" rel="noreferrer">
-                          DOI
-                        </Button>
+                        {p.pdf && (
+                            <Button type="button" href={p.pdf} target="_blank" rel="noreferrer">
+                              PDF
+                            </Button>
+                          )
+                        }
+                        {p.doi && (
+                            <Button type="button" href={p.doi} target="_blank" rel="noreferrer">
+                              DOI
+                            </Button>
+                          )
+                        }
                       </div>
                     </Publication>
                   )})}

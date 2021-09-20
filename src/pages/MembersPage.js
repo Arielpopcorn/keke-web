@@ -95,6 +95,9 @@ const Button = styled.a`
   }
 `;
 
+const Link = styled.a`
+  color: #407A52;
+`;
 
 function MembersPage() {
   return (
@@ -117,7 +120,21 @@ function MembersPage() {
                 <Name>{member.name}</Name>
                 <Position>{member.position}</Position>
               </ContentTitleWrapper>
-              <Content>{member.content}</Content>
+              <Content>
+                {member.content.map(c => {
+                  if (c.url) {
+                    return (
+                      <Link key={c.id} type="button" href={c.url} target="_blank" rel="noreferrer">
+                        {c.text}
+                      </Link>
+                    )
+                  } 
+
+                  return (
+                    <span key={c.id}>{c.text}</span>
+                  )
+                })}  
+              </Content>
             </MemberContent>
           </MemberContainer>
         ))}
