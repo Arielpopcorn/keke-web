@@ -133,7 +133,7 @@ function PublicationsPage() {
                                     {c.text}
                                   </Link>
                                 )
-                              } 
+                              }
 
                               return (
                                 <span key={c.id}>{c.text}</span>

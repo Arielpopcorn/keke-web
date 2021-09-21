@@ -11,7 +11,6 @@ import pdf_2020_2 from '../constants/pdf/pdf_2020_2.pdf';
 import pdf_2021_1 from '../constants/pdf/pdf_2021_1.pdf';
 import pdf_2021_2 from '../constants/pdf/pdf_2021_2.pdf';
 import pdf_2021_3 from '../constants/pdf/pdf_2021_3.pdf';
-import pdf_in_press_1 from '../constants/pdf/pdf_in_press_1.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -273,7 +272,7 @@ export const PUBLICATIONS = [{
   year: "in press",
   magazine: "Ecology",
   highlighted: [],
-  pdf: pdf_in_press_1,
+  pdf: null,
   doi: "https://arxiv.org/abs/1908.07960"
 }, {
   id: "15",
@@ -283,14 +282,14 @@ export const PUBLICATIONS = [{
   magazine: "Ecology Letters",
   highlighted: [],
   pdf: null,
-  doi: null
+  doi: "https://arxiv.org/abs/2102.04069"
 }, {
   id: "16",
   title: "An empiricist’s guide to using ecological theory",
-  authors : ["Tess N. Grainger", "Athmanathan Senthilnathan*", "Po-Ju Ke", "Matthew A. Barbour", "Natalie T. Jones", "John P. DeLong", "Sarah P. Otto", "Mary I. O’Connor", "Kyle E. Coblentz", "Nikunj Goel", "Jawad Sakarchi", "Megan Szojka", "Jonathan M. Levine", "Rachel M. Germain"],
+  authors : ["Tess N. Grainger", "Athmanathan Senthilnathan*", "Po-Ju Ke*", "Matthew A. Barbour", "Natalie T. Jones", "John P. DeLong", "Sarah P. Otto", "Mary I. O’Connor", "Kyle E. Coblentz", "Nikunj Goel", "Jawad Sakarchi", "Megan Szojka", "Jonathan M. Levine", "Rachel M. Germain"],
   year: "in press",
   magazine: "The Amerian Naturalist",
   highlighted: [],
   pdf: null,
-  doi: null
+  doi: "https://www.journals.uchicago.edu/doi/abs/10.1086/717206"
 }];

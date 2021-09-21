@@ -34,7 +34,7 @@ export const MEMBERS = [{
 {
   id: 2,
   name: "Gen-Chang Hsu",
-  position: "Teaching assistant",
+  position: "Teaching Assistant",
   cover: gen_chang,
   content: [{
     id: 1,
@@ -60,7 +60,7 @@ export const MEMBERS = [{
 },{
   id: 3,
   name: "You",
-  position: "student",
+  position: "Student",
   cover: avatar2,
   content: [{
     id: 1,
