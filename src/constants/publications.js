@@ -11,6 +11,7 @@ import pdf_2020_2 from '../constants/pdf/pdf_2020_2.pdf';
 import pdf_2021_1 from '../constants/pdf/pdf_2021_1.pdf';
 import pdf_2021_2 from '../constants/pdf/pdf_2021_2.pdf';
 import pdf_2021_3 from '../constants/pdf/pdf_2021_3.pdf';
+import pdf_2022_3 from '../constants/pdf/pdf_2022_3.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -81,7 +82,7 @@ export const PUBLICATIONS = [{
       url: null,
     }, {
       id: 2,
-      text: "Outstanding Ecological Theory Paper Award, ESA Theory section", 
+      text: "Outstanding Ecological Theory Paper Award, ESA Theory section",
       url: "https://www.esa.org/theory/awards/past-outstanding-paper-award-recipients/"
     }]
   }, {
@@ -188,7 +189,7 @@ export const PUBLICATIONS = [{
       url: null
     }, {
       id: 2,
-      text: "collection of articles", 
+      text: "collection of articles",
       url: "https://www.nature.com/collections/ceaeaabjia/",
     }, {
       id: 3,
@@ -291,5 +292,14 @@ export const PUBLICATIONS = [{
   magazine: "The Amerian Naturalist",
   highlighted: [],
   pdf: null,
+  doi: "https://www.journals.uchicago.edu/doi/abs/10.1086/717206"
+}, {
+  id: "17",
+  title: "Water shifts the balance of coexistence",
+  authors : ["Po-Ju Ke"],
+  year: "2022",
+  magazine: "Nature Ecology & Evolution, 6, 496-497",
+  highlighted: [],
+  pdf: pdf_2022_3,
   doi: "https://www.journals.uchicago.edu/doi/abs/10.1086/717206"
 }];
