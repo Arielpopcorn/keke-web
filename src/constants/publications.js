@@ -262,39 +262,79 @@ export const PUBLICATIONS = [{
   title: "The temporal dimension of plant-soil microbe interactions: mechanisms promoting feedback between generations",
   authors : ["Po-Ju Ke", "Jonathan M. Levine"],
   year: "2021",
-  magazine: "The American Naturalist",
+  magazine: "The American Naturalist, 198(3), E80-E94",
   highlighted: [],
   pdf: pdf_2021_3,
   doi: "https://www.journals.uchicago.edu/doi/10.1086/715577"
 }, {
   id: "14",
-  title: "The effects of ecological selection on species diversity and trait distribution: predictions and an empirical test",
-  authors : ["Niv DeMalach", "Po-Ju Ke", "Tadashi Fukami"],
-  year: "in press",
-  magazine: "Ecology",
-  highlighted: [],
-  pdf: null,
-  doi: "https://arxiv.org/abs/1908.07960"
-}, {
-  id: "15",
   title: "Reconstructing large interaction networks from empirical time series data",
   authors : ["Chun-Wei Chang", "Takeshi Miki", "Masayuki Ushio", "Po-Ju Ke", "Hsiao-Pei Lu", "Fuh-Kwo Shiah", "Chih-hao Hsieh"],
-  year: "in press",
-  magazine: "Ecology Letters",
+  year: "2021",
+  magazine: "Ecology Letters, 24(12), 2763-2774",
   highlighted: [],
   pdf: null,
-  doi: "https://arxiv.org/abs/2102.04069"
+  doi: "https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13897"
 }, {
-  id: "16",
+  id: "15",
   title: "An empiricist’s guide to using ecological theory",
   authors : ["Tess N. Grainger", "Athmanathan Senthilnathan*", "Po-Ju Ke*", "Matthew A. Barbour", "Natalie T. Jones", "John P. DeLong", "Sarah P. Otto", "Mary I. O’Connor", "Kyle E. Coblentz", "Nikunj Goel", "Jawad Sakarchi", "Megan Szojka", "Jonathan M. Levine", "Rachel M. Germain"],
-  year: "in press",
-  magazine: "The Amerian Naturalist",
+  year: "2022",
+  magazine: "The Amerian Naturalist, 199(1), 1-20",
+  highlighted: [{
+    id: 1,
+    content: [{
+      id: 1,
+      text: "See also ",
+      url: null,
+    }, {
+      id: 2,
+      text: "recommendation by Kimberley Mathot",
+      url: "https://facultyopinions.com/article/740903973",
+    }, {
+      id: 3,
+      text: ", Faculty of 1000 Ecology",
+      url: null
+    }]
+  }],
+  pdf: null,
+  doi: "https://www.journals.uchicago.edu/doi/10.1086/717206"
+}, {
+  id: "16",
+  title: "The effects of ecological selection on species diversity and trait distribution: predictions and an empirical test",
+  authors : ["Niv DeMalach", "Po-Ju Ke", "Tadashi Fukami"],
+  year: "2022",
+  magazine: "Ecology, 103(1): e03567",
   highlighted: [],
   pdf: null,
-  doi: "https://www.journals.uchicago.edu/doi/abs/10.1086/717206"
-}, {
+  doi: "https://esajournals.onlinelibrary.wiley.com/doi/ftr/10.1002/ecy.3567"
+}
+, {
   id: "17",
+  title: "Writing accessible theory in ecology and evolution: Insights from cognitive load theory",
+  authors : ["William J-A Ou", "Gil J. B. Henriques", "Athmanathan Senthilnathan", "Po-Ju Ke", "Tess N. Grainger", "Rachel M. Germain"],
+  year: "2022",
+  magazine: "BioScience, 72(3), 300-313",
+  highlighted: [{
+    id: 1,
+    content: [{
+      id: 1,
+      text: "See also ",
+      url: null,
+    }, {
+      id: 2,
+      text: "recommendation by Ryan Chisholm",
+      url: "https://facultyopinions.com/article/741557142",
+    }, {
+      id: 3,
+      text: ", Faculty of 1000 Ecology",
+      url: null
+    }]
+  }],
+  pdf: null,
+  doi: "https://academic.oup.com/bioscience/article-abstract/72/3/300/6482999"
+}, {
+  id: "18",
   title: "Water shifts the balance of coexistence",
   authors : ["Po-Ju Ke"],
   year: "2022",
