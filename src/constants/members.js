@@ -1,4 +1,4 @@
-import keke from '../constants/images/keke.jpg';
+import keke from '../constants/images/keke_headshot.jpg';
 import gen_chang from '../constants/images/genChangHsu.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';

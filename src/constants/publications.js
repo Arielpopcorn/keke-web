@@ -1,17 +1,24 @@
-import pdf_2015_1 from '../constants/pdf/pdf_2015_1.pdf';
-import pdf_2015_2 from '../constants/pdf/pdf_2015_2.pdf';
-import pdf_2017_1 from '../constants/pdf/pdf_2017_1.pdf';
-import pdf_2018_1 from '../constants/pdf/pdf_2018_1.pdf';
-import pdf_2018_2 from '../constants/pdf/pdf_2018_2.pdf';
-import pdf_2018_3 from '../constants/pdf/pdf_2018_3.pdf';
-import pdf_2018_4 from '../constants/pdf/pdf_2018_4.pdf';
-import pdf_2018_5 from '../constants/pdf/pdf_2018_5.pdf';
-import pdf_2020_1 from '../constants/pdf/pdf_2020_1.pdf';
-import pdf_2020_2 from '../constants/pdf/pdf_2020_2.pdf';
-import pdf_2021_1 from '../constants/pdf/pdf_2021_1.pdf';
-import pdf_2021_2 from '../constants/pdf/pdf_2021_2.pdf';
-import pdf_2021_3 from '../constants/pdf/pdf_2021_3.pdf';
-import pdf_2022_3 from '../constants/pdf/pdf_2022_3.pdf';
+import pdf_2015_1 from '../constants/pdf/2015_Ke_et_al_2015_NewPhytologist.pdf';
+import pdf_2015_2 from '../constants/pdf/2015_Ke_and_Miki_2015_FrontiersMicrobiology.pdf';
+import pdf_2017_1 from '../constants/pdf/2017_Letten_et_al_2017_EcologicalMonographs.pdf';
+import pdf_2018_1 from '../constants/pdf/2018_Miki_et_al_2018_EcologicalResearch.pdf';
+import pdf_2018_2 from '../constants/pdf/2018_Ke_and_Nakazawa_2018_Oikos.pdf';
+import pdf_2018_3 from '../constants/pdf/2018_Letten_et_al_2018_PNAS.pdf';
+import pdf_2018_4 from '../constants/pdf/2018_Ke_and_Letten_2018_NatureEcolEvol.pdf';
+import pdf_2018_5 from '../constants/pdf/2018_Smith_et_al_2018_NatureEcolEvol.pdf';
+import pdf_2020_1 from '../constants/pdf/2020_Ke_and_Wan_2020_EcologicalMonographs.pdf';
+import pdf_2020_2 from '../constants/pdf/2020_Chang_et_al_2020_EcologicalModelling.pdf';
+import pdf_2021_1 from '../constants/pdf/2021_Tao_et_al_2021_EcologyEvolution.pdf';
+import pdf_2021_2 from '../constants/pdf/2021_Ke_et_al_2021_NewPhytologist.pdf';
+import pdf_2021_3 from '../constants/pdf/2021_Ke_and_Levine_2021_AmericanNaturalist.pdf';
+import pdf_2021_4 from '../constants/pdf/2021_Chang_et_el_2021_EcologyLetters.pdf';
+import pdf_2022_1 from '../constants/pdf/2022_Grainger_et_al_2022_AmericanNaturalist.pdf';
+import pdf_2022_2 from '../constants/pdf/2022_DeMalach_et_al_2022_Ecology.pdf';
+import pdf_2022_3 from '../constants/pdf/2022_Ou_et_al_2022_BioScience.pdf';
+import pdf_2022_4 from '../constants/pdf/2022_Ke_2022_NatureEcolEvol.pdf';
+import pdf_2023_1 from '../constants/pdf/2023_Ke_and_Wan_2023_PlantSoil.pdf';
+import pdf_2023_2 from '../constants/pdf/2023_VanNuland_et_al_2023_JEcol.pdf';
+import pdf_2023_3 from '../constants/pdf/2023_Spaak_et_al_2023_Oikos.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -273,7 +280,7 @@ export const PUBLICATIONS = [{
   year: "2021",
   magazine: "Ecology Letters, 24(12), 2763-2774",
   highlighted: [],
-  pdf: null,
+  pdf: pdf_2021_4,
   doi: "https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.13897"
 }, {
   id: "15",
@@ -297,7 +304,7 @@ export const PUBLICATIONS = [{
       url: null
     }]
   }],
-  pdf: null,
+  pdf: pdf_2022_1,
   doi: "https://www.journals.uchicago.edu/doi/10.1086/717206"
 }, {
   id: "16",
@@ -306,7 +313,7 @@ export const PUBLICATIONS = [{
   year: "2022",
   magazine: "Ecology, 103(1): e03567",
   highlighted: [],
-  pdf: null,
+  pdf: pdf_2022_2,
   doi: "https://esajournals.onlinelibrary.wiley.com/doi/ftr/10.1002/ecy.3567"
 }
 , {
@@ -331,7 +338,7 @@ export const PUBLICATIONS = [{
       url: null
     }]
   }],
-  pdf: null,
+  pdf: pdf_2022_3,
   doi: "https://academic.oup.com/bioscience/article-abstract/72/3/300/6482999"
 }, {
   id: "18",
@@ -340,6 +347,33 @@ export const PUBLICATIONS = [{
   year: "2022",
   magazine: "Nature Ecology & Evolution, 6, 496-497",
   highlighted: [],
-  pdf: pdf_2022_3,
-  doi: "https://www.journals.uchicago.edu/doi/abs/10.1086/717206"
+  pdf: pdf_2022_4,
+  doi: "https://www.nature.com/articles/s41559-022-01725-y"
+}, {
+  id: "19",
+  title: "A general approach for quantifying microbial effects on plant competition",
+  authors : ["Po-Ju Ke*", "Joe Wan*"],
+  year: "2023",
+  magazine: "Plant and soil, in press",
+  highlighted: [],
+  pdf: pdf_2023_1,
+  doi: "https://link.springer.com/article/10.1007/s11104-022-05744-3"
+}, {
+  id: "20",
+  title: "Mycorrhizal nutrient acquisition strategies shape tree competition and coexistence dynamics",
+  authors : ["Michael E. Van Nuland", "Po-Ju Ke", "Joe Wan", "Kabir G. Peay"],
+  year: "2023",
+  magazine: "Journal of Ecology, in press",
+  highlighted: [],
+  pdf: pdf_2023_2,
+  doi: "https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2745.14040"
+}, {
+  id: "21",
+  title: "Different measures of niche and fitness differences tell different tales",
+  authors : ["Jurg W. Spaak", "Po-Ju Ke", "Andrew D. Letten", "Frederik De Laender"],
+  year: "2023",
+  magazine: "Oikos, e09573",
+  highlighted: [],
+  pdf: pdf_2023_3,
+  doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09573"
 }];
