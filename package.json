@@ -18,10 +18,9 @@
   "homepage": "https://Arielpopcorn.github.io",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI='' react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn build && gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
