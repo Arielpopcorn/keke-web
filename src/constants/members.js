@@ -1,5 +1,6 @@
 import keke from '../constants/images/keke_headshot.jpg';
-import gen_chang from '../constants/images/genChangHsu.jpg';
+import gen_chang from '../constants/images/GenChangHsu.jpg';
+import yu_pei from '../constants/images/YuPeiTseng.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -34,7 +35,7 @@ export const MEMBERS = [{
 {
   id: 2,
   name: "Gen-Chang Hsu",
-  position: "Teaching Assistant",
+  position: "Research Assistant",
   cover: gen_chang,
   content: [{
     id: 1,
@@ -46,7 +47,7 @@ export const MEMBERS = [{
     url: "https://genchanghsu.github.io/ggGallery/",
   }, {
     id: 3,
-    text: "). Outdoors and traveling are his favorites outside of research. Currently, Gen-Chang is affiliated with the lab as a teaching assistant for our theoretical ecology course. Learn more about his research and experiences ",
+    text: "). Gen-Chang first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab he conducts greenhouse experiments to study how plant-soil feedbacks vary through time. Learn more about his research and experiences ",
     url: null
   }, {
     id: 4,
@@ -54,11 +55,30 @@ export const MEMBERS = [{
     url: "https://genchanghsu.github.io/",
   }, {
     id: 5,
-    text: ". Stay inquisitive and never stop exploring!",
+    text: ". ",
+    url: null
+  }]
+},
+{
+  id: 3,
+  name: "Yu-Pei Tseng",
+  position: "Research Assistant",
+  cover: yu_pei,
+  content: [{
+    id: 1,
+    text: "Yu-Pei is interested in community and metacommunity ecology, especially in exploring the underlying mechanisms of shaping community assembly and species diversity. She completed her Master’s degree at National Taiwan University. Yu-Pei worked with ",
+    url: null,
+  }, {
+    id: 2,
+    text: "David Zelený",
+    url: "https://www.davidzeleny.net/veglab/doku.php?id=start",
+  }, {
+    id: 3,
+    text: " to study how the landscape structure affects the local species diversity of woody specialists in montane cloud forests in Taiwan. Yu-Pei joined the lab as a research assistant in 2022 to study the microbial community in forest soil and canopy substrate. ",
     url: null
   }]
 },{
-  id: 3,
+  id: 4,
   name: "You",
   position: "Student",
   cover: avatar2,
