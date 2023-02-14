@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
-import pig_jpg from '../constants/images/keke.jpg';
 import pig from '../constants/images/keke.png';
 
 
