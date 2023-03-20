@@ -379,7 +379,7 @@ export const PUBLICATIONS = [{
   doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09573"
 }, {
   id: "22",
-  title: "Different measures of niche and fitness differences tell different tales",
+  title: "Predicting and controlling ecological communities via trait and environment mediated parameterizations of dynamical models",
   authors : ["Benjamin W. Blonder", "Pierre Gauzere", "Lars L. Iversen", "Po-Ju Ke", "William K. Petry", "Courtenay A. Ray", "Roberto Salguero-Gomez", "William Sharpless", "Cyrille Violle"],
   year: "2023",
   magazine: "Oikos, e09415",

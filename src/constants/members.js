@@ -67,7 +67,7 @@ export const MEMBERS = [{
   cover: sun_yi,
   content: [{
     id: 1,
-    text: "Sun Yi is interested in predator-prey interactions and predator decision-making, with a particular focus on mimicry systems. During his undergraduate studies at National Taiwan University, he conducted research on the coevolution arms race and color patterns of mimicry systems in ",
+    text: "Sun Yi is interested in predator-prey interactions and predator decision-making, with a particular focus on mimicry systems. During his undergraduate studies at National Taiwan University, he conducted research on the coevolution arms race and color patterns of mimicry systems with Prof. ",
     url: null,
   }, {
     id: 2,
@@ -75,7 +75,7 @@ export const MEMBERS = [{
     url: "https://lizardweevil.wixsite.com/mysite",
   }, {
     id: 3,
-    text: "'s lab. In 2022, Sun Yi joined the lab to study the theoretical aspects of mimicry system, specifically, how predator foraging strategies and relationships between mimics and models affect the dynamics of the system. ",
+    text: ". In 2022, Sun Yi joined the lab to study the theoretical aspects of mimicry system, specifically, how predator foraging strategies and relationships between mimics and models affect the dynamics of the system. ",
     url: null
   }]
 },{
@@ -85,7 +85,7 @@ export const MEMBERS = [{
   cover: yu_pei,
   content: [{
     id: 1,
-    text: "Yu-Pei is interested in community and metacommunity ecology, especially in exploring the underlying mechanisms of shaping community assembly and species diversity. She completed her Master’s degree at National Taiwan University. Yu-Pei worked with ",
+    text: "Yu-Pei is interested in community and metacommunity ecology, especially in exploring the underlying mechanisms of shaping community assembly and species diversity. She completed her Master’s degree at National Taiwan University. Yu-Pei worked with Prof. ",
     url: null,
   }, {
     id: 2,
