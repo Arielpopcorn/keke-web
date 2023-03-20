@@ -19,6 +19,7 @@ import pdf_2022_4 from '../constants/pdf/2022_Ke_2022_NatureEcolEvol.pdf';
 import pdf_2023_1 from '../constants/pdf/2023_Ke_and_Wan_2023_PlantSoil.pdf';
 import pdf_2023_2 from '../constants/pdf/2023_VanNuland_et_al_2023_JEcol.pdf';
 import pdf_2023_3 from '../constants/pdf/2023_Spaak_et_al_2023_Oikos.pdf';
+import pdf_2023_4 from '../constants/pdf/2023_Blonder_et_al_2023_Oikos.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -351,6 +352,15 @@ export const PUBLICATIONS = [{
   doi: "https://www.nature.com/articles/s41559-022-01725-y"
 }, {
   id: "19",
+  title: "Mycorrhizal nutrient acquisition strategies shape tree competition and coexistence dynamics",
+  authors : ["Michael E. Van Nuland", "Po-Ju Ke", "Joe Wan", "Kabir G. Peay"],
+  year: "2023",
+  magazine: "Journal of Ecology, 111(3), 564-577",
+  highlighted: [],
+  pdf: pdf_2023_2,
+  doi: "https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2745.14040"
+}, {
+  id: "20",
   title: "A general approach for quantifying microbial effects on plant competition",
   authors : ["Po-Ju Ke*", "Joe Wan*"],
   year: "2023",
@@ -358,15 +368,6 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2023_1,
   doi: "https://link.springer.com/article/10.1007/s11104-022-05744-3"
-}, {
-  id: "20",
-  title: "Mycorrhizal nutrient acquisition strategies shape tree competition and coexistence dynamics",
-  authors : ["Michael E. Van Nuland", "Po-Ju Ke", "Joe Wan", "Kabir G. Peay"],
-  year: "2023",
-  magazine: "Journal of Ecology, in press",
-  highlighted: [],
-  pdf: pdf_2023_2,
-  doi: "https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2745.14040"
 }, {
   id: "21",
   title: "Different measures of niche and fitness differences tell different tales",
@@ -376,4 +377,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2023_3,
   doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09573"
+}, {
+  id: "22",
+  title: "Different measures of niche and fitness differences tell different tales",
+  authors : ["Benjamin W. Blonder", "Pierre Gauzere", "Lars L. Iversen", "Po-Ju Ke", "William K. Petry", "Courtenay A. Ray", "Roberto Salguero-Gomez", "William Sharpless", "Cyrille Violle"],
+  year: "2023",
+  magazine: "Oikos, e09415",
+  highlighted: [],
+  pdf: pdf_2023_4,
+  doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09415"
 }];

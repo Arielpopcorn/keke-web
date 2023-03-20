@@ -1,6 +1,7 @@
 import keke from '../constants/images/keke_headshot.jpg';
 import gen_chang from '../constants/images/genChangHsu.jpg';
 import yu_pei from '../constants/images/YuPeiTseng.jpg';
+import sun_yi from '../constants/images/SunYi.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -61,6 +62,24 @@ export const MEMBERS = [{
 },
 {
   id: 3,
+  name: "Yi Sun",
+  position: "Master student",
+  cover: sun_yi,
+  content: [{
+    id: 1,
+    text: "Sun Yi is interested in predator-prey interactions and predator decision-making, with a particular focus on mimicry systems. During his undergraduate studies at National Taiwan University, he conducted research on the coevolution arms race and color patterns of mimicry systems in ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Hui-Yun Tseng",
+    url: "https://lizardweevil.wixsite.com/mysite",
+  }, {
+    id: 3,
+    text: "'s lab. In 2022, Sun Yi joined the lab to study the theoretical aspects of mimicry system, specifically, how predator foraging strategies and relationships between mimics and models affect the dynamics of the system. ",
+    url: null
+  }]
+},{
+  id: 4,
   name: "Yu-Pei Tseng",
   position: "Research Assistant",
   cover: yu_pei,
