@@ -364,7 +364,7 @@ export const PUBLICATIONS = [{
   title: "A general approach for quantifying microbial effects on plant competition",
   authors : ["Po-Ju Ke*", "Joe Wan*"],
   year: "2023",
-  magazine: "Plant and soil, in press",
+  magazine: "Plant and soil, 485, 57-70",
   highlighted: [],
   pdf: pdf_2023_1,
   doi: "https://link.springer.com/article/10.1007/s11104-022-05744-3"
@@ -373,7 +373,7 @@ export const PUBLICATIONS = [{
   title: "Different measures of niche and fitness differences tell different tales",
   authors : ["Jurg W. Spaak", "Po-Ju Ke", "Andrew D. Letten", "Frederik De Laender"],
   year: "2023",
-  magazine: "Oikos, e09573",
+  magazine: "Oikos, 2023(4): e09573",
   highlighted: [],
   pdf: pdf_2023_3,
   doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09573"
