@@ -20,6 +20,7 @@ import pdf_2023_1 from '../constants/pdf/2023_Ke_and_Wan_2023_PlantSoil.pdf';
 import pdf_2023_2 from '../constants/pdf/2023_VanNuland_et_al_2023_JEcol.pdf';
 import pdf_2023_3 from '../constants/pdf/2023_Spaak_et_al_2023_Oikos.pdf';
 import pdf_2023_4 from '../constants/pdf/2023_Blonder_et_al_2023_Oikos.pdf';
+import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoEcol.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -386,4 +387,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2023_4,
   doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09415"
+}, {
+  id: "23",
+  title: "The effect of non-linear competitive interactions on quantifying niche and fitness differences",
+  authors : ["Jurg W. Spaak", "Remi Millet", "Po-Ju Ke", "Andrew D. Letten", "Frederik De Laender"],
+  year: "2023",
+  magazine: "Theoretical Ecology (in press)",
+  highlighted: [],
+  pdf: pdf_2023_5,
+  doi: "https://link.springer.com/article/10.1007/s12080-023-00560-6"
 }];
