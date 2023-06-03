@@ -21,6 +21,7 @@ import pdf_2023_2 from '../constants/pdf/2023_VanNuland_et_al_2023_JEcol.pdf';
 import pdf_2023_3 from '../constants/pdf/2023_Spaak_et_al_2023_Oikos.pdf';
 import pdf_2023_4 from '../constants/pdf/2023_Blonder_et_al_2023_Oikos.pdf';
 import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoEcol.pdf';
+import pdf_2023_6 from '../constants/pdf/2023_Chung_et_al_2023_JEcol.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -383,8 +384,14 @@ export const PUBLICATIONS = [{
   title: "Predicting and controlling ecological communities via trait and environment mediated parameterizations of dynamical models",
   authors : ["Benjamin W. Blonder", "Pierre Gauzere", "Lars L. Iversen", "Po-Ju Ke", "William K. Petry", "Courtenay A. Ray", "Roberto Salguero-Gomez", "William Sharpless", "Cyrille Violle"],
   year: "2023",
-  magazine: "Oikos, e09415",
-  highlighted: [],
+  magazine: "Oikos, 2023(6): e09415",
+  highlighted: [{
+    id: 1,
+    content: [{
+      id: 1,
+      text: "Editor's choice",
+    }]
+  }],
   pdf: pdf_2023_4,
   doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/oik.09415"
 }, {
@@ -396,4 +403,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2023_5,
   doi: "https://link.springer.com/article/10.1007/s12080-023-00560-6"
+}, {
+  id: "24",
+  title: "Mechanistic approaches to investigate soil microbe-mediated plant competition",
+  authors : ["Y. Anny Chung", "Po-Ju Ke", "Peter B. Adler"],
+  year: "2023",
+  magazine: "Journal of Ecology (in press)",
+  highlighted: [],
+  pdf: pdf_2023_6
+  //doi: "https://link.springer.com/article/10.1007/s12080-023-00560-6"
 }];
