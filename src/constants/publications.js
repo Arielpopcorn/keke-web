@@ -410,6 +410,6 @@ export const PUBLICATIONS = [{
   year: "2023",
   magazine: "Journal of Ecology (in press)",
   highlighted: [],
-  pdf: pdf_2023_6
-  //doi: "https://link.springer.com/article/10.1007/s12080-023-00560-6"
+  pdf: pdf_2023_6,
+  doi: "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.14156"
 }];
