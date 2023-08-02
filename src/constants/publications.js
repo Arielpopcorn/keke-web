@@ -399,7 +399,7 @@ export const PUBLICATIONS = [{
   title: "The effect of non-linear competitive interactions on quantifying niche and fitness differences",
   authors : ["Jurg W. Spaak", "Remi Millet", "Po-Ju Ke", "Andrew D. Letten", "Frederik De Laender"],
   year: "2023",
-  magazine: "Theoretical Ecology (in press)",
+  magazine: "Theoretical Ecology, 16, 161–170",
   highlighted: [],
   pdf: pdf_2023_5,
   doi: "https://link.springer.com/article/10.1007/s12080-023-00560-6"
@@ -408,7 +408,7 @@ export const PUBLICATIONS = [{
   title: "Mechanistic approaches to investigate soil microbe-mediated plant competition",
   authors : ["Y. Anny Chung", "Po-Ju Ke", "Peter B. Adler"],
   year: "2023",
-  magazine: "Journal of Ecology (in press)",
+  magazine: "Journal of Ecology, 111(8), 1587-1810",
   highlighted: [],
   pdf: pdf_2023_6,
   doi: "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.14156"
