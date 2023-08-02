@@ -20,7 +20,7 @@ import pdf_2023_1 from '../constants/pdf/2023_Ke_and_Wan_2023_PlantSoil.pdf';
 import pdf_2023_2 from '../constants/pdf/2023_VanNuland_et_al_2023_JEcol.pdf';
 import pdf_2023_3 from '../constants/pdf/2023_Spaak_et_al_2023_Oikos.pdf';
 import pdf_2023_4 from '../constants/pdf/2023_Blonder_et_al_2023_Oikos.pdf';
-import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoEcol.pdf';
+import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoreticalEcology.pdf';
 import pdf_2023_6 from '../constants/pdf/2023_Chung_et_al_2023_JEcol.pdf';
 
 
