@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import { MEMBERS } from '../constants/members'
+import { ALUMNI } from '../constants/members'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -22,7 +23,7 @@ const Name = styled.p`
 const Position = styled.p`
   font-weight: bold;
   color: #407A52;
-  
+
 
   @media ${breakpoint.sm} {
     margin: 0 0 0 12px;
@@ -52,7 +53,7 @@ const AvatarContainer = styled.div`
 
 const Avatar = styled.img`
   border-radius: 5px;
-  position: absolute; 
+  position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
@@ -142,16 +143,55 @@ function MembersPage() {
                         {c.text}
                       </Link>
                     )
-                  } 
+                  }
 
                   return (
                     <Text key={c.id}>{c.text}</Text>
                   )
-                })}  
+                })}
               </p>
             </MemberContent>
           </MemberContainer>
         ))}
+
+        <Title> </Title>
+        <Title> </Title>
+        <Title>Alumni</Title>
+          {ALUMNI.map(member => (
+            <MemberContainer key={member.id}>
+              <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                <AvatarContainer>
+                  <Avatar src={member.cover} />
+                </AvatarContainer>
+                {member.cv && (
+                  <Button type="button" href={member.cv} target="_blank" rel="noreferrer">
+                    See my CV
+                  </Button>
+                )}
+              </div>
+              <MemberContent>
+                <ContentTitleWrapper>
+                  <Name>{member.name}</Name>
+                  <Position>{member.position}</Position>
+                </ContentTitleWrapper>
+                <p>
+                  {member.content.map(c => {
+                    if (c.url) {
+                      return (
+                        <Link key={c.id} type="button" href={c.url} target="_blank" rel="noreferrer">
+                          {c.text}
+                        </Link>
+                      )
+                    }
+
+                    return (
+                      <Text key={c.id}>{c.text}</Text>
+                    )
+                  })}
+                </p>
+              </MemberContent>
+            </MemberContainer>
+          ))}
     </Wrapper>
   );
 }
