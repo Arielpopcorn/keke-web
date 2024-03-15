@@ -139,19 +139,19 @@ export const MEMBERS = [{
 export const ALUMNI = [{
   id: 1,
   name: "Gen-Chang Hsu",
-  position: "Research Assistant",
+  position: "Research Assistant (2022/03 -- 2023/06)",
   cover: gen_chang,
   content: [{
     id: 1,
-    text: "Gen-Chang’s research interests revolve around species interactions and their ecological dynamics. He is also into data science and visualization (check out his blog ",
+    text: "Gen-Chang’s research interests revolve around species interactions and their ecological dynamics. He first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he helped set up greenhouse experiments to study how plant-soil feedbacks vary through time. Gen-Chang is now pursuing his PhD degree with Prof. ",
     url: null,
   }, {
     id: 2,
-    text: "here",
-    url: "https://genchanghsu.github.io/ggGallery/",
+    text: "Jennifer Thaler",
+    url: "https://blogs.cornell.edu/thaler/",
   }, {
     id: 3,
-    text: "). Gen-Chang first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab he conducts greenhouse experiments to study how plant-soil feedbacks vary through time. Learn more about his research and experiences ",
+    text: "at Connell University. Learn more about his research and experiences ",
     url: null
   }, {
     id: 4,
