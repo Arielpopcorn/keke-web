@@ -156,6 +156,8 @@ function MembersPage() {
 
         <Title> </Title>
         <Title> </Title>
+        <Title> </Title>
+        <Title> </Title>
         <Title>Alumni</Title>
           {ALUMNI.map(member => (
             <MemberContainer key={member.id}>

@@ -4,6 +4,7 @@ import yu_pei from '../constants/images/YuPeiTseng.jpg';
 import sun_yi from '../constants/images/SunYi.jpg';
 import ching_lin from '../constants/images/ChingLinHuang.jpg';
 import shuo from '../constants/images/ShuoWei.jpg';
+import joe from '../constants/images/JoeWan.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -36,6 +37,32 @@ export const MEMBERS = [{
   cv: keke_cv
 },{
   id: 2,
+  name: "Joe Wan",
+  position: "Postdoctoral Researcher",
+  cover: joe,
+  content: [{
+    id: 1,
+    text: "Joe is interested in the interface between community and ecosystem ecology. Since he joined us in 2023, Joe's work has focused on adapting coexistence theory to address a broader range of systems and questions, with forest trees and their microbial interactions as a guiding example. Joe received his doctorate from ETH Zürich in 2023, where he studied the implications of community interactions for carbon cycling with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Tom Crowther",
+    url: "https://crowtherlab.com/about-tom-crowther/",
+  }, {
+    id: 3,
+    text: ". Learn more about his research ",
+    url: null
+  }, {
+    id: 4,
+    text: "here",
+    url: "https://joe-wan.github.io/",
+  }, {
+    id: 5,
+    text: ".",
+    url: null
+  }]
+},{
+  id: 3,
   name: "Ching-Lin Huang (Andy)",
   position: "Research Assistant",
   cover: ching_lin,
@@ -61,7 +88,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 3,
+  id: 4,
   name: "Yu-Pei Tseng",
   position: "Research Assistant",
   cover: yu_pei,
@@ -75,11 +102,11 @@ export const MEMBERS = [{
     url: "https://www.davidzeleny.net/veglab/doku.php?id=start",
   }, {
     id: 3,
-    text: " to study how the landscape structure affects the local species diversity of woody specialists in montane cloud forests in Taiwan. Yu-Pei joined the lab as a research assistant in 2022 to study the microbial community in forest soils. She has also spearheaded our study on the microbiome associated with Asplenium nidus through the lens of theory of island biogeography",
+    text: " to study how the landscape structure affects the local species diversity of woody specialists in montane cloud forests in Taiwan. Yu-Pei joined the lab as a research assistant in 2022 to study the microbial community in forest soils. She has also spearheaded our study on the microbiome associated with bird's nest fern through the lens of theory of island biogeography",
     url: null
   }]
 },{
-  id: 4,
+  id: 5,
   name: "Shuo Wei",
   position: "Research Assistant",
   cover: shuo,
@@ -105,7 +132,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 5,
+  id: 6,
   name: "Yi Sun",
   position: "Master student",
   cover: sun_yi,
@@ -123,7 +150,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 6,
+  id: 7,
   name: "You",
   position: "Student",
   cover: avatar2,
@@ -139,11 +166,11 @@ export const MEMBERS = [{
 export const ALUMNI = [{
   id: 1,
   name: "Gen-Chang Hsu",
-  position: "Research Assistant (2022/03 -- 2023/06)",
+  position: "Research Assistant (2022/03 - 2023/06)",
   cover: gen_chang,
   content: [{
     id: 1,
-    text: "Gen-Chang’s research interests revolve around species interactions and their ecological dynamics. He first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he helped set up greenhouse experiments to study how plant-soil feedbacks vary through time. Gen-Chang is now pursuing his PhD degree with Prof. ",
+    text: "Gen-Chang’s first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he organized field soil sampling and greenhouse experiments to study how plant-soil feedbacks persisted through time. His research interests revolve around species interactions and their ecological dynamicsis now pursuing. Gen-Chang is now persuing a PhD degree with Prof. ",
     url: null,
   }, {
     id: 2,
@@ -151,7 +178,7 @@ export const ALUMNI = [{
     url: "https://blogs.cornell.edu/thaler/",
   }, {
     id: 3,
-    text: "at Connell University. Learn more about his research and experiences ",
+    text: " at Connell University. Learn more about his research ",
     url: null
   }, {
     id: 4,
