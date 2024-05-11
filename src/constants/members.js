@@ -5,6 +5,7 @@ import sun_yi from '../constants/images/SunYi.jpg';
 import ching_lin from '../constants/images/ChingLinHuang.jpg';
 import shuo from '../constants/images/ShuoWei.jpg';
 import joe from '../constants/images/JoeWan.jpg';
+import chin_te from '../constants/images/ChinTeTsai.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -133,6 +134,32 @@ export const MEMBERS = [{
   }]
 },{
   id: 6,
+  name: "Chin-Te Tsai",
+  position: "Research Assistant",
+  cover: chin_te,
+  content: [{
+    id: 1,
+    text: "Chin-Te is interested in exploring the connections between micro- and macro-scales, particularly through the study of interactions between microbiomes and their hosts. Chin-Te completed his master's degree through a joint program between Soochow University and Academia Sinica. From 2022 to 2024, he worked with Professors ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Shan-Hua Yang",
+    url: "https://sites.google.com/view/shanhuayang/home",
+  }, {
+    id: 3,
+    text: " and ",
+    url: null
+  }, {
+    id: 4,
+    text: "Sung-Yin Yang",
+    url: "https://scholar.google.com/citations?user=y5kW4akAAAAJ&hl=zh-TW",
+  }, {
+    id: 5,
+    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. In our lab, Chin-Te helps to conduct next-generation sequencing while also developing a research topic of his own.",
+    url: null
+  }]
+},{
+  id: 7,
   name: "Yi Sun",
   position: "Master student",
   cover: sun_yi,
@@ -150,7 +177,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 7,
+  id: 8,
   name: "You",
   position: "Student",
   cover: avatar2,
