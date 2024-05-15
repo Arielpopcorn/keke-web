@@ -6,6 +6,7 @@ import ching_lin from '../constants/images/ChingLinHuang.jpg';
 import shuo from '../constants/images/ShuoWei.jpg';
 import joe from '../constants/images/JoeWan.jpg';
 import chin_te from '../constants/images/ChinTeTsai.jpg';
+import hsiang_chih from '../constants/images/HsiangChihLo.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -155,7 +156,7 @@ export const MEMBERS = [{
     url: "https://scholar.google.com/citations?user=y5kW4akAAAAJ&hl=zh-TW",
   }, {
     id: 5,
-    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. In our lab, Chin-Te helps to conduct next-generation sequencing while also developing a research topic of his own.",
+    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. Chin-Te joined our lab in 2024 and now helps to conduct next-generation sequencing while also developing a research topic of his own.",
     url: null
   }]
 },{
@@ -178,6 +179,24 @@ export const MEMBERS = [{
   }]
 },{
   id: 8,
+  name: "Hsiang-Chih Lo",
+  position: "Master student",
+  cover: hsiang_chih,
+  content: [{
+    id: 1,
+    text: "Hsiang-Chih is interested in species competition, particularly when the effect of animal behavior is added into the picture. During her undergraduate studies at National Taiwan University, she conducted experiments on fall armyworm in Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Chuan-Kai Ho",
+    url: "https://scholar.google.com/citations?user=_SNS7pMAAAAJ&hl=en",
+  }, {
+    id: 3,
+    text: "'s lab'. Her research revealed consistent cannibalistic behavior among fall armyworm larvae, despite the potential negative impact of cannibalism on individual performance. These empirical experiences sparked her interest in developing models that integrate cannibalism and intraguild predation, which she has been working on since joining our lab in 2024.",
+    url: null
+  }]
+},{
+  id: 9,
   name: "You",
   position: "Student",
   cover: avatar2,
@@ -197,7 +216,7 @@ export const ALUMNI = [{
   cover: gen_chang,
   content: [{
     id: 1,
-    text: "Gen-Chang’s first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he organized field soil sampling and greenhouse experiments to study how plant-soil feedbacks persisted through time. His research interests revolve around species interactions and their ecological dynamicsis now pursuing. Gen-Chang is now persuing a PhD degree with Prof. ",
+    text: "Gen-Chang’s first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he organized field soil sampling and greenhouse experiments to study how plant-soil feedbacks persisted through time. His research interests revolve around species interactions and their ecological dynamicsis. Gen-Chang is now persuing a PhD degree with Prof. ",
     url: null,
   }, {
     id: 2,
