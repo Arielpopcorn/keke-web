@@ -192,7 +192,7 @@ export const MEMBERS = [{
     url: "https://scholar.google.com/citations?user=_SNS7pMAAAAJ&hl=en",
   }, {
     id: 3,
-    text: "'s lab'. Her research revealed consistent cannibalistic behavior among fall armyworm larvae, despite the potential negative impact of cannibalism on individual performance. These empirical experiences sparked her interest in developing models that integrate cannibalism and intraguild predation, which she has been working on since joining our lab in 2024.",
+    text: "'s lab. Her research revealed consistent cannibalistic behavior among fall armyworm larvae, despite the potential negative impact of cannibalism on individual performance. These empirical experiences sparked her interest in developing models that integrate cannibalism and intraguild predation, which she has been working on since joining our lab in 2024.",
     url: null
   }]
 },{
