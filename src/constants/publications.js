@@ -22,6 +22,7 @@ import pdf_2023_3 from '../constants/pdf/2023_Spaak_et_al_2023_Oikos.pdf';
 import pdf_2023_4 from '../constants/pdf/2023_Blonder_et_al_2023_Oikos.pdf';
 import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoreticalEcology.pdf';
 import pdf_2023_6 from '../constants/pdf/2023_Chung_et_al_2023_JEcol.pdf';
+import pdf_2024_1 from '../constants/pdf/2024_Simha_et_al_2024_BulletinESA.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -412,4 +413,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2023_6,
   doi: "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.14156"
+}, {
+  id: "25",
+  title: "When the window is a mirror: how do dominant theories limit our understanding of nature? (ESA 2023 INS23)",
+  authors : ["Anita Simha", "Aubrie James", "Julia D. Monk", "Heng-Xing Zou", "Po-Ju Ke", "Alexandra Wright", "Malyon D. Bimler", "Christopher M. Moore", "Suzanne Pierre", "Lauren N. Carley", "Gaurav Kandlikar"],
+  year: "2024",
+  magazine: "The Bulletin of the Ecological Society of America, 2024: e02145",
+  highlighted: [],
+  pdf: pdf_2024_1,
+  doi: "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.2145"
 }];
