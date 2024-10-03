@@ -23,6 +23,7 @@ import pdf_2023_4 from '../constants/pdf/2023_Blonder_et_al_2023_Oikos.pdf';
 import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoreticalEcology.pdf';
 import pdf_2023_6 from '../constants/pdf/2023_Chung_et_al_2023_JEcol.pdf';
 import pdf_2024_1 from '../constants/pdf/2024_Simha_et_al_2024_BulletinESA.pdf';
+import pdf_2024_2 from '../constants/pdf/2024_Letten_et_al_2024_EcologyLetters.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -422,4 +423,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2024_1,
   doi: "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.2145"
+}, {
+  id: "26",
+  title: "Microbial dormancy supports multi-species coexistence under resource fluctuations",
+  authors : ["Andrew D. Letten*", "Masato Yamamichi", "James A. Richardson", "Po-Ju Ke*"],
+  year: "2024",
+  magazine: "Ecology Letters, 27(9): e14507",
+  highlighted: [],
+  pdf: pdf_2024_2,
+  doi: "https://onlinelibrary.wiley.com/doi/10.1111/ele.14507"
 }];
