@@ -65,76 +65,6 @@ export const MEMBERS = [{
   }]
 },{
   id: 3,
-  name: "Ching-Lin Huang (Andy)",
-  position: "Research Assistant",
-  cover: ching_lin,
-  content: [{
-    id: 1,
-    text: "Andy is interested in applying coexistence theory to ecological communities. He completed his undergraduate degree in Mathematics and his Master’s degree in Ecology and Evolutionary Biology with Prof. ",
-    url: null,
-  }, {
-    id: 2,
-    text: "David Zelený",
-    url: "https://www.davidzeleny.net/veglab/doku.php?id=start",
-  }, {
-    id: 3,
-    text: ". In 2023, Andy joined us to explore how the decaying microbial effects after a forest canopy tree dies would influence seedling demography and tree species coexistence. He approaches this question through theoretical modeling and greenhouse experiments. Learn more about his research ",
-    url: null
-  }, {
-    id: 4,
-    text: "here",
-    url: "https://scholar.google.com.tw/citations?user=mytujjwAAAAJ&hl=zh-TW&authuser=1",
-  }, {
-    id: 5,
-    text: ".",
-    url: null
-  }]
-},{
-  id: 4,
-  name: "Yu-Pei Tseng",
-  position: "Research Assistant",
-  cover: yu_pei,
-  content: [{
-    id: 1,
-    text: "Yu-Pei is interested in community and metacommunity ecology, especially in exploring the underlying mechanisms of shaping community assembly and species diversity. She completed her Master’s degree at National Taiwan University. Yu-Pei worked with Prof. ",
-    url: null,
-  }, {
-    id: 2,
-    text: "David Zelený",
-    url: "https://www.davidzeleny.net/veglab/doku.php?id=start",
-  }, {
-    id: 3,
-    text: " to study how the landscape structure affects the local species diversity of woody specialists in montane cloud forests in Taiwan. Yu-Pei joined the lab as a research assistant in 2022 to study the microbial community in forest soils. She has also spearheaded our study on the microbiome associated with bird's nest fern through the lens of theory of island biogeography",
-    url: null
-  }]
-},{
-  id: 5,
-  name: "Shuo Wei",
-  position: "Research Assistant",
-  cover: shuo,
-  content: [{
-    id: 1,
-    text: "Shuo is interested in forest regeneration, with a specific focus on how micro-environmental factors and soil microbes influence seedling survival. He completed his Master’s degree with Prof. ",
-    url: null,
-  }, {
-    id: 2,
-    text: "David Zelený",
-    url: "https://www.davidzeleny.net/veglab/doku.php?id=start",
-  }, {
-    id: 3,
-    text: ", during which he combined field survival survey with manipulative growth-chamber experiments to study the early-stage regeneration of Chamaecyparis obtusa var. formosana seedlings in Taiwan (see publication ",
-    url: null
-  }, {
-    id: 4,
-    text: "here",
-    url: "https://www.sciencedirect.com/science/article/pii/S0378112724000264?via%3Dihub",
-  }, {
-    id: 5,
-    text: "). Shuo joined us in 2023 to study the density-dependence of plant-soil microbe interactions. Since then, he has continuously supported our greenhouse experiments, even after moving to different affiliations.",
-    url: null
-  }]
-},{
-  id: 6,
   name: "Chin-Te Tsai",
   position: "Research Assistant",
   cover: chin_te,
@@ -160,7 +90,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 7,
+  id: 4,
   name: "Yi Sun",
   position: "Master student",
   cover: sun_yi,
@@ -178,7 +108,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 8,
+  id: 5,
   name: "Hsiang-Chih Lo",
   position: "Master student",
   cover: hsiang_chih,
@@ -196,7 +126,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 9,
+  id: 6,
   name: "You",
   position: "Student",
   cover: avatar2,
@@ -211,12 +141,82 @@ export const MEMBERS = [{
 
 export const ALUMNI = [{
   id: 1,
+  name: "Ching-Lin Huang (Andy)",
+  position: "Research Assistant (2023/10 - 2024/07)",
+  cover: ching_lin,
+  content: [{
+    id: 1,
+    text: "Andy joined the lab in 2023 as a research assistant to develop models that incorporate complex plant demography with plant-soil feedback. He also conducted a greenhouse experiment to study how decaying microbial effects would influence seedling competition. Andy is interested in how dispersal and evolution interactively influence species coexistence. He is now pursuing a PhD degree with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Alison Shaw",
+    url: "https://allisonkshaw.weebly.com/",
+  }, {
+    id: 3,
+    text: " at the University of Minnesota. Learn more about his research ",
+    url: null
+  }, {
+    id: 4,
+    text: "here",
+    url: "https://scholar.google.com.tw/citations?user=mytujjwAAAAJ&hl=zh-TW&authuser=1",
+  }, {
+    id: 5,
+    text: ". ",
+    url: null
+  }]
+}, {
+  id: 2,
+  name: "Shou Wei",
+  position: "Research Assistant (2023/08 - 2024/07)",
+  cover: shuo,
+  content: [{
+    id: 1,
+    text: "Shuo joined the lab as research assistant in 2023 to study the density-dependence of plant-soil microbe interactions. With his expertise in silviculture, he also helped many of our greenhouse experiments. He is interested in forest regeneration and applying trait-based approach to understand how plant communities respond to environmental stress. Shuo is now pursuing a PhD degree with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Liza Comita",
+    url: "http://www.comitalab.com/",
+  }, {
+    id: 3,
+    text: " at Yale University. Learn more about his research ",
+    url: null
+  }, {
+    id: 4,
+    text: "here",
+    url: "https://scholar.google.com/citations?user=IMxMiFEAAAAJ&hl=en&oi=sra",
+  }, {
+    id: 5,
+    text: ". ",
+    url: null
+  }]
+}, {
+  id: 3,
+  name: "Yu-Pei Tseng",
+  position: "Research Assistant (2022/10 - 2024/04)",
+  cover: yu_pei,
+  content: [{
+    id: 1,
+    text: "Yu-Pei joined the lab as a research assistant in 2022 to study the temporal dimensions of plant-soil microbe interactions through a combination of greenhouse experiments and high-throughput sequencing. She has also spearheaded our study on the bird's nest fern microbiome in canopy islands and our project on density-dependent soil conditioning. Yu-Pei is now pursuing a PhD degree with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Andrew Letten",
+    url: "https://andrewletten.wordpress.com/",
+  }, {
+    id: 3,
+    text: " at the University of Queensland, working on the impact of resource fluctuations on microbial communities.",
+    url: null
+  }]
+}, {
+  id: 4,
   name: "Gen-Chang Hsu",
   position: "Research Assistant (2022/03 - 2023/06)",
   cover: gen_chang,
   content: [{
     id: 1,
-    text: "Gen-Chang’s first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he organized field soil sampling and greenhouse experiments to study how plant-soil feedbacks persisted through time. His research interests revolve around species interactions and their ecological dynamicsis. Gen-Chang is now persuing a PhD degree with Prof. ",
+    text: "Gen-Chang’s first joined the lab as a teaching assistant for our theoretical ecology course in 2021 and later became our research assistant. In our lab, he organized field soil sampling and greenhouse experiments to study how plant-soil feedbacks persisted through time. His research interests revolve around species interactions and their ecological dynamics. Gen-Chang is now persuing a PhD degree with Prof. ",
     url: null,
   }, {
     id: 2,

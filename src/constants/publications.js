@@ -24,6 +24,7 @@ import pdf_2023_5 from '../constants/pdf/2023_Spaak_et_al_2023_TheoreticalEcolog
 import pdf_2023_6 from '../constants/pdf/2023_Chung_et_al_2023_JEcol.pdf';
 import pdf_2024_1 from '../constants/pdf/2024_Simha_et_al_2024_BulletinESA.pdf';
 import pdf_2024_2 from '../constants/pdf/2024_Letten_et_al_2024_EcologyLetters.pdf';
+import pdf_2024_3 from '../constants/pdf/2024_Miki_and_Ke_2024_JournalTheoreticalBiology.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -432,4 +433,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_2024_2,
   doi: "https://onlinelibrary.wiley.com/doi/10.1111/ele.14507"
+}, {
+  id: "27",
+  title: "Macroscale vertical power-law distribution of bacteria in dark oceans can emerge from microscale bacteria-particle interactions",
+  authors : ["Takeshi Miki", "Po-Ju Ke"],
+  year: "2024",
+  magazine: "Journal of Theoretical Biology, 595: 111956",
+  highlighted: [],
+  pdf: pdf_2024_2,
+  doi: "https://www.sciencedirect.com/science/article/abs/pii/S0022519324002418"
 }];
