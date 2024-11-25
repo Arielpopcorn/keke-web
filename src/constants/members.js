@@ -92,7 +92,7 @@ export const MEMBERS = [{
 },{
   id: 4,
   name: "Yi Sun",
-  position: "Master student",
+  position: "Research Assistant",
   cover: sun_yi,
   content: [{
     id: 1,
@@ -104,7 +104,7 @@ export const MEMBERS = [{
     url: "https://lizardweevil.wixsite.com/mysite",
   }, {
     id: 3,
-    text: ". In 2022, Sun Yi joined the lab to study the theoretical aspects of mimicry system, specifically, how predator foraging strategies and relationships between mimics and models affect the dynamics of the system. ",
+    text: ". Sun Yi joined the lab in 2022 to study how predator learning and mimic-model similarity affect the dynamics of mimicy systems. He completed his Masters in 2024 and is now a research assistant in our lab.",
     url: null
   }]
 },{
