@@ -7,6 +7,7 @@ import shuo from '../constants/images/ShuoWei.jpg';
 import joe from '../constants/images/JoeWan.jpg';
 import chin_te from '../constants/images/ChinTeTsai.jpg';
 import hsiang_chih from '../constants/images/HsiangChihLo.jpg';
+import guan_yu from '../constants/images/GuanYuChen.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -127,6 +128,16 @@ export const MEMBERS = [{
   }]
 },{
   id: 6,
+  name: "Guan-Yu Chen",
+  position: "Master student",
+  cover: guan_yu,
+  content: [{
+    id: 1,
+    text: "Guan-Yu is interested in plant-pathogen interactions, especially when such interactions are influenced by other biological factors. Guan-Yu received his bachelor degree from the Department of Plant Pathology, National Chung Hsing University, where he learned many mechanisms of how plants and microorganisms interact, which then inspired him to explore the unknown questions of plant pathosystem with theoretical approach after joining the lab in 2024. Currently, Guan-Yu is studying how hyperparasite affect pathogen strains coexistence in host-pathogen-hyperparasite system.",
+    url: null,
+  }]
+},{
+  id: 7,
   name: "You",
   position: "Student",
   cover: avatar2,
