@@ -440,6 +440,6 @@ export const PUBLICATIONS = [{
   year: "2024",
   magazine: "Journal of Theoretical Biology, 595: 111956",
   highlighted: [],
-  pdf: pdf_2024_2,
+  pdf: pdf_2024_3,
   doi: "https://www.sciencedirect.com/science/article/abs/pii/S0022519324002418"
 }];
