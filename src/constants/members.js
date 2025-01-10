@@ -1,13 +1,14 @@
 import keke from '../constants/images/keke_headshot.jpg';
-import gen_chang from '../constants/images/genChangHsu.jpg';
-import yu_pei from '../constants/images/YuPeiTseng.jpg';
-import sun_yi from '../constants/images/SunYi.jpg';
-import ching_lin from '../constants/images/ChingLinHuang.jpg';
-import shuo from '../constants/images/ShuoWei.jpg';
-import joe from '../constants/images/JoeWan.jpg';
-import chin_te from '../constants/images/ChinTeTsai.jpg';
-import hsiang_chih from '../constants/images/HsiangChihLo.jpg';
-import guan_yu from '../constants/images/GuanYuChen.jpg';
+import gen_chang from '../constants/images/Member_genChangHsu.jpg';
+import yu_pei from '../constants/images/Member_YuPeiTseng.jpg';
+import sun_yi from '../constants/images/Member_SunYi.jpg';
+import ching_lin from '../constants/images/Member_ChingLinHuang.jpg';
+import shuo from '../constants/images/Member_ShuoWei.jpg';
+import joe from '../constants/images/Member_JoeWan.jpg';
+import chin_te from '../constants/images/Member_ChinTeTsai.jpg';
+import hsiang_chih from '../constants/images/Member_HsiangChihLo.jpg';
+import guan_yu from '../constants/images/Member_GuanYuChen.jpg';
+import shiang_chi from '../constants/images/Member_ShiangChiHuang.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -67,7 +68,7 @@ export const MEMBERS = [{
 },{
   id: 3,
   name: "Chin-Te Tsai",
-  position: "Research Assistant",
+  position: "PhD student",
   cover: chin_te,
   content: [{
     id: 1,
@@ -87,7 +88,7 @@ export const MEMBERS = [{
     url: "https://scholar.google.com/citations?user=y5kW4akAAAAJ&hl=zh-TW",
   }, {
     id: 5,
-    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. Chin-Te joined our lab in 2024 and now helps to conduct next-generation sequencing while also developing a research topic of his own.",
+    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. Chin-Te joined our lab in 2024 as a research assistant and is now pursuing his PhD with us. For his PhD, he plans to study the spatial dimension of plant-soil microbe interactions.",
     url: null
   }]
 },{
@@ -138,6 +139,24 @@ export const MEMBERS = [{
   }]
 },{
   id: 7,
+  name: "Shiang-Chi Huang",
+  position: "Master student",
+  cover: shiang_chi,
+  content: [{
+    id: 1,
+    text: "Shiang-Chi is interested in interspecific interactions, especially those between different microbes. During her undergraduate research with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Jui-Yu Chou",
+    url: "https://www.researchgate.net/scientific-contributions/Jui-Yu-Chou-2162948752",
+  }, {
+    id: 3,
+    text: ", she worked on projects related to zombie ant fungus and slime mold-algae interactions. After joining our lab in 2024, Shiang-Chi focuses on how genetic differences in plants and soil microbes affect plant succession outcomes and is now learning how to approach the question in a theoretical way.",
+    url: null
+  }]
+},{
+  id: 8,
   name: "You",
   position: "Student",
   cover: avatar2,
@@ -170,7 +189,7 @@ export const ALUMNI = [{
   }, {
     id: 4,
     text: "here",
-    url: "https://scholar.google.com.tw/citations?user=mytujjwAAAAJ&hl=zh-TW&authuser=1",
+    url: "https://scholar.google.com.tw/citations?user=mytujjwAAAAJ",
   }, {
     id: 5,
     text: ". ",
@@ -196,7 +215,7 @@ export const ALUMNI = [{
   }, {
     id: 4,
     text: "here",
-    url: "https://scholar.google.com/citations?user=IMxMiFEAAAAJ&hl=en&oi=sra",
+    url: "https://scholar.google.com/citations?user=IMxMiFEAAAAJ&hl=en",
   }, {
     id: 5,
     text: ". ",
@@ -217,7 +236,15 @@ export const ALUMNI = [{
     url: "https://andrewletten.wordpress.com/",
   }, {
     id: 3,
-    text: " at the University of Queensland, working on the impact of resource fluctuations on microbial communities.",
+    text: " at the University of Queensland, working on the impact of resource fluctuations on microbial communities. Learn more about her research ",
+    url: null
+  }, {
+    id: 4,
+    text: "here",
+    url: "https://scholar.google.com.au/citations?user=krMgvJIAAAAJ&hl=en",
+  }, {
+    id: 5,
+    text: ". ",
     url: null
   }]
 }, {
