@@ -25,10 +25,10 @@ import pdf_2023_6 from '../constants/pdf/2023_Chung_et_al_2023_JEcol.pdf';
 import pdf_2024_1 from '../constants/pdf/2024_Simha_et_al_2024_BulletinESA.pdf';
 import pdf_2024_2 from '../constants/pdf/2024_Letten_et_al_2024_EcologyLetters.pdf';
 import pdf_2024_3 from '../constants/pdf/2024_Miki_and_Ke_2024_JournalTheoreticalBiology.pdf';
+import pdf_2025_1 from '../constants/pdf/2025_Miki_et_al_2025_PhysicaD.pdf';
 import pdf_preprint_1 from '../constants/pdf/preprint_Ke_et_al_2024_EcoEvoRxiv.pdf';
 import pdf_preprint_2 from '../constants/pdf/preprint_Wan_et_al_2024_biorxiv.pdf';
 import pdf_preprint_3 from '../constants/pdf/preprint_Ou_et_al_2024_biorxiv.pdf';
-import pdf_preprint_4 from '../constants/pdf/preprint_Miki_et_al_2024_arXiv.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -448,6 +448,15 @@ export const PUBLICATIONS = [{
   doi: "https://www.sciencedirect.com/science/article/abs/pii/S0022519324002418"
 }, {
   id: "28",
+  title: "How to quantify interaction strengths? A critical rethinking of the interaction Jacobian and evaluation methods for non-parametric inference in time series analysis",
+  authors : ["Takeshi Miki", "Chun-Wei Chang", "Po-Ju Ke", "Arndt Telschow", "Cheng-Han Tsai", "Masayuki Ushio", "Chih-hao Hsieh"],
+  year: "2025",
+  magazine: "Physica D: Nonlinear Phenomena",
+  highlighted: [],
+  pdf: pdf_2025_1,
+  doi: "https://www.sciencedirect.com/science/article/pii/S0167278925000922"
+}, {
+  id: "29",
   title: "Time will tell: the temporal and demographic contexts of plant-soil microbe interactions",
   authors : ["Po-Ju Ke", "Gaurav S. Kandlikar", "Suzanne X. Ou", "Gen-Chang Hsu", "Joe Wan", "Meghna Krishnada"],
   year: "Preprints",
@@ -456,7 +465,7 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_1,
   doi: "https://doi.org/10.32942/X2PS5N"
 }, {
-  id: "29",
+  id: "30",
   title: "Functional coexistence theory: a mechanistic framework linking biodiversity to ecosystem function",
   authors : ["Joe Wan", "Po-Ju Ke", "Iris Hordijk", "Lalasia Bialic-Murphy", "Thomas W. Crowther"],
   year: "Preprints",
@@ -465,7 +474,7 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_2,
   doi: "https://doi.org/10.1101/2024.05.05.591902"
 }, {
-  id: "30",
+  id: "31",
   title: "Realistic time-lags and litter dynamics alter predictions of plant-soil feedback across generations",
   authors : ["Suzanne X. Ou", "Gaurav S. Kandlikar", "Magdalena L. Warren", "Po-Ju Ke"],
   year: "Preprints",
@@ -473,13 +482,4 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_preprint_3,
   doi: "https://doi.org/10.1101/2024.01.25.577053"
-}, {
-  id: "31",
-  title: "How to quantify interaction strengths? A critical rethinking of the interaction Jacobian and evaluation methods for non-parametric inference in time-series analysis",
-  authors : ["Takeshi Miki", "Chun-Wei Chang", "Po-Ju Ke", "Arndt Telschow", "Cheng-Han Tsai", "Masayuki Ushio", "Chih-hao Hsieh"],
-  year: "Preprints",
-  magazine: "arXiv",
-  highlighted: [],
-  pdf: pdf_preprint_4,
-  doi: "https://arxiv.org/abs/2411.09030"
 }];

@@ -88,7 +88,7 @@ export const MEMBERS = [{
     url: "https://scholar.google.com/citations?user=y5kW4akAAAAJ&hl=zh-TW",
   }, {
     id: 5,
-    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. Chin-Te joined our lab in 2024 as a research assistant and is now pursuing his PhD with us. For his PhD, he plans to study the spatial dimension of plant-soil microbe interactions.",
+    text: ", focusing on the seasonal dynamics of coral reef microbiomes in locations experiencing extreme temperature fluctuations. Chin-Te joined our lab in 2024 as a research assistant and is a PhD student with us. For his PhD, he plans to study the spatial dimension of plant-soil microbe interactions.",
     url: null
   }]
 },{
