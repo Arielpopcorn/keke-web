@@ -93,24 +93,6 @@ export const MEMBERS = [{
   }]
 },{
   id: 4,
-  name: "Yi Sun",
-  position: "Research Assistant",
-  cover: sun_yi,
-  content: [{
-    id: 1,
-    text: "Sun Yi is interested in predator-prey interactions and predator decision-making, with a particular focus on mimicry systems. During his undergraduate studies at National Taiwan University, he conducted research on the coevolution arms race and color patterns of mimicry systems with Prof. ",
-    url: null,
-  }, {
-    id: 2,
-    text: "Hui-Yun Tseng",
-    url: "https://lizardweevil.wixsite.com/mysite",
-  }, {
-    id: 3,
-    text: ". Sun Yi joined the lab in 2022 to study how predator learning and mimic-model similarity affect the dynamics of mimicy systems. He completed his Masters in 2024 and is now a research assistant in our lab.",
-    url: null
-  }]
-},{
-  id: 5,
   name: "Hsiang-Chih Lo",
   position: "Master student",
   cover: hsiang_chih,
@@ -128,7 +110,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 6,
+  id: 5,
   name: "Guan-Yu Chen",
   position: "Master student",
   cover: guan_yu,
@@ -138,7 +120,7 @@ export const MEMBERS = [{
     url: null,
   }]
 },{
-  id: 7,
+  id: 6,
   name: "Shiang-Chi Huang",
   position: "Master student",
   cover: shiang_chi,
@@ -156,7 +138,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 8,
+  id: 7,
   name: "You",
   position: "Student",
   cover: avatar2,
@@ -171,6 +153,32 @@ export const MEMBERS = [{
 
 export const ALUMNI = [{
   id: 1,
+  name: "Yi Sun",
+  position: "Master's student and Research Assistant (2022/09 - 2025/07)",
+  cover: sun_yi,
+  content: [{
+    id: 1,
+    text: "Yi joined the lab in 2022 as a Master's student to study how predator recognition and mimic-model similarity affect the dynamics of mimicy systems. After completing his Master's in 2024, Yi  was a research assistant in our lab, during which he used high-throughput sequencing to investigate how microbial turnover depends on host tree abundance and mycorrhizal type. Yi is interested in signal diversification and maintenance through eco-evolutionary feedbacks. He is now pursuing a PhD degree with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Hanna Kokko",
+    url: "https://www.kokkonuts.org/",
+  }, {
+    id: 3,
+    text: ". at the University of Mainz. Learn more about his research ",
+    url: null
+  }, {
+    id: 4,
+    text: "here",
+    url: "https://scholar.google.com/citations?user=ViOP-HgAAAAJ",
+  }, {
+    id: 5,
+    text: ". ",
+    url: null
+  }]
+}, {
+  id: 2,
   name: "Ching-Lin Huang (Andy)",
   position: "Research Assistant (2023/10 - 2024/07)",
   cover: ching_lin,
@@ -196,7 +204,7 @@ export const ALUMNI = [{
     url: null
   }]
 }, {
-  id: 2,
+  id: 3,
   name: "Shou Wei",
   position: "Research Assistant (2023/08 - 2024/07)",
   cover: shuo,
@@ -222,7 +230,7 @@ export const ALUMNI = [{
     url: null
   }]
 }, {
-  id: 3,
+  id: 4,
   name: "Yu-Pei Tseng",
   position: "Research Assistant (2022/10 - 2024/04)",
   cover: yu_pei,
@@ -248,7 +256,7 @@ export const ALUMNI = [{
     url: null
   }]
 }, {
-  id: 4,
+  id: 5,
   name: "Gen-Chang Hsu",
   position: "Research Assistant (2022/03 - 2023/06)",
   cover: gen_chang,
