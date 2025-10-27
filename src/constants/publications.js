@@ -29,7 +29,9 @@ import pdf_2025_1 from '../constants/pdf/2025_Miki_et_al_2025_PhysicaD.pdf';
 import pdf_2025_2 from '../constants/pdf/2025_Magee_et_al_2025_EcologyLetters.pdf';
 import pdf_2025_3 from '../constants/pdf/2025_Ke_et_al_2025_EcologicalMonographs.pdf';
 import pdf_2025_4 from '../constants/pdf/2025_Wan_et_al_2025_EcologicalMonographs.pdf';
-import pdf_preprint_3 from '../constants/pdf/preprint_Ou_et_al_2024_biorxiv.pdf';
+import pdf_preprint_1 from '../constants/pdf/preprint_Ou_et_al_2024_biorxiv.pdf';
+import pdf_preprint_2 from '../constants/pdf/preprint_Huang_et_al_2025_biorxiv.pdf';
+import pdf_preprint_3 from '../constants/pdf/preprint_Sun_and_Ke_2025_biorxiv.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -461,28 +463,28 @@ export const PUBLICATIONS = [{
   title: "Memories of trees past: coexistence implications of legacy conspecific density dependence",
   authors : ["Lukas Magee", "Daniel Smith", "David Bauman", "Po-Ju Ke", "Helene Muller-Landau", "Kristina Anderson-Teixeira", "Jessica Shue", "David Orwig", "Sean McMahon", "Stephanie Bohlman", "Raelene Crandall", "Ben Weinstein", "Sergio Marconi", "Jeremy Lichstein", "James Gillooly", "Robert Bagchi", "Joseph LaManna", "Daniel Johnson"],
   year: "2025",
-  magazine: "Ecology Letters (accepted)",
+  magazine: "Ecology Letters, 28(10): e70197",
   highlighted: [],
   pdf: pdf_2025_2,
-  doi: "https://www.authorea.com/users/902301/articles/1277330-memories-of-trees-past-coexistence-implications-of-legacy-conspecific-density-dependence"
+  doi: "https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70197"
 }, {
   id: "30",
   title: "Time will tell: the temporal and demographic contexts of plant-soil microbe interactions",
   authors : ["Po-Ju Ke", "Gaurav S. Kandlikar", "Suzanne X. Ou", "Gen-Chang Hsu", "Joe Wan", "Meghna Krishnada"],
   year: "2025",
-  magazine: "Ecological Monographs (accepted)",
+  magazine: "Ecological Monographs, 95(3): e70032",
   highlighted: [],
   pdf: pdf_2025_3,
-  doi: "https://doi.org/10.32942/X2PS5N"
+  doi: "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.70032"
 }, {
   id: "31",
   title: "Functional coexistence theory: a mechanistic framework linking biodiversity to ecosystem function",
   authors : ["Joe Wan", "Po-Ju Ke", "Iris Hordijk", "Lalasia Bialic-Murphy", "Thomas W. Crowther"],
   year: "2025",
-  magazine: "Ecological Monographs (accepted)",
+  magazine: "Ecological Monographs, 95(3): e70033",
   highlighted: [],
   pdf: pdf_2025_4,
-  doi: "https://doi.org/10.1101/2024.05.05.591902"
+  doi: "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.70033"
 }, {
   id: "32",
   title: "Realistic time-lags and litter dynamics alter predictions of plant-soil feedback across generations",
@@ -490,6 +492,24 @@ export const PUBLICATIONS = [{
   year: "Preprints",
   magazine: "bioRxiv",
   highlighted: [],
+  pdf: pdf_preprint_1,
+  doi: "https://doi.org/10.1101/2024.01.25.577053v2"
+}, {
+  id: "33",
+  title: "Plant–soil feedback persists beyond host death to shape density-dependent plant competition",
+  authors : ["Ching-Lin Huang", "Joe Wan", "Shou Wei", "Chia-Hao Chang-Yang", "Po-Ju Ke"],
+  year: "Preprints",
+  magazine: "bioRxiv",
+  highlighted: [],
+  pdf: pdf_preprint_2,
+  doi: "https://www.biorxiv.org/content/10.1101/2025.10.04.680482v1"
+}, {
+  id: "34",
+  title: "Predator decision-making shapes the dynamics and stability of mimicry systems",
+  authors : ["Yi Sun", "Po-Ju Ke"],
+  year: "Preprints",
+  magazine: "bioRxiv",
+  highlighted: [],
   pdf: pdf_preprint_3,
-  doi: "https://doi.org/10.1101/2024.01.25.577053"
+  doi: "https://www.biorxiv.org/content/10.1101/2025.10.15.670298v1"
 }];
