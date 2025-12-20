@@ -9,6 +9,7 @@ import chin_te from '../constants/images/Member_ChinTeTsai.jpg';
 import hsiang_chih from '../constants/images/Member_HsiangChihLo.jpg';
 import guan_yu from '../constants/images/Member_GuanYuChen.jpg';
 import shiang_chi from '../constants/images/Member_ShiangChiHuang.jpg';
+import jia_zhen from '../constants/images/Members_JiaZhenLiu.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -139,6 +140,24 @@ export const MEMBERS = [{
   }]
 },{
   id: 7,
+  name: "Jia-Zhen Liu",
+  position: "Master student",
+  cover: jia_zhen,
+  content: [{
+    id: 1,
+    text: "Jia-Zhen is interested in plant ecology, particularly the interactions among plants and how these interactions influence ecosystem dynamics. During her undergraduate research at National Taiwan Normal University, she studied how leaf functional traits reflect plant adaptation to the environment in Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Teng-Chiu Lin",
+    url: "https://scholar.google.com/citations?user=wwdthM0AAAAJ&hl=zh-TW",
+  }, {
+    id: 3,
+    text: "’s lab. After joining our lab in 2025, Jia-Zhen has focused on studying how plant leachates affect plant-soil feedback. She aims to understand the mechanisms by which plants shape their surrounding soil environment and the consequences for plant interactions.",
+    url: null
+  }]
+},{
+  id: 8,
   name: "You",
   position: "Student",
   cover: avatar2,
