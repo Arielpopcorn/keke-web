@@ -207,7 +207,7 @@ export const ALUMNI = [{
     url: null,
   }, {
     id: 2,
-    text: "Alison Shaw",
+    text: "Allison Shaw",
     url: "https://allisonkshaw.weebly.com/",
   }, {
     id: 3,
