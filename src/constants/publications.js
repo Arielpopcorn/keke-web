@@ -32,6 +32,7 @@ import pdf_2025_4 from '../constants/pdf/2025_Wan_et_al_2025_EcologicalMonograph
 import pdf_preprint_1 from '../constants/pdf/preprint_Ou_et_al_2024_biorxiv.pdf';
 import pdf_preprint_2 from '../constants/pdf/preprint_Huang_et_al_2025_biorxiv.pdf';
 import pdf_preprint_3 from '../constants/pdf/preprint_Sun_and_Ke_2025_biorxiv.pdf';
+import pdf_preprint_4 from '../constants/pdf/preprint_Tseng_et_al_2026_biorxiv.pdf';
 
 
 export const PUBLICATIONS = [{
@@ -512,4 +513,13 @@ export const PUBLICATIONS = [{
   highlighted: [],
   pdf: pdf_preprint_3,
   doi: "https://www.biorxiv.org/content/10.1101/2025.10.15.670298v1"
+}, {
+  id: "35",
+  title: "Extending island biogeography theory to biotic islands: Microbial communities in epiphytic bird's nest fern Asplenium nidus",
+  authors : ["Yu-Pei Tseng", "Shou Wei", "Po-Ju Ke"],
+  year: "Preprints",
+  magazine: "bioRxiv",
+  highlighted: [],
+  pdf: pdf_preprint_4,
+  doi: "https://www.biorxiv.org/content/10.64898/2026.03.30.715435v1"
 }];

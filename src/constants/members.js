@@ -9,7 +9,8 @@ import chin_te from '../constants/images/Member_ChinTeTsai.jpg';
 import hsiang_chih from '../constants/images/Member_HsiangChihLo.jpg';
 import guan_yu from '../constants/images/Member_GuanYuChen.jpg';
 import shiang_chi from '../constants/images/Member_ShiangChiHuang.jpg';
-import jia_zhen from '../constants/images/Members_JiaZhenLiu.jpg';
+import jia_zhen from '../constants/images/Member_JiaZhenLiu.jpg';
+import kuang_yu from '../constants/images/Member_KuangYuWang.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
 import avatar2 from '../constants/images/avatar2.png';
 
@@ -112,6 +113,32 @@ export const MEMBERS = [{
   }]
 },{
   id: 5,
+  name: "Kuang-Yu Wang",
+  position: "Master student",
+  cover: kuang_yu,
+  content: [{
+    id: 1,
+    text: "Kuang-Yu is interested in how environmental perturbations and spatial connectivity shape microbial ecosystems. For his master's degree at National Taiwan University, advised by Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Chun-Wei Chang",
+    url: "https://scholar.google.com/citations?user=dVhUx1UAAAAJ&hl=en",
+  }, {
+    id: 3,
+    text: " and Prof. ",
+    url: null,
+  }, {
+    id: 4,
+    text: "Li-Han Chen",
+    url: "https://webpageprodvm.ntu.edu.tw/fishing_en/cp.aspx?n=101484&s=35936&state=F5D336F102ACBC68",
+  }, {
+    id: 5,
+    text: ", he investigated source-sink microbial dynamics in coupled aquaculture ponds. Inspired to understand the underlying theoretical mechanisms of these microbiome manipulations. Kuang-Yu join the lab in 2026 and is currently investigating the spatial dynamics of plant-soil feedbacks.",
+    url: null
+  }]
+},{
+  id: 6,
   name: "Guan-Yu Chen",
   position: "Master student",
   cover: guan_yu,
@@ -121,7 +148,7 @@ export const MEMBERS = [{
     url: null,
   }]
 },{
-  id: 6,
+  id: 7,
   name: "Shiang-Chi Huang",
   position: "Master student",
   cover: shiang_chi,
@@ -139,7 +166,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 7,
+  id: 8,
   name: "Jia-Zhen Liu",
   position: "Master student",
   cover: jia_zhen,
@@ -157,7 +184,7 @@ export const MEMBERS = [{
     url: null
   }]
 },{
-  id: 8,
+  id: 9,
   name: "You",
   position: "Student",
   cover: avatar2,
