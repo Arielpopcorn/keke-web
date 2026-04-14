@@ -96,7 +96,7 @@ export const MEMBERS = [{
 },{
   id: 4,
   name: "Hsiang-Chih Lo",
-  position: "Master student",
+  position: "Research Assistant",
   cover: hsiang_chih,
   content: [{
     id: 1,
@@ -108,13 +108,13 @@ export const MEMBERS = [{
     url: "https://scholar.google.com/citations?user=_SNS7pMAAAAJ&hl=en",
   }, {
     id: 3,
-    text: "'s lab. Her research revealed consistent cannibalistic behavior among fall armyworm larvae, despite the potential negative impact of cannibalism on individual performance. These empirical experiences sparked her interest in developing models that integrate cannibalism and intraguild predation, which she has been working on since joining our lab in 2024.",
+    text: "'s lab. Her research revealed consistent cannibalistic behavior among fall armyworm larvae, despite the potential negative impact of cannibalism on individual performance. Hsiang-Chih joined the lab in 2024 to study how non-selective aggression of fall armyworm can lead to its ecological dominance. She completed in Master's in 2025 and is now a research assistant in our lab.",
     url: null
   }]
 },{
   id: 5,
   name: "Kuang-Yu Wang",
-  position: "Master student",
+  position: "Research Assistant",
   cover: kuang_yu,
   content: [{
     id: 1,
