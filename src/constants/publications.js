@@ -29,6 +29,7 @@ import pdf_2025_1 from '../constants/pdf/2025_Miki_et_al_2025_PhysicaD.pdf';
 import pdf_2025_2 from '../constants/pdf/2025_Magee_et_al_2025_EcologyLetters.pdf';
 import pdf_2025_3 from '../constants/pdf/2025_Ke_et_al_2025_EcologicalMonographs.pdf';
 import pdf_2025_4 from '../constants/pdf/2025_Wan_et_al_2025_EcologicalMonographs.pdf';
+import pdf_2026_1 from '../constants/pdf/2026_Davis_et_al_2026_EcologyLetters.pdf';
 import pdf_preprint_1 from '../constants/pdf/preprint_Ou_et_al_2024_biorxiv.pdf';
 import pdf_preprint_2 from '../constants/pdf/preprint_Huang_et_al_2025_biorxiv.pdf';
 import pdf_preprint_3 from '../constants/pdf/preprint_Sun_and_Ke_2025_biorxiv.pdf';
@@ -488,6 +489,15 @@ export const PUBLICATIONS = [{
   doi: "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.70033"
 }, {
   id: "32",
+  title: "General predictions for the effects of warming on competition",
+  authors : ["Kaleigh E. Davis", "Tess N. Grainger", "Po-Ju Ke", "Patrick L. Thompson", "Mary I. O'Connor", "Joey R. Bernhardt"],
+  year: "2026",
+  magazine: "Ecology Letters, 29(6): e70395",
+  highlighted: [],
+  pdf: pdf_2026_1,
+  doi: "https://onlinelibrary.wiley.com/doi/10.1111/ele.70395"
+}, {
+  id: "33",
   title: "Realistic time-lags and litter dynamics alter predictions of plant-soil feedback across generations",
   authors : ["Suzanne X. Ou", "Gaurav S. Kandlikar", "Magdalena L. Warren", "Po-Ju Ke"],
   year: "Preprints",
@@ -496,7 +506,7 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_1,
   doi: "https://doi.org/10.1101/2024.01.25.577053v2"
 }, {
-  id: "33",
+  id: "34",
   title: "Plant–soil feedback persists beyond host death to shape density-dependent plant competition",
   authors : ["Ching-Lin Huang", "Joe Wan", "Shou Wei", "Chia-Hao Chang-Yang", "Po-Ju Ke"],
   year: "Preprints",
@@ -505,7 +515,7 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_2,
   doi: "https://www.biorxiv.org/content/10.1101/2025.10.04.680482v1"
 }, {
-  id: "34",
+  id: "35",
   title: "Predator decision-making shapes the dynamics and stability of mimicry systems",
   authors : ["Yi Sun", "Po-Ju Ke"],
   year: "Preprints",
@@ -514,7 +524,7 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_3,
   doi: "https://www.biorxiv.org/content/10.1101/2025.10.15.670298v1"
 }, {
-  id: "35",
+  id: "36",
   title: "Extending island biogeography theory to biotic islands: Microbial communities in epiphytic bird's nest fern Asplenium nidus",
   authors : ["Yu-Pei Tseng", "Shou Wei", "Po-Ju Ke"],
   year: "Preprints",
