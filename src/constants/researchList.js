@@ -1,16 +1,19 @@
 import img1 from '../constants/images/research1.jpg';
 import RunHorseLight_1_1 from '../constants/images/RunHorseLight_1.jpg';
 import RunHorseLight_1_2 from '../constants/images/RunHorseLight_1_2.jpg';
+import img2 from '../constants/images/research2.jpg';
 import RunHorseLight_2_1 from '../constants/images/RunHorseLight_2.jpg';
+import img3 from '../constants/images/research3.jpg';
 import RunHorseLight_3_1 from '../constants/images/RunHorseLight_3.jpg';
 import RunHorseLight_3_2 from '../constants/images/RunHorseLight_3_2.jpg';
+import img4 from '../constants/images/research4.jpg';
 import RunHorseLight_4_1 from '../constants/images/RunHorseLight_4.jpg';
 import RunHorseLight_4_2 from '../constants/images/RunHorseLight_4_2.jpg';
-import RunHorseLight_5_1 from '../constants/images/RunHorseLight_5.jpg';
-import img2 from '../constants/images/research2.jpg';
-import img3 from '../constants/images/research3.jpg';
-import img4 from '../constants/images/research4.jpg';
 import img5 from '../constants/images/research5.jpg';
+import RunHorseLight_5_1 from '../constants/images/RunHorseLight_5.jpg';
+import img6 from '../constants/images/research6.jpg';
+import RunHorseLight_6_1 from '../constants/images/RunHorseLight_6.jpg';
+import RunHorseLight_6_2 from '../constants/images/RunHorseLight_6_2.jpg';
 
 export const RESEARCH_LIST = [{
     id: "1",
@@ -56,15 +59,15 @@ export const RESEARCH_LIST = [{
     paragraph: [
       "When developing models to describe competitive interactions, two approaches are broadly applicable to various organisms. Some ecologists adopt a phenomenological approach, which seeks to capture an aggregated measure of the negative effects species have on each other and does not require full knowledge on how species compete (i.e., Lotka-Volterra models). In contrast, others adopt a mechanistic approach, which attempts to gain a highly resolved understanding of the competitive process by directly modeling the limiting factors underlying competition (e.g., consumer-resource models). Despite shared goals, little communication and translation of governing principles across the two perspectives preclude further conceptual advances at their interface.",
       "",
-      "We have made an attempt to integrate these two approaches. We focused on modern coexistence theory, a prominent theoretical framework mainly based on phenomenological models, which recognizes stabilizing (i.e., increasing species’ niche differences) and equalizing (i.e., decreasing species’ fitness differences) processes as two higher-level ecological forces maintaining coexistence. By linking modern coexistence theory with a consumer-resource model, we have demonstrated that mechanistic models could provide an explicit connection between causal mechanisms and emergent phenomena. Specifically, we have shown how changes in resource supply and consumer traits translate into stabilizing and equalizing forces that either leads to coexistence (Letten et al, 2017, Ecological Monographs) or priority effects (Ke and Letten, 2018, Nature Ecology and Evolution).", 
+      "We have made an attempt to integrate these two approaches. We focused on modern coexistence theory, a prominent theoretical framework mainly based on phenomenological models, which recognizes stabilizing (i.e., increasing species’ niche differences) and equalizing (i.e., decreasing species’ fitness differences) processes as two higher-level ecological forces maintaining coexistence. By linking modern coexistence theory with a consumer-resource model, we have demonstrated that mechanistic models could provide an explicit connection between causal mechanisms and emergent phenomena. Specifically, we have shown how changes in resource supply and consumer traits translate into stabilizing and equalizing forces that either leads to coexistence (Letten et al, 2017, Ecological Monographs) or priority effects (Ke and Letten, 2018, Nature Ecology and Evolution).",
       "",
-      "In recent collaborations, we are digging further into the details of calculating the niche and fitness components of modern coexistence theory. In particular, we are studying how different definitions give different interpretations of the underlying mechanisms that shape species coexistence and relative abundance. Furthermore, with collaborators we are also incorporating metabolic theory into our synthetic framework, thereby linking the effects of temperature on organismal performance to competitive interactions and biodiversity.", 
+      "In recent collaborations, we are digging further into the details of calculating the niche and fitness components of modern coexistence theory. In particular, we are studying how different definitions give different interpretations of the underlying mechanisms that shape species coexistence and relative abundance. Furthermore, with collaborators we are also incorporating metabolic theory into our synthetic framework, thereby linking the effects of temperature on organismal performance to competitive interactions and biodiversity.",
     ]
   }, {
     id: "5",
     slides: [RunHorseLight_5_1],
     title: "Stage dependent species interactions",
-    cover: img5,   
+    cover: img5,
     tags: ['All', 'Ontogenetic niche shift'],
     paragraph: [
       "The strength of species interactions is often assumed to be fixed through time. However, greater awareness of the temporal complexity of ecological communities has urged ecologists to challenge this viewpoint. In particular, there is a pressing need to understand how species’ phenology, ontogeny, and stage structure modify the way interactions are coordinated in time and their impact on community structure.",
@@ -72,6 +75,17 @@ export const RESEARCH_LIST = [{
       "Our lab combines both empirical and theoretical approaches to develop a temporally-explicit perspective of community ecology. For example, we had developed a model that integrates stage-structured food-web theory with the theory of hybrid community (i.e. mixture of different interaction types), considering that not only diet but also interaction type often changes because of ontogenetic niche shift (e.g. the metamorphosis of pollinating insects, in which juveniles and adults are herbivores and pollinators, respectively). With this model, we suggested that ontogenetic antagonism-mutualism coupling stabilizes community dynamics in that it increases the potential for species coexistence in unproductive environments while improving community resilience in productive environments (Ke and Nakazawa, 2018, Oikos).",
       "",
       "We have also studied the temporal dimension of species interactions using plant-soil microbe interactions as a model system. For example, we developed a model of plant-soil interactions where seedlings and adults were affected by microbes differently and have different effects on nutrient cycling (Ke et al., 2015, New Phytologist). We have also combined aerial photo analysis, high-throughput sequencing, greenhouse experiments, and ecological modeling to study how plant-soil microbe interactions change with the length of soil conditioning and decay (Ke et al., 2021, New Phytologist; Ke and Levine, 2021, The American Naturalist). We hope to further develop this research theme in the future.",
+    ]
+  }, {
+    id: "6",
+    slides: [RunHorseLight_6_1, RunHorseLight_6_2],
+    title: "Bird's nest fern microbiome",
+    cover: img6,
+    tags: ['All', 'Microbial ecology'],
+    paragraph: [
+      "Epiphytic bird's nest ferns create suspended soil habitats high in forest canopies, forming natural 'biotic islands' that host diverse microbial communities. Because each fern varies in size, age, and spatial isolation, this system provides a unique opportunity to ask how classical ideas from island biogeography and metacommunity theory apply to habitats that are themselves formed and modified by living organisms. In recent work, we have used bird's nest ferns to test how patch size and isolation shape fungal and bacterial diversity, and to identify the mechanisms underlying these patterns. Our results suggest that larger ferns support higher microbial diversity because their growth creates stronger environmental heterogeneity through decomposition-driven pH gradients within the nest structure (Tseng et al. biorxiv). This makes bird's nest ferns an especially exciting system for linking local habitat complexity with regional processes such as dispersal.",
+      "",
+      "Beyond these first results, the system opens the door to many broader ecological questions. For example, we are interested in how host tree species, litter chemistry, and co-occurring epiphytes influence microbiome assembly. Another interesting question is how the three-dimensional structure of the forest canopy shapes metacommunity dynamics, especially when energy and nutrient flow move unidirectionally from the canopy, potentially forming a meta-ecosystem. More generally, bird's nest ferns allow us to study how habitat development by organisms feeds back to shape biodiversity itself.",
     ]
   }
 ];

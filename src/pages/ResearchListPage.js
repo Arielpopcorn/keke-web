@@ -33,10 +33,10 @@ const ResearchSection = styled.div`
     margin: 6.5%;
     width: 35%;
     }
-  
+
     @media ${breakpoint.sm}{
-      width: 17%;
-      margin: 1.5%;
+      width: 25%; /* 17 for 5 blocks */
+      margin: 4.1666%; /* 1.5 for 5 blocks */
     }
   }
 
@@ -46,7 +46,7 @@ const ResearchSection = styled.div`
     @media ${breakpoint.xs} {
 
     }
-  
+
     @media ${breakpoint.sm} {
       margin: 32px 0 0 0;
       font-size: 13px;
@@ -85,7 +85,7 @@ const TabsWrapper = styled.div`
   }
 
   @media ${breakpoint.sm} {
-    grid-template-columns: repeat(4, 177px);
+    grid-template-columns: repeat(5, 177px);
     grid-row-gap: 14px;
   }
 `;
@@ -224,6 +224,10 @@ const tabs = [{
   id: "Ontogenetic niche shift",
   name: "Ontogenetic niche shift",
   description: "The strength of species interactions is often assumed to be fixed through time. However, greater awareness of the temporal complexity of ecological communities has urged ecologists to study how species’ phenology and ontogeny modify species interaction strength. In our lab, we combine both empirical and theoretical approaches to develop a temporally-explicit perspective of community ecology."
+}, {
+  id: "Microbial ecology",
+  name: "Microbial ecology",
+  description: "Microbial communities provide a unique opportunity to test many ecological theories. In our lab, we are developing the bird’s nest fern humus microbiome as a model microbial system for examining how theories such as island biogeography and metacommunity theory explain community assembly. Moving forward, we aim to use microbial community data from Taiwan-specific systems to refine existing theories."
 }];
 
 function ResearchListPage() {
@@ -258,17 +262,17 @@ function ResearchListPage() {
         break;
     }
   }
-  
+
   //Distance Formula
   function distMetric(x, y, x2, y2) {
     var xDiff = x - x2;
     var yDiff = y - y2;
     return xDiff * xDiff + yDiff * yDiff;
   }
-  
+
   var boxes = window.document.querySelectorAll(".box");
   var TweenMax = window.TweenMax;
-  
+
   for (var i = 0; i < boxes.length; i++) {
     boxes[i].onmouseenter = function (e) {
       var x = e.pageX - this.offsetLeft;
@@ -276,7 +280,7 @@ function ResearchListPage() {
       var edge = closestEdge(x, y, this.clientWidth, this.clientHeight);
       var overlay = this.childNodes[1];
       var image = this.childNodes[0];
-  
+
       switch (edge) {
         case "left":
           //tween overlay from the left
@@ -307,18 +311,18 @@ function ResearchListPage() {
           TweenMax.to(image, 0.5, { scale: 1.2 });
           break;
 
-          default: 
+          default:
           break;
       }
     };
-  
+
     boxes[i].onmouseleave = function (e) {
       var x = e.pageX - this.offsetLeft;
       var y = e.pageY - this.offsetTop;
       var edge = closestEdge(x, y, this.clientWidth, this.clientHeight);
       var overlay = this.childNodes[1];
       var image = this.childNodes[0];
-  
+
       switch (edge) {
         case "left":
           TweenMax.to(overlay, 0.5, { left: "-100%" });
@@ -378,7 +382,7 @@ function ResearchListPage() {
               pathname: `research/${research.id}`,
               state: currentTab
               }}
-              className="box" 
+              className="box"
               key={research.id}>
               <CoverContainer>
                 <Cover cover={research.cover} />
