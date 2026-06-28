@@ -1,23 +1,29 @@
 import img1 from '../constants/images/research1.jpg';
-import RunHorseLight_1_1 from '../constants/images/RunHorseLight_1.jpg';
+import RunHorseLight_1_1 from '../constants/images/RunHorseLight_1_1.jpg';
 import RunHorseLight_1_2 from '../constants/images/RunHorseLight_1_2.jpg';
+import RunHorseLight_1_3 from '../constants/images/RunHorseLight_1_3.jpg';
+import RunHorseLight_1_4 from '../constants/images/RunHorseLight_1_4.jpg';
 import img2 from '../constants/images/research2.jpg';
-import RunHorseLight_2_1 from '../constants/images/RunHorseLight_2.jpg';
+import RunHorseLight_2_1 from '../constants/images/RunHorseLight_2_1.jpg';
+import RunHorseLight_2_2 from '../constants/images/RunHorseLight_2_2.jpg';
 import img3 from '../constants/images/research3.jpg';
-import RunHorseLight_3_1 from '../constants/images/RunHorseLight_3.jpg';
+import RunHorseLight_3_1 from '../constants/images/RunHorseLight_3_1.jpg';
 import RunHorseLight_3_2 from '../constants/images/RunHorseLight_3_2.jpg';
+import RunHorseLight_3_3 from '../constants/images/RunHorseLight_3_3.jpg';
 import img4 from '../constants/images/research4.jpg';
-import RunHorseLight_4_1 from '../constants/images/RunHorseLight_4.jpg';
+import RunHorseLight_4_1 from '../constants/images/RunHorseLight_4_1.jpg';
 import RunHorseLight_4_2 from '../constants/images/RunHorseLight_4_2.jpg';
+import RunHorseLight_4_3 from '../constants/images/RunHorseLight_4_3.jpg';
 import img5 from '../constants/images/research5.jpg';
-import RunHorseLight_5_1 from '../constants/images/RunHorseLight_5.jpg';
+import RunHorseLight_5_1 from '../constants/images/RunHorseLight_5_1.jpg';
+import RunHorseLight_5_2 from '../constants/images/RunHorseLight_5_2.jpg';
 import img6 from '../constants/images/research6.jpg';
-import RunHorseLight_6_1 from '../constants/images/RunHorseLight_6.jpg';
+import RunHorseLight_6_1 from '../constants/images/RunHorseLight_6_1.jpg';
 import RunHorseLight_6_2 from '../constants/images/RunHorseLight_6_2.jpg';
 
 export const RESEARCH_LIST = [{
     id: "1",
-    slides: [RunHorseLight_1_1, RunHorseLight_1_2],
+    slides: [RunHorseLight_1_1, RunHorseLight_1_2, RunHorseLight_1_3, RunHorseLight_1_4],
     title: "Temporal dimension of PSF",
     cover: img1,
     tags:  ['All', 'Plant-soil feedback', 'Ontogenetic niche shift'],
@@ -30,20 +36,20 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "2",
-    slides: [RunHorseLight_2_1],
+    slides: [RunHorseLight_2_2, RunHorseLight_2_1],
     title: "Mechanistic understanding of PSF",
     cover: img2,
     tags:  ['All', 'Plant-soil feedback'],
     paragraph: [
       "PSF studies often treat the soil microbial community as a black box that has either a net positive of negative effect on plant performance. However, the microbial community consists of many different functional groups, each with different direct and indirect interactions with other belowground processes. Our ability to predict the strength and impact of PSF would be low unless we take a mechanistic peek into the black box by considering these complex indirect interactions.",
       "",
-      "In the past, we had developed models to investigate the interdependency among two major belowground processes: plant-mediated nutrient cycling (i.e., litter-mediated PSF) and plant-soil microbe interactions (i.e., microbial-mediated PSF). we have shown that plant litter decomposability, a key trait controlling nutrient cycling, has a strong positive effect on a plant’s PSF strength when mycorrhizal fungi are abundant, but not when pathogens dominate the microbial community. This result stems from the fact that the two microbial functional groups have different indirect interactions with litter dynamics. In particular, mycorrhizal fungi create an environment with depleted soil nutrient and enhanced litter production, and therefore the benefits of having higher litter decomposability are amplified under such an environment. Data compiled from empirical studies also supported this theoretical prediction (Ke et al., 2015, New Phytologist; Ke and Miki, 2015, Frontiers in Microbiology).",
+      "In the past, we had developed models to investigate the interdependency among two major belowground processes: plant-mediated nutrient cycling (i.e., litter-mediated PSF) and plant-soil microbe interactions (i.e., microbial-mediated PSF). We have shown that plant litter decomposability, a key trait controlling nutrient cycling, has a strong positive effect on a plant’s PSF strength when mycorrhizal fungi are abundant, but not when pathogens dominate the microbial community. This result stems from the fact that the two microbial functional groups have different indirect interactions with litter dynamics. In particular, mycorrhizal fungi create an environment with depleted soil nutrients and enhanced litter production, and therefore, the benefits of having higher litter decomposability are amplified under such an environment. Data compiled from empirical studies also supported this theoretical prediction (Ke et al., 2015, New Phytologist; Ke and Miki, 2015, Frontiers in Microbiology).",
       "",
-      "In recent collaborations, we are building mechanistic models that further integrate litter- and microbial-mediated PSFs into resource competition theory. For example, we are considering how different microbial functions groups (e.g., pathogens, mutualists, decomposers) influences the supply and demand of soil nutrients during plant competition. We are also conducting experiments to study how litter input affects the decay of PSF in California chaparral ecosystems. Together, we believe this will allow us to better predict the consequences of PSF across environmental contexts.",
+      "In recent collaborations, we are building mechanistic models that further integrate litter- and microbial-mediated PSFs into resource competition theory (Chung et al., 2023, Journal of Ecology). For example, we are considering how different microbial functional groups (e.g., pathogens, mutualists, decomposers) influence the supply and demand of soil nutrients during plant competition. We are also conducting experiments to study how litter input affects the decay of PSF in California chaparral ecosystems (Ou et al., biorxiv). Together, we believe this will allow us to better predict the consequences of PSF across environmental contexts.",
     ]
   }, {
     id: "3",
-    slides: [RunHorseLight_3_1, RunHorseLight_3_2],
+    slides: [RunHorseLight_3_1, RunHorseLight_3_2, RunHorseLight_3_3],
     title: "Linking PSF and coexistence theory",
     cover: img3,
     tags: ['All', 'Plant-soil feedback', 'Species coexistence'],
@@ -52,7 +58,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "4",
-    slides: [RunHorseLight_4_1, RunHorseLight_4_2],
+    slides: [RunHorseLight_4_3, RunHorseLight_4_1, RunHorseLight_4_2],
     title: "Synthesizing coexistence theories",
     cover: img4,
     tags: ['All', 'Species coexistence'],
@@ -65,7 +71,7 @@ export const RESEARCH_LIST = [{
     ]
   }, {
     id: "5",
-    slides: [RunHorseLight_5_1],
+    slides: [RunHorseLight_5_2, RunHorseLight_5_1],
     title: "Stage dependent species interactions",
     cover: img5,
     tags: ['All', 'Ontogenetic niche shift'],
