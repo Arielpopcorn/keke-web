@@ -34,6 +34,8 @@ const Avatar = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
 
   @media ${breakpoint.sm}{
     width: 200px;
