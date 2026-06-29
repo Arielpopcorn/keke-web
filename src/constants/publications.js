@@ -504,7 +504,7 @@ export const PUBLICATIONS = [{
   magazine: "bioRxiv",
   highlighted: [],
   pdf: pdf_preprint_1,
-  doi: "https://doi.org/10.1101/2024.01.25.577053v2"
+  doi: "https://www.biorxiv.org/content/10.1101/2024.01.25.577053v2.full"
 }, {
   id: "34",
   title: "Plant–soil feedback persists beyond host death to shape density-dependent plant competition",
