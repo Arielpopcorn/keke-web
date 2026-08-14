@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import { PUBLICATIONS } from '../constants/publications';
@@ -72,7 +72,29 @@ const Button = styled.a`
   line-height: 20px;
 `;
 
+const AbstractText = styled.p`
+  margin: 8px 0 0 0;
+  padding: 5px 7px;
+  font-size: 13px;
+  line-height: 22px;
+  border: 1px dashed #407A52;
+  border-radius: 2px;
+
+  width: 100%;
+  max-width: 720px;
+  box-sizing: border-box;
+`;
+
 function PublicationsPage() {
+  const [openAbstracts, setOpenAbstracts] = useState({});
+
+  const toggleAbstract = (id) => {
+    setOpenAbstracts(previous => ({
+      ...previous,
+      [id]: !previous[id],
+    }));
+  };
+
   const years = PUBLICATIONS.map(publication => publication.year).reduce((years, currentYear) => {
     if (years.includes(currentYear)) return years;
 
@@ -143,6 +165,16 @@ function PublicationsPage() {
                         </BulletPoint>
                       ))}
                       <div>
+                        {p.abstract && (
+                            <Button
+                              as="button"
+                              type="button"
+                              onClick={() => toggleAbstract(p.id)}
+                            >
+                              Abstract
+                            </Button>
+                            )
+                        }
                         {p.pdf && (
                             <Button type="button" href={p.pdf} target="_blank" rel="noreferrer">
                               PDF
@@ -156,6 +188,12 @@ function PublicationsPage() {
                           )
                         }
                       </div>
+
+                      {openAbstracts[p.id] && (
+                      <AbstractText>
+                        {p.abstract}
+                      </AbstractText>
+                    )}
                     </Publication>
                   )})}
                 </Fragment>
