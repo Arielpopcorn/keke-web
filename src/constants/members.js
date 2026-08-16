@@ -17,7 +17,7 @@ import avatar2 from '../constants/images/avatar2.png';
 export const MEMBERS = [{
   id: 1,
   name: "Po-Ju Ke",
-  position: "Assistant Professor",
+  position: "Associate Professor",
   cover: keke,
   content: [{
     id: 1,
