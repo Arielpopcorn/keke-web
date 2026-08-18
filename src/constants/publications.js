@@ -32,8 +32,8 @@ import pdf_2025_4 from '../constants/pdf/2025_Wan_et_al_2025_EcologicalMonograph
 import pdf_2026_1 from '../constants/pdf/2026_Davis_et_al_2026_EcologyLetters.pdf';
 import pdf_2026_2 from '../constants/pdf/2026_Huang_et_al_2026_PlantSoil.pdf';
 import pdf_2026_3 from '../constants/pdf/2026_Senthilnathan_et_al_2026_PlantSoil.pdf';
+import pdf_2026_4 from '../constants/pdf/2026_Sun_and_Ke_2026_JAnimalEcol.pdf';
 import pdf_preprint_1 from '../constants/pdf/preprint_Ou_et_al_2024_biorxiv.pdf';
-import pdf_preprint_3 from '../constants/pdf/preprint_Sun_and_Ke_2025_biorxiv.pdf';
 import pdf_preprint_4 from '../constants/pdf/preprint_Tseng_et_al_2026_biorxiv.pdf';
 
 
@@ -551,6 +551,16 @@ export const PUBLICATIONS = [{
   abstract: "Plant-soil feedback (PSF) affects plant coexistence and diversity. Although the current paradigm provides a direct experimental method to quantify PSF and explains coexistence with varying levels of success, the emphasis on pairwise interactions hinders linking PSF to community patterns. We propose a new framework emphasizing the role of individual plants in soil dynamics. Our framework suggests a common-garden experiment to quantify PSF which is species-specific rather than focused on species pairs, which require fewer treatment groups. We illustrate how data from such an experiment can be used to quantify PSF using simulated data of plant-soil dynamics. We show that the current approach is susceptible to mispredicting coexistence due to incomplete characterization of the timescale of soil conditioning. Our proposed framework remedies this issue and expands the realm of possible coexistence outcomes dependent on the soil’s history. Our proposed experiments are designed to confront the implicit assumptions in current PSF research and reveal gaps in our understanding of how plants condition the soil. The shift in focus from pairwise PSF measures to species-based soil conditioning offers a better path to linking PSF to plant coexistence and community structure, and to forecasting the effects of PSF under changing environments."
 }, {
   id: "35",
+  title: "Predator decision-making shapes the dynamics and stability of mimicry systems",
+  authors : ["Yi Sun", "Po-Ju Ke"],
+  year: "2026",
+  magazine: "Journal of Animal Ecology (in press)",
+  highlighted: [],
+  pdf: pdf_2026_4,
+  doi: "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.70319",
+  abstract: "Mimicry is an anti-predator strategy in which prey species (the mimic) resemble an unprofitable species (the model) to deceive predators. Despite theoretical expectations for perfect mimicry, imperfect mimicry, where the mimic resembles its model imperfectly, is widespread in nature. To understand how imperfect mimicry can persist ecologically, we studied the effect of different predator recognition processes on the dynamics and stability of various mimicry systems. Specifically, we extended a dynamical model that integrates optimal foraging and signal detection theories by introducing a novel abundance-dependent recognition mechanism, where predators' perception of the similarity between mimic and model is influenced by the relative abundance of prey types. We demonstrate that intermediate similarity promotes stable community dynamics and increases mimic abundance in single Batesian mimicry systems. Moreover, abundance-dependent recognition leads predators to reduce attack on mimics with low morphological similarity, further contributing to system stability. Extending the framework to a multi-mimicry system, we find that Batesian and Müllerian mimics have contrasting effects: Intermediate Batesian similarity continues to stabilize the system, while high Müllerian similarity provides additional protection and can offset destabilization caused by highly similar Batesian mimics. Our study offers a novel explanation for the prevalence of imperfect mimicry in nature and highlights how recognition processes shape the ecological stability of mimicry systems."
+}, {
+  id: "36",
   title: "Realistic time-lags and litter dynamics alter predictions of plant-soil feedback across generations",
   authors : ["Suzanne X. Ou", "Gaurav S. Kandlikar", "Magdalena L. Warren", "Po-Ju Ke"],
   year: "Preprints",
@@ -559,16 +569,6 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_1,
   doi: "https://www.biorxiv.org/content/10.1101/2024.01.25.577053v2.full",
   abstract: "Plant–soil feedback is a critical process in natural plant communities. However, it remains unclear whether greenhouse-measured microbial effects manifest in natural systems with temporally separated growing seasons as classic experiments often overlook seasonal time lags and litter dynamics. We modified the classic two-phase experiment to study plant–soil feedback for three Californian annual plant species. Our response phase used soil inoculum obtained either immediately after plant conditioning, after a six-month dry period with the conditioning plant removed, or after a dry period with the litter of the conditioning plant. We characterized soil bacterial and fungal communities in different treatments and employed recent advancement in plant–soil feedback theory to predict plant coexistence. Temporal delays and the presence of litter caused distinct responses in the fungal and bacterial communities, resulting in divergent microbial compositions at the end of the response phases. The delayed response treatments also affected microbially mediated stabilization, fitness differences, and invasion growth rates differently across species pairs, influencing predictions of plant coexistence. Our study highlights that the interplay between seasonal delays and litter dynamics prevents the direct extrapolation of plant–soil feedback measurements across multiple seasons, emphasizing the necessity of considering natural history when predicting microbially mediated plant coexistence."
-}, {
-  id: "36",
-  title: "Predator decision-making shapes the dynamics and stability of mimicry systems",
-  authors : ["Yi Sun", "Po-Ju Ke"],
-  year: "Preprints",
-  magazine: "bioRxiv",
-  highlighted: [],
-  pdf: pdf_preprint_3,
-  doi: "https://www.biorxiv.org/content/10.1101/2025.10.15.670298v1",
-  abstract: "Mimicry is an anti-predator strategy in which prey species (the mimic) resemble an unprofitable species (the model) to deceive predators. Despite theoretical expectations for perfect mimicry, imperfect mimicry, where the mimic resembles its model imperfectly, is widespread in nature. To understand how imperfect mimicry can persist ecologically, we studied the effect of different predator recognition processes on the dynamics and stability of various mimicry systems. Specifically, we extended a dynamical model that integrates optimal foraging and signal detection theories by introducing a novel abundance-dependent recognition mechanism, where predators’ perception of the similarity between mimic and model is influenced by the relative abundance of prey types. We demonstrate that intermediate similarity promotes stable community dynamics and increases mimic abundance in single Batesian mimicry systems. Moreover, abundance-dependent recognition leads predators to reduce attack on mimics with low morphological similarity, further contributing to system stability. Extending the framework to a multi-mimicry system, we find that Batesian and Müllerian mimics have contrasting effects: intermediate Batesian similarity continues to stabilize the system, while high Müllerian similarity provides additional protection and can offset destabilization caused by highly similar Batesian mimics. Our study offers a novel explanation for the prevalence of imperfect mimicry in nature and highlights how recognition processes shape the ecological stability of mimicry systems."
 }, {
   id: "37",
   title: "Extending island biogeography theory to biotic islands: Microbial communities in epiphytic bird's nest fern Asplenium nidus",
