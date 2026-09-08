@@ -534,7 +534,7 @@ export const PUBLICATIONS = [{
   title: "Plant–soil feedback persists beyond host death to shape density-dependent plant competition",
   authors : ["Ching-Lin Huang", "Joe Wan", "Shou Wei", "Chia-Hao Chang-Yang", "Po-Ju Ke"],
   year: "2026",
-  magazine: "Plant and soil (in press)",
+  magazine: "Plant and soil, 525: 291-307",
   highlighted: [],
   pdf: pdf_2026_2,
   doi: "https://link.springer.com/article/10.1007/s11104-026-08731-0",
@@ -561,6 +561,16 @@ export const PUBLICATIONS = [{
   abstract: "Mimicry is an anti-predator strategy in which prey species (the mimic) resemble an unprofitable species (the model) to deceive predators. Despite theoretical expectations for perfect mimicry, imperfect mimicry, where the mimic resembles its model imperfectly, is widespread in nature. To understand how imperfect mimicry can persist ecologically, we studied the effect of different predator recognition processes on the dynamics and stability of various mimicry systems. Specifically, we extended a dynamical model that integrates optimal foraging and signal detection theories by introducing a novel abundance-dependent recognition mechanism, where predators' perception of the similarity between mimic and model is influenced by the relative abundance of prey types. We demonstrate that intermediate similarity promotes stable community dynamics and increases mimic abundance in single Batesian mimicry systems. Moreover, abundance-dependent recognition leads predators to reduce attack on mimics with low morphological similarity, further contributing to system stability. Extending the framework to a multi-mimicry system, we find that Batesian and Müllerian mimics have contrasting effects: Intermediate Batesian similarity continues to stabilize the system, while high Müllerian similarity provides additional protection and can offset destabilization caused by highly similar Batesian mimics. Our study offers a novel explanation for the prevalence of imperfect mimicry in nature and highlights how recognition processes shape the ecological stability of mimicry systems."
 }, {
   id: "36",
+  title: "Realistic time-lags and litter dynamics alter predictions of plant-soil feedback across generations",
+  authors : ["Suzanne X. Ou", "Gaurav S. Kandlikar", "Magdalena L. Warren", "Po-Ju Ke"],
+  year: "Preprints",
+  magazine: "bioRxiv",
+  highlighted: [],
+  pdf: pdf_preprint_1,
+  doi: "https://www.biorxiv.org/content/10.1101/2024.01.25.577053v2.full",
+  abstract: "Plant–soil feedback is a critical process in natural plant communities. However, it remains unclear whether greenhouse-measured microbial effects manifest in natural systems with temporally separated growing seasons as classic experiments often overlook seasonal time lags and litter dynamics. We modified the classic two-phase experiment to study plant–soil feedback for three Californian annual plant species. Our response phase used soil inoculum obtained either immediately after plant conditioning, after a six-month dry period with the conditioning plant removed, or after a dry period with the litter of the conditioning plant. We characterized soil bacterial and fungal communities in different treatments and employed recent advancement in plant–soil feedback theory to predict plant coexistence. Temporal delays and the presence of litter caused distinct responses in the fungal and bacterial communities, resulting in divergent microbial compositions at the end of the response phases. The delayed response treatments also affected microbially mediated stabilization, fitness differences, and invasion growth rates differently across species pairs, influencing predictions of plant coexistence. Our study highlights that the interplay between seasonal delays and litter dynamics prevents the direct extrapolation of plant–soil feedback measurements across multiple seasons, emphasizing the necessity of considering natural history when predicting microbially mediated plant coexistence."
+}, {
+  id: "37",
   title: "Extending island biogeography theory to biotic islands: Microbial communities in epiphytic bird's nest fern Asplenium nidus",
   authors : ["Yu-Pei Tseng", "Shou Wei", "Po-Ju Ke"],
   year: "Preprints",
