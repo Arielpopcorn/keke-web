@@ -12,6 +12,7 @@ import shiang_chi from '../constants/images/Member_ShiangChiHuang.jpg';
 import jia_zhen from '../constants/images/Member_JiaZhenLiu.jpg';
 import kuang_yu from '../constants/images/Member_KuangYuWang.jpg';
 import keke_cv from '../constants/pdf/keke_cv.pdf';
+import i_chih from '../constants/images/Member_IChihSha.jpg';
 import avatar2 from '../constants/images/avatar2.png';
 
 export const MEMBERS = [{
@@ -136,6 +137,24 @@ export const MEMBERS = [{
     id: 5,
     text: ", he investigated source-sink microbial dynamics in coupled aquaculture ponds. Inspired to understand the underlying theoretical mechanisms of these microbiome manipulations. Kuang-Yu join the lab in 2026 and is currently investigating the spatial dynamics of plant-soil feedbacks.",
     url: null
+  }]
+},{
+  id: 10,
+  name: "I-Chih Sha",
+  position: "Research Assistant",
+  cover: i_chih,
+  content: [{
+    id: 1,
+    text: "I-Chih is interested in community ecology, particularly succession and community assembly theory. During his master’s degree with Prof. ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Chih-Han Chang",
+    url: "https://chihhanchang.weebly.com/",
+  }, {
+    id: 3,
+    text: " and us, he studied the succession of microarthropods in bird’s nest ferns and tried to clarify the underlying mechanisms. I-Chih joins our lab as a research assistant in 2026 and continues to investigate microarthropod communities. Driven by curiosity, he is also participating in research on the spatial dynamics of plant-soil feedbacks and is planning a project linking animal movement behavior with coexistence theory.",
+    url: null,
   }]
 },{
   id: 6,
