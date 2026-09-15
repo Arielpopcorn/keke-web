@@ -146,7 +146,7 @@ function MembersPage() {
                   }
 
                   return (
-                    <Text key={c.id}>{c.text}</Text>
+                    <Text key={c.id}>{c.italic ? <i>{c.text}</i> : c.text}</Text>
                   )
                 })}
               </p>
@@ -187,7 +187,7 @@ function MembersPage() {
                     }
 
                     return (
-                      <Text key={c.id}>{c.text}</Text>
+                      <Text key={c.id}>{c.italic ? <i>{c.text}</i> : c.text}</Text>
                     )
                   })}
                 </p>

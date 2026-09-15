@@ -43,32 +43,6 @@ export const MEMBERS = [{
   }],
   cv: keke_cv
 },{
-  id: 2,
-  name: "Joe Wan",
-  position: "Postdoctoral Researcher",
-  cover: joe,
-  content: [{
-    id: 1,
-    text: "Joe is interested in the interface between community and ecosystem ecology. Since he joined us in 2023, Joe's work has focused on adapting coexistence theory to address a broader range of systems and questions, with forest trees and their microbial interactions as a guiding example. Joe received his doctorate from ETH Zürich in 2023, where he studied the implications of community interactions for carbon cycling with Prof. ",
-    url: null,
-  }, {
-    id: 2,
-    text: "Tom Crowther",
-    url: "https://crowtherlab.com/about-tom-crowther/",
-  }, {
-    id: 3,
-    text: ". Learn more about his research ",
-    url: null
-  }, {
-    id: 4,
-    text: "here",
-    url: "https://joe-wan.github.io/",
-  }, {
-    id: 5,
-    text: ".",
-    url: null
-  }]
-},{
   id: 3,
   name: "Chin-Te Tsai",
   position: "PhD student",
@@ -217,6 +191,40 @@ export const MEMBERS = [{
 
 
 export const ALUMNI = [{
+  id: 6,
+  name: "Joe Wan",
+  position: "Postdoctoral researcher (2023/10 - 2026/06)",
+  cover: joe,
+  content: [{
+    id: 1,
+    text: "Joe joined the lab as a postdoc in 2023 to study coexistence theory and its applications to plant-soil microbe interactions. Joe spearheaded many theoretical projects in the lab, including applying coexistence theory to predict ecosystem functioning, extending it to multi-species systems using approaches from statistical physics, and conducting invasion analyses for structured populations. Joe also led the development of our new empirical system of ",
+    url: null,
+  }, {
+    id: 2,
+    text: "Bidens pilosa",
+    url: null,
+  }, {
+    id: 3,
+    text: ", which we used to study how microbial effects vary throughout plant life stages. Joe is now an independent ESPRIT fellow working with Prof. ",
+    url: null,
+  }, {
+    id: 4,
+    text: "Adam Clark",
+    url: "https://www.adamclarktheecologist.com/",
+  }, {
+    id: 5,
+    text: " at the University of Graz, where he integrates long-term data with theory to predict community structure. Learn more about his research ",
+    url: null,
+  }, {
+    id: 6,
+    text: "here",
+    url: "https://joe-wan.github.io/",
+  }, {
+    id: 7,
+    text: ".",
+    url: null,
+  }]
+}, {
   id: 1,
   name: "Yi Sun",
   position: "Master's student and Research Assistant (2022/09 - 2025/07)",
