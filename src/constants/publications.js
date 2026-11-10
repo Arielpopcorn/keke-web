@@ -1,3 +1,4 @@
+import pdf_preprint_5 from '../constants/pdf/preprint_Wan_et_al_2026_biorxiv.pdf';
 import pdf_2015_1 from '../constants/pdf/2015_Ke_et_al_2015_NewPhytologist.pdf';
 import pdf_2015_2 from '../constants/pdf/2015_Ke_and_Miki_2015_FrontiersMicrobiology.pdf';
 import pdf_2017_1 from '../constants/pdf/2017_Letten_et_al_2017_EcologicalMonographs.pdf';
@@ -544,7 +545,7 @@ export const PUBLICATIONS = [{
   title: "Plants, soil, and coexistence: an alternative approach to modelling plant‑soil feedback",
   authors : ["Athmanathan Senthilnathan", "Po-Ju Ke", "Xinyi Yan", "Kerri Crawford", "Rafael D’Andrea"],
   year: "2026",
-  magazine: "Plant and soil (in press)",
+  magazine: "Plant and Soil, 526(2), 1061-1073",
   highlighted: [],
   pdf: pdf_2026_3,
   doi: "https://link.springer.com/article/10.1007/s11104-026-08915-8",
@@ -554,7 +555,7 @@ export const PUBLICATIONS = [{
   title: "Predator decision-making shapes the dynamics and stability of mimicry systems",
   authors : ["Yi Sun", "Po-Ju Ke"],
   year: "2026",
-  magazine: "Journal of Animal Ecology (in press)",
+  magazine: "Journal of Animal Ecology, 95(10), 1984-1998",
   highlighted: [],
   pdf: pdf_2026_4,
   doi: "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.70319",
@@ -579,4 +580,14 @@ export const PUBLICATIONS = [{
   pdf: pdf_preprint_4,
   doi: "https://www.biorxiv.org/content/10.64898/2026.03.30.715435v1",
   abstract: "Biotic insular systems differ from conventional islands in that patch properties change as habitat-forming organisms grow, raising questions about the applicability of island biogeography theory (IBT). Using epiphytic bird's nest ferns (Asplenium nidus) as a model system, we tested whether fungal and bacterial communities exhibit species-area relationships and evaluated the roles of passive sampling, disproportionate effects, environmental heterogeneity, and assessed isolation effects using distance–decay patterns in community similarity. We treated individual ferns as microbial islands and sampled 24 individuals spanning three size classes. Microbial communities across litter layers were characterized using high-throughput sequencing, and humus chemistry was measured to quantify microhabitat variation. We applied a multi-scale rarefaction framework to partition diversity components and used distance–decay relationships to assess dispersal limitation. Both fungal and bacterial communities exhibited positive species-area relationships. Fungal richness was driven by both disproportionate effects and environmental heterogeneity, whereas bacterial richness was primarily explained by environmental heterogeneity. Larger ferns exhibited greater pH heterogeneity across litter layers, which was associated with increased species turnover, indicating that decomposition-driven gradients promote microbial diversity. Both communities showed significant distance–decay patterns, consistent with dispersal limitation. Our results demonstrate that organism-driven habitat development generates environmental heterogeneity that links area to diversity, supporting the extension of IBT to dynamic biotic island systems."
+}, {
+  id: "38",
+  title: "Invasion analysis for structured populations: analytical principles and numerical workflows",
+  authors: ["Joe Wan","Hsiang-Chih Lo","Guan-Yu Chen","Shiang-Chi Huang","Jia-Zhen Liu","Chin-Te Tsai","Po-Ju Ke"],
+  year: "Preprints",
+  magazine: "bioRxiv",
+  highlighted: [],
+  pdf: pdf_preprint_5,
+  doi: "https://doi.org/10.64898/2026.11.04.763670",
+  abstract: "All real populations show some form of structure—differences among individuals, such as life stage or physiological condition, that shape a species' ability to persist. Yet it remains challenging to incorporate population structure into models of species interactions. We provide a general framework for studying competition in structured populations by quantifying species' invasion growth rates. The crux of our approach is separation of timescales: the initial dynamics of a structured population depend on how exactly it is introduced, but these transient differences do not affect long-term invasion success. Depending on the research question, the relevant long-term growth rate when rare may equivalently be derived using analytical separation of timescales, matrix population theory, or numerical simulations. Using case studies spanning developmental stage, environmental state, and infection status, we illustrate how our methodology derives simple, ecologically meaningful invasion conditions for a variety of systems. Finally, we extend the approach to fluctuating resident dynamics, showing how to use simulations or a general mathematical framework known as Floquet theory to correctly quantify invasion growth. By unifying the quantitative methods of population biology and community ecology, our framework will allow ecologists to study species persistence and coexistence across a greater variety of demographically complex systems."
 }];
